@@ -685,6 +685,7 @@
         /**
          * SUPPORT
          * -------------------------------------------------------- */
+        .spaces-levels__layout,
         .support-levels__layout,
         #ember-and-spark-support-levels {
             display: grid;
@@ -705,12 +706,14 @@
         }
 
         @media screen and (min-width: 1240px) {
+            .spaces-levels__layout,
             .support-levels__layout {
                 grid-template-columns: 1fr 1fr 1fr;
             }
 
         }
 
+        .spaces-level,
         .support-level {
             outline: 1px solid var(--framework-color);
             padding: var(--spacing-small);
@@ -721,23 +724,27 @@
 
         }
 
+        .spaces-level__heading,
         .support-level__heading {
             font-weight: normal;
             margin-bottom: var(--spacing-small);
         }
 
+        .spaces-level__heading em,
         .support-level__heading em {
             font-style: normal;
             color: white;
             border-bottom: 2px solid var(--framework-color);
         }
 
+        .spaces-level__footer,
         .support-level__footer {
             position: relative;
             flex-grow: 1;
             padding-bottom: var(--spacing-default);
         }
 
+        .spaces-level__amount,
         .support-level__amount {
             background-color: var(--framework-color);
             color: var(--background-color);
@@ -750,6 +757,9 @@
             bottom: calc(-1 * var(--spacing-medium));
         }
 
+        #spaces-levels__food {
+            outline-style: dashed;
+        }
 
         /**
          * CONFERENCE
@@ -1006,7 +1016,11 @@
             </div>
         </div>
 
+    </div>
+</div>
 
+<div class="row">
+    <div class="col">
         <div class="section" id="where-and-when">
             <h2>
                 <svg alt="Where and When is Rust Forge?" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1345.66602px" height="255.28px" viewBox="0 0 1345.66602 255.28" style="enable-background:new 0 0 1345.66602 255.28;" xml:space="preserve">
@@ -1248,7 +1262,11 @@
             </div>
 
         </div>
+    </div>
+</div>
 
+<div class="row">
+    <div class="col">
 
         <div class="section" id="spaces">
 
@@ -1309,6 +1327,13 @@
                             conference attendees or just your team
                         </li>
                     </ul>
+                    <h3>2 Day Team Spaces Include:</h3>
+                    <ul class="plus">
+                    <li>Access on August 27–28, 2025 from 9am to 6pm</li>
+                    <li>A/V support</li>
+                    <li>Branded conference badges</li>
+                    <li>Security/registration</li>
+                    </ul>
                 </div>
 
                 <div>
@@ -1318,10 +1343,73 @@
                 </div>
 
             </div>
+            <div class="spaces-levels__layout">
+                <div id="spaces-levels__one" class="support-level">
+                    <div class="spaces-level__body">
+                        <h3 class="spaces-level__heading">
+                            <em>Room 1:</em></h3>
+                        <ul class="plus">
+                            <li class="highlight">$5,000k USD Sponsorship Credit</li>
+                            <li>Main conference room</li>
+                            <li>Theatre screen</li>
+                            <li>36 seats</li>
+                            <li>5 conference passes</li>
+                        </ul>
+                    </div>
+                    <div class="spaces-level__footer">
+                        <div class="spaces-level__amount">
+                            $6,250 USD
+                        </div>
+                    </div>
+                </div>
+
+                <div id="spaces-levels__two" class="support-level">
+                    <div class="spaces-level__body">
+                        <h3 class="spaces-level__heading">
+                            <em>Room 2:</em></h3>
+                        <ul class="plus">
+                            <li class="highlight">$3,000k USD Sponsorship Credit</li>
+                            <li>Breakout room</li>
+                            <li>Large screen</li>
+                            <li>24 seats</li>
+                            <li>2 conference passes</li>
+                        </ul>
+                    </div>
+                    <div class="spaces-level__footer">
+                        <div class="spaces-level__amount">
+                            $4,000 USD
+                        </div>
+                    </div>
+                </div>
+
+
+                <div id="spaces-levels__addons">
+                    <div id="spaces-levels__food" class="support-level">
+                        <div class="spaces-level__body">
+                            <h3 class="spaces-level__heading">
+                                Option<<em>Catering</em>></h3>
+                            <ul class="plus">
+                                <li>Lunch</li>
+                                <li>In room refreshments</li>
+                                <li>Drinks and snacks</li>
+                            </ul>
+                        </div>
+                        <div class="spaces-level__footer">
+                            <div class="spaces-level__amount">
+                                $60 USD/pp/day
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
         </div>
 
+    </div>
+</div>
 
+<div class="row">
+    <div class="col">
         <div class="section" id="conference">
 
             <h2>
@@ -1398,7 +1486,11 @@
             </div>
 
         </div>
+    </div>
+</div>
 
+<div class="row">
+    <div class="col">
         <div class="section" id="networking">
 
             <h2>
@@ -1459,8 +1551,14 @@
                 where those relationships can grow.</p>
             </div>
 
-        </div>
 
+
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col">
 
         <div class="section" id="support">
 
@@ -1596,7 +1694,11 @@
 
             </div>
         </div>
+    </div>
+</div>
 
+<div class="row">
+    <div class="col">
         <div class="section" id="who">
 
             <h2>
