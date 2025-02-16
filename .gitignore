@@ -1,2 +1,6 @@
+# IDE and OS cruft
+.idea/
+.vscode/
+*.swp
+*.swo
 .DS_Store
-.idea
