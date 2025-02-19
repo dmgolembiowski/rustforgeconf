@@ -1,4 +1,4 @@
-# Rust Forge Conference
+# Rust Forge 2025 Conference Website
 
 Repository for the conference website source code, and supporting collateral. 
 
