@@ -1,3 +1,6 @@
+# environment variables, e.g. server hostname
+.env
+
 # IDE and OS cruft
 .idea/
 .vscode/
