@@ -1,0 +1,39 @@
+If we have an OTF or TTF, we can make WOFF and WOFF2.
+
+Step 1: Install packages
+~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+
+We need the `ttfautohint` package in the Debian/Ubuntu repos:
+
+	sudo apt install ttfautohint
+
+We also If you cant download fonttools from the repo, you can download it from PyPI:
+
+uv:
+
+	uv venv --no-project --python=">=3.12"
+	uv install brotli
+	uv install fonttools
+
+pip:
+
+	python -m venv .env
+	source .env/bin/activate
+	pip install brotli
+	pip install fonttools
+
+Step 2: add type hinting
+~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+
+These options are for Roc Grotesk, which we're using for headlines.
+
+	ttfautohint --strong-stem-width="nnn" --no-info --windows-compatibility <original>.ttf <hinted>.ttf
+
+Step 3: Compress
+~ ~ ~ ~ ~ ~ ~ ~ ~
+
+Now, we essentially just need to apply compression to the ttf files to produce woff and woff2.
+	
+	fonttools ttLib --flavor woff -o <final>.woff <hinted>.ttf
+	fonttools ttLib --flavor woff2 -o <final>.woff2 <hinted>.ttf
+
