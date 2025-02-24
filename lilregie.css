@@ -1,0 +1,103 @@
+
+:root {
+    --brand-color-dark: #06252f;
+    --brand-color-light: rgba(26, 183, 143, 1);
+    --brand-color-light-ghost: rgba(26, 183, 143, 0.2);
+    --background-color: var(--brand-color-dark);
+    --highlight-color: var(--brand-color-light);
+    --heading-color: var(--brand-color-light);
+    --text-color: white;
+    --framework-color: var(--brand-color-light);
+    --spacing-medium: 3rem;
+    --spacing-regular: 1.5rem;
+    --spacing-default: 2rem;
+    --spacing-small: 1rem;
+    --spacing-smaller: 0.75rem;
+    --spacing-tiny: 0.25rem;
+    --spacing-content: 1rem;
+    --col-width: 50rem;
+    --row-spacing: 2rem;
+    --viewport-gutter: 3rem;
+    --text-fonts: 'Space Mono', 'Fira Code', monospace;
+}
+
+body {
+    --fbc-blue-60: var(--brand-color-dark);
+    --fbc-blue-70: var(--brand-color-light);
+    --fbc-gray-20: var(--brand-color-light-ghost);
+    --fbc-light-gray: #b2bdc0;
+    --fbc-white: #ffffff;
+    /* --fbc-transition: all .15s cubic-bezier(.07, .95, 0, 1); */
+    --fbc-borders: 1px solid var(--brand-color-light-ghost);
+    --fbc-primary-text: var(--brand-color-dark);
+    --fbc-secondary-text: var(--brand-color-light);
+    --fbc-font-size: 16pt;
+}
+
+/* .lilregie {
+    color: white;
+    background-color: var(--brand-color-dark);
+} */
+
+h2.content, h3.content, h4.content {
+    color: var(--brand-color-dark);
+}
+
+.booking-form {
+    border: solid 1px var(--brand-color-light);
+}
+
+fieldset {
+    margin-top: 6px;
+}
+
+#booking-container a {
+    color: var(--brand-color-light);
+}
+
+#contact-information a {
+    color: var(--brand-color-light);
+}
+
+.fbc-container {
+    font-size: var(--fbc-font-size);
+    font-weight: 400;
+    color: var(--fbc-primary-text);
+    background: var(--fbc-white);
+}
+
+.booking-form-header {
+    background-color: var(--brand-color-dark);
+}
+
+h3.booking-header__title {
+    color: var(--brand-color-light);
+}
+
+.booking-actions button {
+    border-radius: 3px;
+    background: var(--brand-color-dark);
+    opacity: 0.8;
+}
+
+.booking-actions button.btn-secondary {
+    background: var(--brand-color-dark);
+}
+
+.booking-actions button:hover {
+    background: var(--brand-color-dark);
+    opacity: 0.9;
+}
+
+.booking-actions button.btn-secondary:hover {
+    background: var(--brand-color-dark);
+    opacity: 0.9;
+}
+
+.booking-actions button.btn-primary {
+    background: var(--brand-color-light);
+}
+
+.booking-actions button:hover {
+    box-shadow: 4px 4px var(--brand-color-dark);
+}
