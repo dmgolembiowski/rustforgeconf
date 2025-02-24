@@ -224,6 +224,8 @@
 
         ul.plus {
             list-style: none;
+            margin-top: var(--spacing-small);
+            margin-bottom: var(--spacing-small);
         }
 
         ul.plus li::before {
@@ -782,7 +784,6 @@
         /**
          * SUPPORT
          * -------------------------------------------------------- */
-        .deals-levels__layout,
         .spaces-levels__layout,
         .support-levels__layout,
         #ember-and-spark-support-levels {
@@ -792,6 +793,10 @@
         }
 
         @media screen and (min-width: 960px) and (max-width: 1239px) {
+            .deals-levels__layout {
+                grid-template-columns: 1fr;
+            }
+
             .support-levels__layout {
                 grid-template-columns: 1fr 1fr;
             }
@@ -804,7 +809,10 @@
         }
 
         @media screen and (min-width: 1240px) {
-            .deals-levels__layout,
+            .deals-levels__layout {
+                grid-template-columns: 1fr;
+            }
+
             .spaces-levels__layout,
             .support-levels__layout {
                 grid-template-columns: 1fr 1fr 1fr;
@@ -888,6 +896,7 @@
             flex-direction: column;
             position: relative;
             align-content: stretch;
+            margin-bottom: calc(3*var(--spacing-default));
         }
 
         .deals-level__amount {
