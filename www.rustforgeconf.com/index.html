@@ -109,6 +109,8 @@
             --highlight-color: var(--brand-color-light);
             --heading-color: var(--brand-color-light);
             --text-color: white;
+            --list-text-color: rgba(255, 255, 255, 0.8);
+            --text-color-muted: rgba(255, 255, 255, 0.6);
             --framework-color: var(--brand-color-light);
 
             --spacing-medium: 3rem;
@@ -165,14 +167,19 @@
         }
 
         h2 {
-            font-family: 'Space Mono', 'Fira Code', monospace;
-            font-size: 1rem;
+            font-family: 'Roc Grotesk Wide Bold', 'Space Mono', 'Fira Code', monospace;
+            font-size: 4rem;
             margin: 0;
             text-transform: uppercase;
-            letter-spacing: 0.25rem;
+            letter-spacing: -0.05rem;
             font-weight: normal;
+            color: var(--text-color);
+            text-align: left;
+            line-height: 98%;
+        }
+
+        h2 span.boost {
             color: var(--heading-color);
-            text-align: center;
         }
 
         h2 svg {
@@ -184,7 +191,12 @@
         }
 
         h3 {
+            font-family: 'Roc Grotesk Wide Bold', 'Space Mono', 'Fira Code', monospace;
             color: var(--heading-color);
+        }
+
+        h3 span.boost {
+            color: var(--text-color);
         }
 
         p {
@@ -201,6 +213,11 @@
         ul {
             margin-left: var(--spacing-small);
             position: relative;
+            color: var(--list-text-color);
+        }
+
+        ul a {
+            color: var(--list-text-color);
         }
 
         ul.plus {
@@ -212,6 +229,18 @@
             left: 0;
             width: var(--spacing-small);
             content: "+ ";
+            margin-left: calc(-1 * var(--spacing-small));
+        }
+
+        ul.plus ul {
+            list-style: none;
+        }
+
+        ul.plus ul li::before {
+            position: absolute;
+            left: 0;
+            width: var(--spacing-small);
+            content: "- ";
             margin-left: calc(-1 * var(--spacing-small));
         }
 
@@ -269,7 +298,21 @@
 
         .highlight {
             color: var(--highlight-color);
+            text-decoration-color: var(--highlight-color);
+            font-weight: 500;
+            font-size: 110%;
         }
+
+        h3 .highlight {
+            font-family: "Fira Code", "Space Mono", monospace;
+        }
+
+        .ghost {
+            background-color: var(--brand-color-light-ghost);
+            padding-top: 2px;
+            padding-bottom: 2px;
+        }
+
         .break-long-text {
             display: inline-block;
             white-space: pre-wrap;
@@ -277,6 +320,10 @@
         }
 
         .main {
+            background-image: url("assets/images/rustforge-background-overlay.jpg");
+            background-size: 1200px;
+            background-position: bottom;
+            background-repeat: no-repeat;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -532,12 +579,15 @@
             }
         }
 
-
-
+        #intro {
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+        }
 
         #intro-layout {
-            min-height: 50vh;
-            border-bottom: 1px solid var(--brand-color-light-ghost);
             width: 100%;
             justify-content: center;
             align-items: center;
@@ -551,7 +601,7 @@
         #intro-logo {
             display: block;
             width: 100%;
-            max-width: 30rem;
+            max-width: 900px;
             height: auto;
         }
 
@@ -619,12 +669,12 @@
         }
 
         .product-block {
-            outline: 1px solid var(--framework-color);
+            outline: 2px solid var(--framework-color);
             display: flex;
             width: auto;
             flex-direction: column;
             gap: 1px;
-
+            background-color: var(--brand-color-light-ghost);
         }
 
         .product-name {
@@ -723,6 +773,7 @@
         /**
          * SUPPORT
          * -------------------------------------------------------- */
+        .deals-levels__layout,
         .spaces-levels__layout,
         .support-levels__layout,
         #ember-and-spark-support-levels {
@@ -744,6 +795,7 @@
         }
 
         @media screen and (min-width: 1240px) {
+            .deals-levels__layout,
             .spaces-levels__layout,
             .support-levels__layout {
                 grid-template-columns: 1fr 1fr 1fr;
@@ -753,7 +805,7 @@
 
         .spaces-level,
         .support-level {
-            outline: 1px solid var(--framework-color);
+            outline: 2px solid var(--framework-color);
             padding: var(--spacing-small);
             display: flex;
             flex-direction: column;
@@ -762,12 +814,14 @@
 
         }
 
+        .deals-level__heading,
         .spaces-level__heading,
         .support-level__heading {
             font-weight: normal;
             margin-bottom: var(--spacing-small);
         }
 
+        .deals-level__heading em,
         .spaces-level__heading em,
         .support-level__heading em {
             font-style: normal;
@@ -795,8 +849,60 @@
             bottom: calc(-1 * var(--spacing-medium));
         }
 
+        .spaces-level__amount a,
+        .support-level__amount a {
+            color: var(--background-color);
+            text-decoration: underline;
+            text-underline-offset: 20%;
+        }
+
         #spaces-levels__food {
             outline-style: dashed;
+        }
+
+        /*
+        * OFFERS
+        *
+        * -------------------------------------------------------- */
+        .deals-level__footer {
+            display: flex;
+            position: relative;
+            gap: -2px;
+            padding-bottom: var(--spacing-default);
+            position: absolute;
+            right: calc(40px + (-1 * var(--spacing-small)));
+        }
+
+        .deals-level {
+            outline: 2px solid var(--framework-color);
+            padding: var(--spacing-small);
+            flex-direction: column;
+            position: relative;
+            align-content: stretch;
+        }
+
+        .deals-level__amount {
+            outline: solid 2px var(--framework-color);
+            background-color: var(--framework-color);
+            padding: var(--spacing-smaller) var(--spacing-small);
+            text-align: right;
+            font-weight: bold;
+            display: inline;
+        }
+
+        .deals-level__amount a {
+            color: var(--background-color);
+            text-decoration: underline;
+            text-underline-offset: 20%;
+        }
+
+        .deals-levels__code {
+            outline: solid 2px;
+            background-color: var(--background-color);
+            color: var(--heading-color);
+            text-align: center;
+            font-weight: bold;
+            display: inline;
         }
 
         /**
@@ -845,14 +951,11 @@
 </head>
 <body>
 
-
 <div class="main h-event">
-
     <div id="intro" class="row">
         <div class="col">
             <div class="section">
                 <div id="intro-layout">
-
                     <svg id="intro-logo" viewBox="0 0 763.18 317.17" style="enable-background:new 0 0 763.18 317.17;" xml:space="preserve">
                         <g>
                             <path class="text" d="M122.69,60.63c0-19.72-12.7-32.59-53.49-32.59H0v109.99h32.09V98.41h39.78c13.71,0,18.05,5.18,18.05,16.55
@@ -928,62 +1031,62 @@
                     <div id="intro-body">
                         <p class="p-summary">
                         <span class="p-name">Rust Forge 2025</span> is a <span class="p-category">conference</span> for
-                        developers building with the Rust programming language that is being hosted in <strong>
+                        developers building with the Rust&nbsp;programming&nbsp;language that is being hosted in <strong>
                             <a href="#location">
                                     <span class="p-location h-hdr">
                                         <span class="p-locality">Wellington</span>,
-                                        <span class="p-country-name">New Zealand</span>
+                                        <span class="p-country-name">New&nbsp;Zealand</span>
                                     </span> </a> </strong> from
                         <span class="dt-start" datetime="27-08-2025">27</span>-<span class="dt-end" datetime="30-08-2025">30th</span>
                         August 2025. Join us! </p>
-
                     </div>
-
-
-                    <div class="section">
-                        <div class="form-box">
-                            <h2>Register interest</h2>
-                            <p>We're still in the early stages of planning. Please let us know if you're interested and
-                            how you'd like to be involved. This helps us gauge interest and we'll send out info, etc.
-                            (Rewrite this)</p>
-                            <form enctype="multipart/form-data" id="form01" method="post2" target="https://hooks.zapier.com/hooks/catch/19805528/263afdp/" data-autofocus="1">
-
-                                <div class="field" data-type="email">
-                                    <input type="email" name="email" id="interest-email" placeholder="iloverust@example.com" maxlength="128" required="">
-                                </div>
-
-                                <div class="field" data-type="select">
-                                    <select name="interested-in" id="interest-area">
-                                        <option value="">– Interested In ... (optional) –</option>
-                                        <option value="Attending">Attending</option>
-                                        <option value="Speaking">Speaking</option>
-                                        <option value="Sponsoring">Sponsoring</option>
-                                        <option value="Organising">Organising</option>
-                                        <option value="Volunteering">Volunteering</option>
-                                        <option value="Something Else">Something Else</option>
-                                    </select>
-                                </div>
-
-                                <div class="field" style="display: none;">
-                                    <input type="text" name="fax" id="form01-fax" placeholder="Fax" maxlength="128" disabled="">
-                                </div>
-
-                                <div class="actions">
-                                    <button type="submit" class="button">
-                                        form.submit()
-                                    </button>
-                                </div>
-
-                                <input type="hidden" name="id" value="form01">
-                            </form>
-                        </div>
-                    </div>
-
                 </div>
-
             </div>
         </div>
+    </div>
+</div>
 
+<div class="row">
+    <div class="col">
+        <div class="section">
+            <h2>Register</h2>
+            <p>Registrations are open!</p>
+
+            <div class="form-box">
+                <h3>Join mailing list</h2>
+                <p>Add your email address to the mailing list</p>
+                <form enctype="multipart/form-data" id="form01" method="post2" target="https://hooks.zapier.com/hooks/catch/19805528/263afdp/" data-autofocus="1">
+
+                    <div class="field" data-type="email">
+                        <input type="email" name="email" id="interest-email" placeholder="iloverust@example.com" maxlength="128" required="">
+                    </div>
+
+                    <div class="field" data-type="select">
+                        <select name="interested-in" id="interest-area">
+                            <option value="">– Interested In ... (optional) –</option>
+                            <option value="Attending">Attending</option>
+                            <option value="Speaking">Speaking</option>
+                            <option value="Sponsoring">Sponsoring</option>
+                            <option value="Organising">Organising</option>
+                            <option value="Volunteering">Volunteering</option>
+                            <option value="Something Else">Something Else</option>
+                        </select>
+                    </div>
+
+                    <div class="field" style="display: none;">
+                        <input type="text" name="fax" id="form01-fax" placeholder="Fax" maxlength="128" disabled="">
+                    </div>
+
+                    <div class="actions">
+                        <button type="submit" class="button">
+                            form.submit()
+                        </button>
+                    </div>
+
+                    <input type="hidden" name="id" value="form01">
+                </form>
+            </div>
+        </div>
     </div>
 </div>
 
@@ -992,7 +1095,8 @@
 
         <div class="section" id="what">
             <h2>
-                <svg alt="What is Rust Forge" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1140.22058px" height="245.48px" viewBox="0 0 1140.22058 245.48" style="enable-background:new 0 0 1140.22058 245.48;" xml:space="preserve">
+                <span class="boost">What</span> is Rust&nbsp;Forge?
+                <!-- <svg alt="What is Rust Forge" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1140.22058px" height="245.48px" viewBox="0 0 1140.22058 245.48" style="enable-background:new 0 0 1140.22058 245.48;" xml:space="preserve">
                         <g>
                             <path style="fill:#FFFFFF;" d="M1071.34058,243.8h24.92004v-22.12001h-24.92004V243.8z M1074.00049,215.51999h17.92004v-10.22
                                 h0.28003c2.23999,5.18001,7.41992,10.36002,18.62,10.36002c17.35999,0,29.40002-13.3,29.40002-33.04001
@@ -1037,7 +1141,7 @@
                             h-59.08002v-34.72H188.019v92.12001h26.87999V56.27989H273.979v37.52002h26.88V1.6799H273.979z M373.00098,21.8399h0.14001
                             l19.17902,37.52H353.961L373.00098,21.8399z M359.00098,1.6799L308.88,93.79991h27.72098L346.121,75.0399h54.17999l9.51999,18.76001
                             h31.22l-50.12-92.12001H359.00098z M426.95599,1.6799v19.88H463.216v72.24001h26.879V21.55991h36.26102v-19.88H426.95599z"/>
-                        </svg>
+                        </svg> -->
 
             </h2>
             <div class="blocks-regular">
@@ -1060,8 +1164,11 @@
 <div class="row">
     <div class="col">
         <div class="section" id="where-and-when">
+            <img src="assets/images/shed6-500x260.png" alt="Shed 6 from across the harbour." style="opacity: 0.8;" >
+
             <h2>
-                <svg alt="Where and When is Rust Forge?" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1345.66602px" height="255.28px" viewBox="0 0 1345.66602 255.28" style="enable-background:new 0 0 1345.66602 255.28;" xml:space="preserve">
+                <span class="boost">Where and When</span> is Rust&nbsp;Forge?
+                <!-- <svg alt="Where and When is Rust Forge?" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1345.66602px" height="255.28px" viewBox="0 0 1345.66602 255.28" style="enable-background:new 0 0 1345.66602 255.28;" xml:space="preserve">
                 <g>
                     <path style="fill:#FFFFFF;" d="M1276.78601,253.60001h24.92004V231.48h-24.92004V253.60001z M1279.44604,225.32001h17.91992v-10.22
                         h0.28003c2.23999,5.17999,7.42004,10.35999,18.62,10.35999c17.35999,0,29.40002-13.29999,29.40002-33.03999
@@ -1116,12 +1223,24 @@
                          M36.96,103.60001H66.5l23.66-59.5h0.28l22.82,59.5h29.53999l36.96002-92.12h-26.46002l-23.37999,63.28h-0.28l-24.08-63.28h-27.16
                         L53.9,74.76001h-0.28l-24.5-63.28H0L36.96,103.60001z"/>
                 </g>
-                </svg>
+                </svg> -->
 
+<!-- 
+            <div style="display: flex; gap: 2px">
+                <div style="width: calc(99% - 4px); padding: 1px; background-color: var(--brand-color-light-ghost); color: var(--text-color-muted); font-size: 10pt;">
+                    <img src="assets/images/mt-victoria-cyclists-500x533.png" alt="Cyclists at the top of Mt Victoria" >
+                    <div style="padding: 2px;">Cyclists looking out across Wellington Harbour from the Mt Victoria summit.</div>
+                </div>
+                <div style="width: calc(99% - 4px); padding: 1px; background-color: var(--brand-color-light-ghost); color: var(--text-color-muted); font-size: 10pt;">
+                    <img src="assets/images/princess-bay-500x333.png" alt="A couple sitting at Princess Bay at dusk.">
+                    <div style="padding: 2px;">A couple sitting at Princess Bay at dusk.</div>
+                </div>
+            </div> -->
 
             </h2>
             <div id="where-and-when-layout">
                 <div class="blocks-regular">
+                    <img src="assets/images/wel_ington-500x533.png" alt="Cyclists at the top of Mt Victoria"  style="opacity: 0.8;">
                     <p class="highlight">Rust Forge will take place on <em>August 27-30, 2025</em> at <em>Shed 6 in
                         Wellington, New Zealand.</em></p>
                     <dl id="where-and-when-dates">
@@ -1132,6 +1251,7 @@
                     </dl>
                 </div>
                 <div class="blocks-regular">
+                    <img src="assets/images/princess-bay-500x333.png" alt="A couple sitting at Princess Bay at dusk." style="opacity: 0.8;">
                     <h3 class="highlight">Why New Zealand?</h3>
                     <p>Wellington was selected for its beauty and accessibility. It features affordable and accessible
                     amenities, a deep/rich culture, and undeniable natural beauty. It’s a perfect place to gather,
@@ -1148,7 +1268,8 @@
         <div class="section" id="participate">
 
             <h2>
-                <svg alt="How to Participate" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1067.83997px" height="245.48px" viewBox="0 0 1067.83997 245.48" style="enable-background:new 0 0 1067.83997 245.48;" xml:space="preserve">
+                <span class="boost">How</span> to Participate
+                <!-- <svg alt="How to Participate" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1067.83997px" height="245.48px" viewBox="0 0 1067.83997 245.48" style="enable-background:new 0 0 1067.83997 245.48;" xml:space="preserve">
                     <g>
                         <path style="fill:#FFFFFF;" d="M979.35999,243.8h88.47998v-19.88h-61.59998v-18.62001h46.19995V189.62h-46.19995v-18.06h60.19995
                             v-19.88h-87.07996V243.8z M907.96002,243.8h26.88V171.56h36.25995v-19.88h-99.39996v19.88h36.26001V243.8z M798.70502,209.36
@@ -1181,7 +1302,7 @@
                             C246.17599,21.84001,227.276,0,185.696,0s-60.48,21.84001-60.48,47.32001C125.216,74.90001,143.976,95.48,185.696,95.48 M0,93.8
                             h26.88V56.28h59.08V93.8h26.88v-92.12H85.96v34.72H26.88v-34.72H0V93.8z"/>
                     </g>
-                    </svg>
+                    </svg> -->
             </h2>
             <div id="participate-layout">
                 <div>
@@ -1211,7 +1332,8 @@
         <div class="section" id="workshop">
 
             <h2>
-                <svg alt="How to Adopt Rust Workshop" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1530.08765px" height="245.48px" viewBox="0 0 1530.08765 245.48" style="enable-background:new 0 0 1530.08765 245.48;" xml:space="preserve">
+                How to Adopt Rust <span class="boost">Workshop</span>
+                <!-- <svg alt="How to Adopt Rust Workshop" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1530.08765px" height="245.48px" viewBox="0 0 1530.08765 245.48" style="enable-background:new 0 0 1530.08765 245.48;" xml:space="preserve">
                     <g>
                         <path style="fill:#1AB78F;" d="M1456.16772,199.56v-28h27.43994c14.97998,0,21,4.89999,21,14c0,9.51999-6.71997,14-21.14001,14
                             H1456.16772z M1429.2876,243.8h26.88013v-27.16h27.85986c32.4801,0,46.06006-10.92001,46.06006-31.92001
@@ -1271,7 +1393,7 @@
                             c42.98,0,60.48-21.98,60.48-48.15999C246.17599,21.84001,227.276,0,185.696,0s-60.48,21.84001-60.48,47.32001
                             C125.216,74.90001,143.976,95.48,185.696,95.48 M0,93.8h26.88V56.28h59.08V93.8h26.88v-92.12H85.96v34.72H26.88v-34.72H0V93.8z"/>
                     </g>
-                    </svg>
+                    </svg> -->
 
 
             </h2>
@@ -1309,7 +1431,8 @@
         <div class="section" id="spaces">
 
             <h2>
-                <svg alt="Team Spaces" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="677.20349px" height="243.80009px" viewBox="0 0 677.20349 243.80009" style="enable-background:new 0 0 677.20349 243.80009;" xml:space="preserve">
+                Team <span class="boost">Spaces</span>
+                <!-- <svg alt="Team Spaces" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="677.20349px" height="243.80009px" viewBox="0 0 677.20349 243.80009" style="enable-background:new 0 0 677.20349 243.80009;" xml:space="preserve">
                 <g>
                     <path style="fill:#1AB78F;" d="M621.9035,243.80009c47.45996,0,55.29999-17.22,55.29999-31.78
 		c0-8.82001-5.03998-16.10001-13.85999-19.74001c-7.84003-3.22-19.32001-4.34-32.76001-5.17999
@@ -1338,7 +1461,7 @@
 	 M252.741,0l-50.119,92.12001h27.72l9.519-18.76001h54.18002l9.51996,18.76001h31.22101L284.66199,0H252.741z M436.883,0
 	l-24.35999,64.12001h-0.14102L387.46201,0h-44.66v92.12001h26.04099V18.34h0.28L398.383,92.12001h25.05899l29.121-73.78001h0.28
 	v73.78001h26.88V0H436.883z"/>
-                </svg>
+                </svg> -->
 
             </h2>
 
@@ -1425,7 +1548,7 @@
                     <div id="spaces-levels__food" class="support-level">
                         <div class="spaces-level__body">
                             <h3 class="spaces-level__heading">
-                                Option<<em>Catering</em>></h3>
+                                Option&lt;<em>Catering</em>&gt;</h3>
                             <ul class="plus">
                                 <li>Lunch</li>
                                 <li>In room refreshments</li>
@@ -1451,7 +1574,8 @@
         <div class="section" id="conference">
 
             <h2>
-                <svg alt="Rust Forge Conference" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1137.95703px" height="245.48px" viewBox="0 0 1137.95703 245.48" style="enable-background:new 0 0 1137.95703 245.48;" xml:space="preserve">
+                <span class="boost">Rust&nbsp;Forge</span> Conference
+                <!-- <svg alt="Rust Forge Conference" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1137.95703px" height="245.48px" viewBox="0 0 1137.95703 245.48" style="enable-background:new 0 0 1137.95703 245.48;" xml:space="preserve">
                 <g>
                     <path style="fill:#FFFFFF;" d="M1049.47705,243.8h88.47998v-19.88h-61.59998v-18.62001h46.19995V189.62h-46.19995v-18.06h60.19995
                         v-19.88h-87.07996V243.8z M982.71198,245.48c39.34003,0,53.90009-19.74001,53.90009-37.66c0-0.28,0-1.25999-0.14001-1.95999
@@ -1501,7 +1625,7 @@
                         c0-9.65999-1.53999-19.87999-16.1-23.23999v-0.28c12.74-3.78,16.66-12.74001,16.66-21.98001
                         c0-16.51999-10.64-27.29999-44.8-27.29999H3.08V93.8z"/>
                 </g>
-                </svg>
+                </svg> -->
 
             </h2>
 
@@ -1532,7 +1656,8 @@
         <div class="section" id="networking">
 
             <h2>
-                <svg alt="Space In-between" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1048.93201px" height="243.8px" viewBox="0 0 1048.93201 243.8" style="enable-background:new 0 0 1048.93201 243.8;" xml:space="preserve">
+                <span class="boost">Spaces</span> In-between
+                <!-- <svg alt="Space In-between" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1048.93201px" height="243.8px" viewBox="0 0 1048.93201 243.8" style="enable-background:new 0 0 1048.93201 243.8;" xml:space="preserve">
                     <g>
                         <path style="fill:#FFFFFF;" d="M936.09198,243.8h26.04004v-67.75999h0.13995l60.06,67.75999h26.60004v-92.12001h-26.03998v55.44
                             h-0.14001l-49.14001-55.44h-37.52002V243.8z M834.284,243.8h88.47998v-19.88H861.164V205.3h46.20001V189.62H861.164v-18.06
@@ -1569,7 +1694,7 @@
                             C79.38,59.78,81.76,62.02,81.76,65.8C81.76,72.09999,77.7,77,53.34,77c-23.1,0-28.7-6.3-28.7-14.14H0.56
                             C0.56,75.17999,5.46,95.48,53.34,95.48"/>
                     </g>
-                </svg>
+                </svg> -->
 
             </h2>
 
@@ -1601,7 +1726,8 @@
         <div class="section" id="support">
 
             <h2>
-                <svg alt="It takes a community" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1081.88599px" height="245.48px" viewBox="0 0 1081.88599 245.48" style="enable-background:new 0 0 1081.88599 245.48;" xml:space="preserve">
+                It takes a <span class="boost">community</span>
+                <!-- <svg alt="It takes a community" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1081.88599px" height="245.48px" viewBox="0 0 1081.88599 245.48" style="enable-background:new 0 0 1081.88599 245.48;" xml:space="preserve">
                     <g>
                         <path style="fill:#1AB78F;" d="M1004.88599,243.8h26.88v-37.38l50.12-54.74001H1050.526L1020.98596,185.14h-0.41998
                             l-29.82001-33.46001h-35.83997l49.97998,54.74001V243.8z M885.82996,243.8h26.88V171.56h36.26001v-19.88h-99.40002v19.88h36.26001
@@ -1632,23 +1758,31 @@
                             h-31.91998L272.56201,93.8h27.72l9.51999-18.76001h54.17999L373.50201,93.8z M223.577,93.8h26.88V21.56h36.26001v-19.88H187.317
                             v19.88H223.577V93.8z M75.179,93.8h26.88V21.56h36.26v-19.88h-99.4v19.88h36.26V93.8z M3.78,93.8h26.88v-92.12H3.78V93.8z"/>
                     </g>
-                    </svg>
+                    </svg> -->
 
             </h2>
 
             <div class="blocks-regular">
-                <p class="highlight">Rust Forge needs your support.</p>
-                <p>Financial support from event registrations, workshop particiaption, sponsorships, and team space
-                reservations allows us to build something special. Our hope is that Rust Forge will be a place where
+                <p>Our hope is that Rust&nbsp;Forge will be a place where
                 developers of all levels and walks of life can join together to celebrate their differences, learn from
                 each other, and leave the conference feeling inspired and connected.</p>
+                <p >To achieve this, <span class="highlight">Rust&nbsp;Forge needs your support</span>.</p>
+                <p>Financial support from event registrations, workshop particiaption, sponsorships, and team space
+                reservations allows us to build something special.</p>
+                <p>How to help:</p>
+                <ul class="plus">
+                    <li><a href="https://rust-forge-2025.lilregie.com/">Register early</a></li>
+                    <li><a href="https://discord.gg/fwd8tGC4Ya">Join the event's Discord server</a></li>
+                    <li>Ask your workspace to <a href="#support-levels">sponsor the event</a></li>
+                    <li><a href="#support-levels">Join the mailing list</a> and </li>
+                    <li>Tell others about Rust&nbsp;Forge</li>
+                </ul>
             </div>
-
         </div>
 
         <div class="section" id="support-levels">
 
-            <h2>Support Levels</h2>
+            <h2><span class="boost">Sponsorship</span> Levels</h2>
 
             <p id="support-levels__cta">
             Connect with us to set-up your sponsorship! &lt;<a class="break-long-text" href="mailto:sponsorship@rustforgeconf.com">sponsorship@rustforgeconf.com</a>&gt;
@@ -1731,6 +1865,169 @@
                 </div>
 
             </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col">
+        <div class="section" id="conduct">
+            <h2>Travel</h2>
+
+            <div class="blocks-regular">
+                <p class="highlight">The city's airport is <b class="ghost">WLG</b> (Wellington International Airport).</p>
+            </div>
+
+            <h3>Travel Offers</h3>
+
+            <p class="highlight"> Rust Forge 2025 is delighted to have Cathay
+                Pacific Airways and Qantas as international travel partners.</p>
+
+            <div class="deals-levels__layout">
+                <div class="deals-level">
+                    <div class="deals-levels__body">
+                        <h3 class="support-level__heading ghost">Worldwide - Cathay Pacific</h3>
+
+                        <p>Up to 10% off the listed sale price on CX-ticketed
+                        return flights to New Zealand from ports worldwide.</p>
+    
+                        <ul class="plus">
+                            <li>Flight bookings must be made via <a
+                            href="https://eventsoffer.cathaypacific.com/"> Cathay
+                            Pacific's dedicated online booking page</a> using
+                            code <b class="ghost">MICE08B</b>.</li>
+                            <li>In-bound flights to New Zealand must be within
+                            the 18-30 Aug 2025 period.</li>
+                        </ul>
+
+                        <div class="deals-level__footer">
+                            <div class="deals-level__amount deals-levels__code">Code: MICE08B</div>
+
+                            <div class="deals-level__amount">
+                                <a href="https://eventsoffer.cathaypacific.com/">Book Cathay Pacific</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="deals-level">
+                    <div class="deals-levels__body">
+                        <h3 class="deals-level__heading ghost">Australia - Qantas</h3>
+
+                        <p>AUD $100 off trans-tasman return tickets on QF-ticketed flights. </p>
+    
+                        <ul class="plus">
+                            <li>Flight bookings must be made via the <a href="https://www.qantas.com/">Qantas website</a> using code <b class="ghost">TAKINA</b>.</li>
+                            <li>Valid for all Australian ports to WLG.</li>
+                            <li>Flight credits, points and secondary promo codes are excluded forms of payment.</li>
+                        </ul>
+
+                        <div class="deals-level__footer">
+                            <div class="deals-level__amount deals-levels__code">Code: TAKINA</div>
+
+                            <div class="deals-level__amount">
+                                <a href="https://www.qantas.com/">Book Qantas</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col">
+        <div class="section" id="families">
+            <h2>Information for families</h2>
+
+            <div style="display: flex; gap: 2px">
+                <div style="width: calc(99% - 4px); padding: 1px; background-color: var(--brand-color-light-ghost); color: var(--text-color-muted); font-size: 10pt;">
+                    <img src="assets/images/capitale-interior-500-334.png" alt="Children playing and laughing at Capital-E" >
+                    <div style="padding: 2px;">Children playing and laughing at Capital-E. Photo by Celeste Fontein/WellingtonNZ.</div>
+                </div>
+                <div style="width: calc(99% - 4px); padding: 1px; background-color: var(--brand-color-light-ghost); color: var(--text-color-muted); font-size: 10pt;">
+                    <img src="assets/images/trail-with-kids-500x333.png" alt="Child riding a tricycle along a natural path with a parent.">
+                    <div style="padding: 2px;">A child and parent exploring the Spicer Link trail. Photo by Mark Tantrum.</div>
+                </div>
+            </div>
+
+            <div class="blocks-regular">
+                <p>While Rust Forge itself is intended for adults, the surrounding area provides many opportunities for young explorers to have fun.</p>
+                
+                <p>Here are some ideas: </p>
+
+                <ul class="plus">
+                    <li><a href="https://wellington.govt.nz/recreation/outdoors/parks-and-reserves/city-and-suburban-reserves/frank-kitts-park">Frank Kitts Park</a> playground is next door to the venue.</li>
+                    <li><a href="https://www.tepapa.govt.nz/">Te Papa Tongarewa</a> and <a href="https://www.museumswellington.org.nz/wellington-museum/">Wellington Museum</a> are within 10 minutes' walk and can easily absorb hours.</li>
+                    <li>Visiting <a href="">Wellington Zoo</a> and/or <a href="https://visitzealandia.com/">Zealandia Te Māra a Tāne</a> ecosanctuary provides opportunities to explore the country's wildlife.</li>
+                    <li>The children's play space <a href="https://www.capitale.org.nz/">Nōku te Ao Capital-E</a> is next door. Check out <a href="">PlayHQ</a> for under 5s.</li>
+                    <li>A trip up the top of <a href="https://www.wellingtoncablecar.co.nz/">Wellington Cable Car</a> will take you to Wellington Botanic Garden</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="row">
+    <div class="col">
+        <div class="section" id="conduct">
+            <h2>Conduct and Safety</h2>
+
+            <div class="blocks-regular">
+            <p class="highlight">Everyone participating in the event and its
+            online spaces agrees to the <a href="">Rust Project Code of
+            Conduct</a>. While in New Zealand, you are also subject to New
+            Zealand law.</p>
+
+            <h3>Active incidents</h3>
+
+            <p>
+                <b class="ghost">In an emergency, dial 111</b> from any phone and ask to speak to the
+                Police.<ul class="plus"><li>111 is New Zealand's emergency number.</li><li>The event venue's
+                    address as "Shed 6, Queens Wharf, Wellington".</li></ul>
+            </p>
+
+            <p>
+                <b class="ghost">In non-emergency situations</b>, please use whichever channel you prefer:</b>
+                <ul class="plus">
+                    <li>Come to the reception desk</li>
+                    <li>Speak to a security guard</li>
+                    <li>Contact an event volunteer</li>
+                    <li>Email <a href="mailto:safety@rustforgeconf.com">safety@rustforgeconf.com</a></li>
+                    <li>In the Discord server, tag members with the #safety role</li>
+                </ul>
+            </p>
+
+            <h3>Preventing incidents</h3>
+
+            <p>
+                If you would like to raise a possible safety concern before the event or offer
+                advice to prevent breaches of the code of conduct:
+
+                <ul class="plus">
+                    <li>Email <a href="mailto:safety@rustforgeconf.com">safety@rustforgeconf.com</a></li>
+                </ul>
+            </p>
+            
+            <h3>Retrospective Reports</h3>
+            <p>
+                To notify us of an issue after the event has finished, then
+                please use one of these channels:
+                <ul class="plus">
+                    <li>Email <a href="mailto:safety@rustforgeconf.com">safety@rustforgeconf.com</a></li>
+                    <li>Contact the New Zealand <a href="https://www.police.govt.nz/use-105">Police via 105</a></li>
+                </ul>
+            </p>
+
+            <h3>Anonymous Reports</h3>
+
+            <p>If you would like to raise a complaint avoid revealing your name
+            to the event's organizers, then please:</p>
+
+            <ul class="plus">
+                <li>Contact the Rust Project's moderation team <a href="mailto:rust-mods@rust-lang.org">rust-mods@rust-lang.org</a></li>
+            </ul>
         </div>
     </div>
 </div>
