@@ -193,6 +193,8 @@
         h3 {
             font-family: 'Roc Grotesk Wide Bold', 'Space Mono', 'Fira Code', monospace;
             color: var(--heading-color);
+            text-transform: uppercase;
+            letter-spacing: 0.5pt;
         }
 
         h3 span.boost {
@@ -601,7 +603,6 @@
         #intro-logo {
             display: block;
             width: 100%;
-            max-width: 900px;
             height: auto;
         }
 
@@ -647,10 +648,10 @@
         }
 
         .form-box {
-
             border: 1px solid var(--brand-color-light);
             box-shadow: 10px 10px 0px var(--brand-color-light);
-
+            width: 100%;
+            margin: 0 auto;
             max-width: 30rem;
             justify-content: center;
             align-items: center;
@@ -658,6 +659,14 @@
             flex-direction: column;
             gap: var(--spacing-default);
             padding: var(--spacing-default);
+        }
+
+        a:has(> .form-box )  {
+            border-bottom: none;
+        }
+
+        a .form-box:hover {
+            background-color: var(--brand-color-light-ghost);
         }
 
         #footer-layout {
@@ -1049,43 +1058,57 @@
 <div class="row">
     <div class="col">
         <div class="section">
-            <h2>Register</h2>
-            <p>Registrations are open!</p>
+            <h2><span class="boost">Get involved</span> in the event</h2>
 
-            <div class="form-box">
-                <h3>Join mailing list</h2>
-                <p>Add your email address to the mailing list</p>
-                <form enctype="multipart/form-data" id="form01" method="post2" target="https://hooks.zapier.com/hooks/catch/19805528/263afdp/" data-autofocus="1">
+            <div style="display: flex; flex-direction: column; gap: 55px; align-content: center; width: 100%;">
+                <div class="form-box">
+                    <h3>Register</h3>
+                    <p>Visit <a href="https://rust-forge-2025.lilregie.com/">our booking page</a> to reserve your place.</p>
+                </div></a>
+    
+                <div class="form-box">
+                    <h3>Join the Discord server</h3>
+                    <p><a href="https://discord.gg/fwd8tGC4Ya">Chat with people</a> from around the world.</p>
+                </div>
+                
+                <div class="form-box">
+                    <h3>Join mailing list</h2>
+                    <p>Keep up to date with announcements</p>
+                    <form enctype="multipart/form-data" id="form01" method="post2" target="https://hooks.zapier.com/hooks/catch/19805528/263afdp/" data-autofocus="1">
+    
+                        <div class="field" data-type="email">
+                            <input type="email" name="email" id="interest-email" placeholder="iloverust@example.com" maxlength="128" required="">
+                        </div>
+    
+                        <div class="field" data-type="select">
+                            <select name="interested-in" id="interest-area">
+                                <option value="">– Interested In ... (optional) –</option>
+                                <option value="Attending">Attending</option>
+                                <option value="Speaking">Speaking</option>
+                                <option value="Sponsoring">Sponsoring</option>
+                                <option value="Organising">Organising</option>
+                                <option value="Volunteering">Volunteering</option>
+                                <option value="Something Else">Something Else</option>
+                            </select>
+                        </div>
+    
+                        <div class="field" style="display: none;">
+                            <input type="text" name="fax" id="form01-fax" placeholder="Fax" maxlength="128" disabled="">
+                        </div>
+    
+                        <div class="actions">
+                            <button type="submit" class="button">
+                                form.submit()
+                            </button>
+                        </div>
+    
+                        <input type="hidden" name="id" value="form01">
+                    </form>
+                </div>
 
-                    <div class="field" data-type="email">
-                        <input type="email" name="email" id="interest-email" placeholder="iloverust@example.com" maxlength="128" required="">
-                    </div>
-
-                    <div class="field" data-type="select">
-                        <select name="interested-in" id="interest-area">
-                            <option value="">– Interested In ... (optional) –</option>
-                            <option value="Attending">Attending</option>
-                            <option value="Speaking">Speaking</option>
-                            <option value="Sponsoring">Sponsoring</option>
-                            <option value="Organising">Organising</option>
-                            <option value="Volunteering">Volunteering</option>
-                            <option value="Something Else">Something Else</option>
-                        </select>
-                    </div>
-
-                    <div class="field" style="display: none;">
-                        <input type="text" name="fax" id="form01-fax" placeholder="Fax" maxlength="128" disabled="">
-                    </div>
-
-                    <div class="actions">
-                        <button type="submit" class="button">
-                            form.submit()
-                        </button>
-                    </div>
-
-                    <input type="hidden" name="id" value="form01">
-                </form>
             </div>
+
+
         </div>
     </div>
 </div>
