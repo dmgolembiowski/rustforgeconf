@@ -823,28 +823,6 @@
             .hide-on-small-screens {
                 display: none;
             }
-
-            .col #spaces-layout {
-                padding-left: calc( var(--viewport-gutter) + var(--spacing-small));
-                padding-right: var(--spacing-default);
-            }
-
-            .col .support-level {
-                /* padding: var(--spacing-small); */
-                /* width: 100%; */
-                margin-left: auto;
-                margin-right: auto;
-            }
-
-            #spaces-layout {
-                grid-template-columns: 1fr;
-                margin-left: auto;
-                margin-right: auto;
-            }
-
-            /* #spaces-layout .support-level__body {
-                width: 70vw;
-            } */
         }
 
         @media screen and (min-width: 980px) {
@@ -859,6 +837,7 @@
          * -------------------------------------------------------- */
         .spaces-levels__layout,
         .support-levels__layout,
+        #spaces-levels__addons,
         #ember-and-spark-support-levels {
             display: grid;
             grid-row-gap: var(--spacing-medium);
@@ -866,11 +845,10 @@
         }
 
         @media screen and (max-width: 960px) {
-            .deals-levels__layout {
-                grid-template-columns: 1fr;
-            }
-
-            .support-levels__layout {
+            .deals-levels__layout,
+            .support-levels__layout,
+            #spaces-levels__addons            
+             {
                 grid-template-columns: 1fr;
             }
 
@@ -915,7 +893,7 @@
             display: flex;
             flex-direction: column;
             position: relative;
-            align-content: stretch;
+            /* align-content: stretch; */
 
         }
 
@@ -960,6 +938,10 @@
             color: var(--background-color);
             text-decoration: underline;
             text-underline-offset: 20%;
+        }
+
+        #spaces-levels__food {
+            outline-style: dashed;
         }
 
         #spaces-levels__food {
@@ -1599,7 +1581,6 @@
             </div>
 
             <div id="spaces-layout">
-
                 <div class="blocks-regular">
                     <p class="highlight">
                     Bring your team together and gather in one of our two batteries included team spaces. </p>
