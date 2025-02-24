@@ -121,10 +121,10 @@
             --spacing-tiny: 0.25rem;
             --spacing-content: 1rem;
 
+            --col-width-narrow-screen: 80vw;
             --col-width: 50rem;
             --row-spacing: 2rem;
             --viewport-gutter: 3rem;
-
         }
 
         * {
@@ -350,12 +350,13 @@
             justify-content: center;
             align-items: flex-start;
             padding: var(--row-spacing) var(--viewport-gutter);
-            max-width: var(--col-width);
+            max-width: var(--col-width-narrow-screen);
             gap: var(--spacing-default);
         }
 
         @media screen and (min-width: 640px) {
             .col {
+                max-width: var(--col-width);
                 padding: var(--row-spacing) calc(var(--viewport-gutter) * 2);
             }
         }
@@ -570,14 +571,58 @@
         .right-gutter {
             display: none;
         }
+
+        .image-row {
+            display: flex;
+            flex-direction: column;
+            grid-template-columns: 1fr;
+        }
+
+        @media screen and (min-width:800px) {
+            .image-row {
+                flex-direction: row;
+                gap: var(--spacing-small);
+            }
+        }
+
+        /*
+        * SMALL SCREEN HACKS
+        **/
+        @media screen and (max-width: 640px) {
+            .hide-on-small-screens {
+                display: none;
+            }
+        }
+
+
         @media screen and (max-width:640px ) {
             .right-gutter {
                 display: none;
             }
-            .col {
-                padding-right: var(--spacing-default);
-                padding-left: calc( var(--viewport-gutter) + var(--spacing-default));
+
+            .col .form-box {
+                text-align: center;
+                width: 50vw;
             }
+
+            .col h2 {
+                font-size: 28pt;
+                line-height: 115%;
+            }
+
+            .col h3 {
+                font-size: 22pt;
+                line-height: 110%;
+            }
+
+            .col li {
+                font-size: 14pt;
+            }
+
+            .col p {
+                font-size: 16pt;
+            }
+
             .row {
                 overflow-x: hidden;
             }
@@ -772,6 +817,34 @@
         #spaces-layout {
             display: grid;
             grid-gap: var(--spacing-default);
+        }
+
+        @media screen and (max-width: 640px) {
+            .hide-on-small-screens {
+                display: none;
+            }
+
+            .col #spaces-layout {
+                padding-left: calc( var(--viewport-gutter) + var(--spacing-small));
+                padding-right: var(--spacing-default);
+            }
+
+            .col .support-level {
+                padding: var(--spacing-small);
+                width: calc(100vw - (var(--viewport-gutter) + var(--spacing-small) + var(--spacing-default))) ;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            #spaces-layout {
+                grid-template-columns: 1fr;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            /* #spaces-layout .support-level__body {
+                width: 70vw;
+            } */
         }
 
         @media screen and (min-width: 980px) {
@@ -1127,7 +1200,7 @@
 
         <div class="section" id="what">
             <h2>
-                <span class="boost">What</span> is Rust&nbsp;Forge?
+                <span class="boost">What</span> is Rust Forge?
                 <!-- <svg alt="What is Rust Forge" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1140.22058px" height="245.48px" viewBox="0 0 1140.22058 245.48" style="enable-background:new 0 0 1140.22058 245.48;" xml:space="preserve">
                         <g>
                             <path style="fill:#FFFFFF;" d="M1071.34058,243.8h24.92004v-22.12001h-24.92004V243.8z M1074.00049,215.51999h17.92004v-10.22
@@ -1199,7 +1272,7 @@
             <img src="assets/images/shed6-500x260.png" alt="Shed 6 from across the harbour." style="opacity: 0.8;" >
 
             <h2>
-                <span class="boost">Where and When</span> is Rust&nbsp;Forge?
+                <span class="boost">Where and When</span> is Rust Forge?
                 <!-- <svg alt="Where and When is Rust Forge?" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1345.66602px" height="255.28px" viewBox="0 0 1345.66602 255.28" style="enable-background:new 0 0 1345.66602 255.28;" xml:space="preserve">
                 <g>
                     <path style="fill:#FFFFFF;" d="M1276.78601,253.60001h24.92004V231.48h-24.92004V253.60001z M1279.44604,225.32001h17.91992v-10.22
@@ -1580,7 +1653,7 @@
                     <div id="spaces-levels__food" class="support-level">
                         <div class="spaces-level__body">
                             <h3 class="spaces-level__heading">
-                                Option&lt;<em>Catering</em>&gt;</h3>
+                                <span class="hide-on-small-screens">Option&lt;</span><em>Catering</em><span class="hide-on-small-screens">&gt;</span></span></h3>
                             <ul class="plus">
                                 <li>Lunch</li>
                                 <li>In room refreshments</li>
@@ -1795,19 +1868,17 @@
             </h2>
 
             <div class="blocks-regular">
-                <p>Our hope is that Rust&nbsp;Forge will be a place where
+                <p>Our hope is that Rust Forge will be a place where
                 developers of all levels and walks of life can join together to celebrate their differences, learn from
                 each other, and leave the conference feeling inspired and connected.</p>
-                <p >To achieve this, <span class="highlight">Rust&nbsp;Forge needs your support</span>.</p>
-                <p>Financial support from event registrations, workshop particiaption, sponsorships, and team space
-                reservations allows us to build something special.</p>
+                <p>To achieve this, <span class="highlight">Rust Forge needs your support</span>.</p>
                 <p>How to help:</p>
                 <ul class="plus">
                     <li><a href="https://rust-forge-2025.lilregie.com/">Register early</a></li>
                     <li><a href="https://discord.gg/fwd8tGC4Ya">Join the event's Discord server</a></li>
                     <li>Ask your workspace to <a href="#support-levels">sponsor the event</a></li>
                     <li><a href="#support-levels">Join the mailing list</a> and </li>
-                    <li>Tell others about Rust&nbsp;Forge</li>
+                    <li>Tell others about Rust Forge</li>
                 </ul>
             </div>
         </div>
@@ -1817,7 +1888,7 @@
             <h2><span class="boost">Sponsorship</span> Levels</h2>
 
             <p id="support-levels__cta">
-            Connect with us to set-up your sponsorship! &lt;<a class="break-long-text" href="mailto:sponsorship@rustforgeconf.com">sponsorship@rustforgeconf.com</a>&gt;
+            Connect with us to set-up your sponsorship! &lt;<a href="mailto:sponsor@rustforgeconf.com">sponsor@rustforgeconf.com</a>&gt;
             </p>
 
             <div class="support-levels__layout">
@@ -1972,7 +2043,7 @@
         <div class="section" id="families">
             <h2>Information for families</h2>
 
-            <div style="display: flex; gap: 2px">
+            <div style="display: flex; gap: 2px;" class="image-row">
                 <div style="width: calc(99% - 4px); padding: 1px; background-color: var(--brand-color-light-ghost); color: var(--text-color-muted); font-size: 10pt;">
                     <img src="assets/images/capitale-interior-500-334.png" alt="Children playing and laughing at Capital-E" >
                     <div style="padding: 2px;">Children playing and laughing at Capital-E. Photo by Celeste Fontein/WellingtonNZ.</div>
@@ -2008,7 +2079,7 @@
 
             <div class="blocks-regular">
             <p class="highlight">Everyone participating in the event and its
-            online spaces agrees to the <a href="">Rust Project Code of
+            online spaces agrees to the <a href="https://www.rust-lang.org/policies/code-of-conduct">Rust Project&rsquo;s Code of
             Conduct</a>. While in New Zealand, you are also subject to New
             Zealand law.</p>
 
@@ -2068,8 +2139,8 @@
     <div class="col">
         <div class="section" id="who">
 
-            <h2>
-                <svg alt="Who is Involved" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="925.99701px" height="245.48px" viewBox="0 0 925.99701 245.48" style="enable-background:new 0 0 925.99701 245.48;" xml:space="preserve">
+            <h2><span class="boost">Who</span> is Involved?
+                <!-- <svg alt="Who is Involved" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="925.99701px" height="245.48px" viewBox="0 0 925.99701 245.48" style="enable-background:new 0 0 925.99701 245.48;" xml:space="preserve">
                     <g>
                         <path style="fill:#FFFFFF;" d="M857.117,243.8h24.91998v-22.12001H857.117V243.8z M859.77698,215.51999h17.92004v-10.22h0.27997
                             c2.23999,5.18001,7.41998,10.36,18.62,10.36c17.35999,0,29.40002-13.29999,29.40002-33.03999
@@ -2101,7 +2172,7 @@
                             H273.979V93.8h26.87997v-92.12H273.979v34.72h-59.08002v-34.72h-26.87997V93.8z M36.96,93.8H66.5l23.66-59.5h0.28l22.82,59.5
                             h29.53999l36.96002-92.12h-26.46002l-23.37999,63.28h-0.28l-24.08-63.28h-27.16L53.9,64.96001h-0.28l-24.5-63.28H0L36.96,93.8z"/>
                     </g>
-                    </svg>
+                    </svg> -->
             </h2>
 
 
