@@ -280,6 +280,11 @@
             color: var(--list-text-color);
         }
 
+        li {
+            margin: var(--spacing-smaller) auto;
+            line-height: normal;
+        }
+
         ul.plus {
             list-style: none;
             margin-top: var(--spacing-small);
@@ -330,6 +335,24 @@
             border-radius: 0.25em;
 
 
+        }
+
+        details {
+            margin-left: var(--spacing-small);
+        }
+
+        details h3 {
+            margin-top: var(--spacing-default);
+        }
+        details p, details ul {
+            margin-top: var(--spacing-small);
+        }
+
+        summary {
+            position: relative;
+            left: calc(0px - var(--spacing-small));
+            font-family: 'Roc Grotesk Wide Bold', 'Space Mono', 'Fira Code', monospace;
+            margin-bottom: var(--spacing-default);
         }
 
         img {
@@ -1950,18 +1973,22 @@
                 <div id="forge-support-level" class="support-level">
                     <div class="support-level__body">
                         <h3 class="support-level__heading">
-                            <em>Forge:</em> (4 passes) </h3>
+                            <em>Forge</em> Sponsor </h3>
+                        
+                        <p>Exclusivity with maximal visibility and impact.</p>
+
                         <ul class="plus">
+                            <li>Furnace perks, plus</li>
                             <li>Logo appearing solo in recording pre-roll and livestream breaks</li>
                             <li>200 word blurb beside logo on website</li>
-                            <li>Dedicated public channel in discord server</li>
-                            <li>Right of first refusal for any branded event opportunities, e.g. evening function, group
-                                dinner
-                            </li>
-                            <li>Furnace perks</li>
+                            <li>Dedicated public channel in Discord server</li>
+                            <li>Right of first refusal for any branded event opportunities, e.g. evening function, group dinner</li>
+                            <li>30 second pre-roll ad in the planned Rust Forge podcast for speaker interviews for the 2025 season</li>
+                            <li>20 minute speaking slot at the conference</li>
                         </ul>
                     </div>
                     <div class="support-level__footer">
+
                         <div class="support-level__amount">
                             $12k USD (1 max)
                         </div>
@@ -1971,14 +1998,18 @@
                 <div id="furnace-support-level" class="support-level">
                     <div class="support-level__body">
                         <h3 class="support-level__heading">
-                            <em>Furnace:</em> (4 passes) </h3>
+                            <em>Furnace</em> Sponsor</h3>
+                        <p>Major visibility and a lasting record of your support.</p>
                         <ul class="plus">
+                            <li>Ember perks, plus</li>
                             <li>Custom channel in discord server</li>
                             <li>Logo in recording pre-roll slide</li>
                             <li>Logo in livestream during breaks</li>
                             <li>60 word blurb beside logo on website</li>
                             <li>Discord server bot action created to initiate a recruitment chat</li>
-                            <li>Ember perks</li>
+                            <li>1 social media post during August syndicated to all Rust Forge channels.</li>
+                            <li>Acknowledgements in outbound communications, such as emails.</li>
+                            <li>2 conference passes (4 total)</li>
                         </ul>
                     </div>
                     <div class="support-level__footer">
@@ -1992,16 +2023,19 @@
                     <div id="ember-support-level" class="support-level">
                         <div class="support-level__body">
                             <h3 class="support-level__heading">
-                                <em>Ember:</em> (2 passes) </h3>
+                                <em>Ember</em> sponsor</h3>
+                            <p>Let delegates contact you.</p>
                             <ul class="plus">
+                                <li>Spark perks, plus</li>
                                 <li>Shoutouts at beginning/end</li>
-                                <li>Custom role in discord server</li>
-                                <li>Spark perks</li>
+                                <li>Custom role in Discord server</li>
+                                <li>1 conference pass (2 total)</li>
                             </ul>
+                            <p style="font-size: small;">Payment options: credit card & SWIFT.</p>
                         </div>
                         <div class="support-level__footer">
                             <div class="support-level__amount">
-                                $3k USD
+                                <a href="#ember-sponsorship-info">$3k USD</a>
                             </div>
                         </div>
                     </div>
@@ -2009,10 +2043,13 @@
                     <div id="spark-support-level" class="support-level">
                         <div class="support-level__body">
                             <h3 class="support-level__heading">
-                                <em>Spark:</em> (1 pass) </h3>
+                                <em>Spark</em> sponsor</h3>
+                            <p>Perfect for small businesses and individuals.</p>
                             <ul class="plus">
-                                <li>Logo on Website</li>
+                                <li>Logo or name on website</li>
+                                <li>1 conference pass</li>
                             </ul>
+                            <p>Payment options: credit card.</p>
                         </div>
                         <div class="support-level__footer">
                             <div class="support-level__amount">
@@ -2024,14 +2061,81 @@
 
             </div>
         </div>
+
+        <div class="blocks-regular section">
+            <h3>How to <span class="boost">Sponsor</span></h3>
+            <p>
+                Please email <a
+                href="mailto:sponsor@rustforgeconf.com?Subject=Sponsoring Rust
+                Forge 2025">&lt;sponsor@rustforgeconf.com&gt;</a> to set-up your
+                sponsorship. We'll discuss how to enable all of your perks and
+                to make sure that you're making the most of your support for the
+                event and the local Rust community.
+            </p>
+
+            <h3><span class="highlight">Easy Path</span> for Ember and Spark</h3>
+            <p>
+                For Ember and Spark levels, you can also use the <a
+                href="https://rust-forge-2025.lilregie.com/">registration
+                portal</a> and select <span class="ghost">Ember</span> or <span
+                class="ghost">Spark</span> in the ticket type field. This will
+                allow you to pay via credit card.
+            </p>
+            <details>
+                <summary>Further details for sponsors</summary>    
+            
+                <h3>Making Payment</h3>
+                <p>
+                    Once you've been in contact, we'll generate an invoice from 
+                    <a href="https://accelerant.dev/">Accelerant Limited</a> (the event's sponsoring organization) that's 
+                    payable via these payment systems:
+
+                    <ul>
+                        <li><b>Australia</b> - Direct Entry (BECS) in AUD from a business bank account</li>
+                        <li><b>New Zealand</b> - Direct credit in NZD</li>
+                        <li><b>USA</b> - ACH in USD from a business bank account</li>
+                        <li><b>Worldwide</b> - SWIFT (wire) transfers in USD</li>
+                    </ul>
+                </p>
+                <p>
+                    If you use one of the local payment options, we will convert the
+                    USD amount to the local currency and 
+                </p>
+
+                <h3>Submitting Content</h3>
+                <p>
+                    Content should be uploaded to the Google Drive folder that was
+                    created for you. You are also welcome to send files to <a
+                    href="mailto:sponsor@rustforgeconf.com?Subject=Sponsor content
+                    submission">&lt;sponsor@rustforgeconf.com&gt;</a>
+                </p>
+                <p>
+                    All content is subject to review by the Rust Forge 2025 team.
+                </p>
+
+                <h3>Logo Specs</h3>
+                
+                <p>
+                    At a minimum, please provide a horizontal logo that's suitable
+                    for use on a dark background.
+                </p>
+
+                <p>
+                    For optimal treatment of your brand, please provide horizontal and square aspect
+                    ratios in monochrome, full color (light), full color (dark) palettes. Logos should 
+                    preferably be exported as vector file formats such as 
+                    <abbr title="Adobe Illustrator">.ai</abbr> or
+                    <abbr title="Scalable Vector Graphics">.svg</abbr>.
+                </p>
+            </details>
+        </div>
     </div>
 </div>
 
 <div class="row">
     <div class="col">
         <div class="section" id="conduct">
-            <h2>Travel</h2>
-
+                <h2>Travel <span class="boost">Guidance</span></h2>
             <div class="blocks-regular">
                 <p class="highlight">The city's airport is <b class="ghost">WLG</b> (Wellington International Airport).</p>
             </div>
@@ -2044,8 +2148,7 @@
             <div class="deals-levels__layout">
                 <div class="deals-level">
                     <div class="deals-levels__body">
-                        <h3 class="support-level__heading ghost">Worldwide - Cathay Pacific</h3>
-
+                        <h3 class="support-level__heading ghost"><em >Worldwide</em> - Cathay Pacific</h3>
                         <p>Up to 10% off the listed sale price on CX-ticketed
                         return flights to New Zealand from ports worldwide.</p>
     
@@ -2069,7 +2172,7 @@
                 </div>
                 <div class="deals-level">
                     <div class="deals-levels__body">
-                        <h3 class="deals-level__heading ghost">Australia - Qantas</h3>
+                        <h3 class="deals-level__heading ghost"><em>Australia</em> - Qantas</h3>
 
                         <p>AUD $100 off trans-tasman return tickets on QF-ticketed flights. </p>
     
@@ -2096,7 +2199,7 @@
 <div class="row">
     <div class="col">
         <div class="section" id="families">
-            <h2>Information for families</h2>
+            <h2><span class="boost">Bring</span> your family</h2>
 
             <div style="display: flex; gap: 2px;" class="image-row">
                 <div style="width: calc(99% - 4px); padding: 1px; background-color: var(--brand-color-light-ghost); color: var(--text-color-muted); font-size: 10pt;">
