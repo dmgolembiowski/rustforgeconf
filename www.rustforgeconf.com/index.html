@@ -1668,9 +1668,7 @@
                             <li>Logo appearing solo in recording pre-roll and livestream breaks</li>
                             <li>200 word blurb beside logo on website</li>
                             <li>Dedicated public channel in Discord server</li>
-                            <li>Right of first refusal for any branded event opportunities, e.g. evening function, group
-                                dinner
-                            </li>
+                            <li>Right of first refusal for any branded event opportunities, e.g. evening function, group dinner</li>
                             <li>30 second pre-roll ads in the <a href="https://timclicks.dev/compose-podcast">Compose podcast</a> episodes of interviews Rust Forge 2025 speakers</li>
                         </ul>
                     </div>
@@ -1709,7 +1707,6 @@
                             <div class="feature-box__footer-block-solid">$8k USD (3 max)</div>
                         </div>
                     </div>
-
                 </div><!-- /.feature-box -->
 
                 <div class="feature-box">
@@ -1752,9 +1749,9 @@
                         </div>
                     </div>
                 </div><!-- /.feature-box -->
-
+              
             </div>
-
+          
         </div> <!-- /#sponsorship -->
 
         <div id="support-paths">
@@ -2264,31 +2261,5 @@
     </div>
 </div>
 
-<script>
-    document
-        .querySelectorAll('form')
-        .forEach(form => {
-            form
-                .addEventListener('submit', function (e) {
-                    e.preventDefault();
-                    fetch(
-                        e.target.target,
-                        {
-                            body: new FormData(e.target),
-                            method: e.target.method
-                        }
-                    ).then(response => response.json())
-                        .then(data => {
-                            e.target.reset();
-                            if (data.status === "success") {
-                                alert("Thank you for your interest! An automated confirmation email should be with you shortly. Please email contact@rustforgeconf.com if it hasn't arrived within 24h.");
-                                return;
-                            }
-                            alert("Looks like there was a problem submitting your data. Please email contact@rustforgeconf.com.")
-
-                        })
-                });
-        });
-</script>
 </body>
 </html>
