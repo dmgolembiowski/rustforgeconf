@@ -192,6 +192,9 @@
             --col-width: 50rem;
             --row-spacing: 2rem;
             --viewport-gutter: 3rem;
+
+            --logo-width: clamp(80px, 60vw, 800px);
+            --logo-body-font-size: clamp(15px, calc(0.5vw + var(--font-size-regular)), 26px);
         }
 
         * {
@@ -410,10 +413,6 @@
             align-items: center;
         }
 
-        .row:has( #intro) {
-            min-height: 100vh;
-        }
-
         .col {
             display: flex;
             flex-direction: column;
@@ -429,6 +428,10 @@
             .col {
                 max-width: var(--col-width);
                 padding: var(--row-spacing) calc(var(--viewport-gutter) * 2);
+            }
+
+            .col:has(#intro) {
+                padding-top: 0;
             }
         }
 
@@ -941,32 +944,31 @@
          * -------------------------------------------------------- */
 
         #intro {
-            min-height: 50vh;
             justify-content: center;
             align-items: center;
             display: flex;
             flex-direction: column;
+            height: 100vh;
         }
 
         #intro-layout {
-            width: 100%;
             justify-content: center;
             align-items: center;
             display: flex;
             flex-direction: column;
             gap: var(--spacing-default);
             padding-bottom: var(--spacing-default);
-
+            text-rendering: optimizeLegibility;
         }
 
         #intro-logo {
             display: block;
-            width: 100%;
+            width: var(--logo-width);
             height: auto;
         }
 
         #intro-logo .text {
-            fill: var(--heading-color);
+            fill: white;
         }
 
         #intro-logo .mark {
@@ -975,11 +977,26 @@
 
         #intro-body {
             text-align: center;
-            max-width: 25rem;
+            width: var(--logo-width);
             margin: 0 auto;
             display: flex;
             flex-direction: column;
             gap: var(--spacing-default);
+        }
+
+        #intro-body p {
+            font-size: var(--logo-body-font-size);
+            font-weight: 400;
+            letter-spacing: -2%;
+            line-height: 160%;
+        }
+
+        .row:has(#intro) {
+            background-image: url("assets/images/rustforge-background-overlay.jpg");
+            background-repeat: no-repeat;
+            background-position: bottom;
+            background-size: 1400px auto;
+            height: 100vh;
         }
 
         #unique li {
