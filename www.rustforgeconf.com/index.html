@@ -5,63 +5,63 @@
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Rust Forge Conference | Wellington, New Zealand | August 2025</title>
-    <meta property="og:title" content="Rust Forge 2025" />
-    <meta property="og:url" content="https://www.rustforgeconf.com/" />
-    <meta property="og:description" name="twitter:description" content="A tech conference for developers building with the Rust programming language hosted in Wellington, New Zealand from 27-30th August 2025." />
-    <meta property="og:locale" content="en" />
-    <meta property="og:image" name="twitter:image" content="https://www.rustforgeconf.com/assets/images/rust-forge-conference-2025-1000x500.png" />
-    <meta property="og:image:width" content="1000" />
-    <meta property="og:image:height" content="500" />
-    <meta property="fb:app_id" content="61562783053986" />
+    <meta property="og:title" content="Rust Forge 2025"/>
+    <meta property="og:url" content="https://www.rustforgeconf.com/"/>
+    <meta property="og:description" name="twitter:description" content="A tech conference for developers building with the Rust programming language hosted in Wellington, New Zealand from 27-30th August 2025."/>
+    <meta property="og:locale" content="en"/>
+    <meta property="og:image" name="twitter:image" content="https://www.rustforgeconf.com/assets/images/rust-forge-conference-2025-1000x500.png"/>
+    <meta property="og:image:width" content="1000"/>
+    <meta property="og:image:height" content="500"/>
+    <meta property="fb:app_id" content="61562783053986"/>
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@rustforgeconf">
-    <meta name="twitter:title" content="Rust Forge 2025" />
-    <link rel="canonical" href="https://www.rustforgeconf.com/" />
+    <meta name="twitter:title" content="Rust Forge 2025"/>
+    <link rel="canonical" href="https://www.rustforgeconf.com/"/>
     <script type="application/ld+json">
         {
-          "@context": "https://schema.org",
-          "@type": "Event",
-          "name": "Rust Forge 2025",
-          "description": "A tech conference for developers building with the Rust programming language hosted in Wellington, New Zealand from 27-30th August 2025.",
-          "image": "https://www.rustforgeconf.com/assets/images/rust-forge-conference-2025-1000x500.png",
-          "startDate": "2025-08-27",
-          "endDate": "2025-08-30",
-          "eventAttendanceMode": "https://schema.org/MixedEventAttendanceMode",
-          "eventStatus": "https://schema.org/EventScheduled",
-          "location": [
-            {
-                "@type": "VirtualLocation",
-                "url": "https://discord.gg/fwd8tGC4Ya"
-            },
-            {
-                "@type": "Place",
-                "name": "Shed 6",
-                "address": {
-                "@type": "PostalAddress",
-                "streetAddress": "4 Queens Wharf",
-                "addressLocality": "Wellington Central",
-                "postalCode": "5011",
-                "addressRegion": "Wellington",
-                "addressCountry": "New Zealand"
+            "@context": "https://schema.org",
+            "@type": "Event",
+            "name": "Rust Forge 2025",
+            "description": "A tech conference for developers building with the Rust programming language hosted in Wellington, New Zealand from 27-30th August 2025.",
+            "image": "https://www.rustforgeconf.com/assets/images/rust-forge-conference-2025-1000x500.png",
+            "startDate": "2025-08-27",
+            "endDate": "2025-08-30",
+            "eventAttendanceMode": "https://schema.org/MixedEventAttendanceMode",
+            "eventStatus": "https://schema.org/EventScheduled",
+            "location": [
+                {
+                    "@type": "VirtualLocation",
+                    "url": "https://discord.gg/fwd8tGC4Ya"
+                },
+                {
+                    "@type": "Place",
+                    "name": "Shed 6",
+                    "address": {
+                        "@type": "PostalAddress",
+                        "streetAddress": "4 Queens Wharf",
+                        "addressLocality": "Wellington Central",
+                        "postalCode": "5011",
+                        "addressRegion": "Wellington",
+                        "addressCountry": "New Zealand"
+                    }
                 }
+            ],
+            "offers": [
+                {
+                    "@type": "Offer",
+                    "price": 225,
+                    "priceCurrency": "USD",
+                    "availability": "https://schema.org/InStock",
+                    "url": "https://rust-forge-2025.lilregie.com"
+                }
+            ],
+            "organizer": {
+                "@type": "Organization",
+                "name": "Accelerant Limited",
+                "url": "https://accelerant.dev"
             }
-          ],
-          "offers": [
-            {
-               "@type": "Offer",
-               "price": 225,
-               "priceCurrency": "USD",
-               "availability": "https://schema.org/InStock",
-               "url": "https://rust-forge-2025.lilregie.com"
-            }
-          ],
-          "organizer": {
-            "@type": "Organization",
-            "name": "Accelerant Limited",
-            "url": "https://accelerant.dev"
-          }
         }
-        </script>
+    </script>
 
     <style>
         @font-face {
@@ -162,21 +162,29 @@
             --brand-color-dark: #06252f;
             --brand-color-light: rgba(26, 183, 143, 1);
             --brand-color-light-ghost: rgba(26, 183, 143, 0.2);
-
+            --background-pattern: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%231ab78f' fill-opacity='0.2' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
             --background-color: var(--brand-color-dark);
             --highlight-color: var(--brand-color-light);
             --heading-color: var(--brand-color-light);
-            --text-color: white;
-            --list-text-color: rgba(255, 255, 255, 0.8);
+            --heading-color-highlight: rgba(255, 255, 255, 1);
+            --text-color-highlight: rgba(255, 255, 255, 1);
+            --text-color: rgba(255, 255, 255, 0.8);
             --text-color-muted: rgba(255, 255, 255, 0.6);
             --framework-color: var(--brand-color-light);
+            --framework-width: 2px;
+
+            --font-size-regular: clamp(15px, 4vw, 20px);
+            --line-height-regular: 1.625;
+            --font-family-body: "Fira Code", monospace;
 
             --spacing-medium: 3rem;
             --spacing-regular: 1.5rem;
             --spacing-default: 2rem;
             --spacing-small: 1rem;
             --spacing-smaller: 0.75rem;
+            --spacing-teeny: 0.5rem;
             --spacing-tiny: 0.25rem;
+            --spacing-hairline: 0.1rem;
             --spacing-content: 1rem;
 
             --col-width-narrow-screen: 80vw;
@@ -192,10 +200,10 @@
 
         html {
             color: var(--text-color);
-            line-height: 1.5;
-            font-size: clamp(13px, 4vw, 20px);
+            line-height: var(--line-height-regular);
+            font-size: clamp(15px, 4vw, 20px);
             background-color: var(--background-color);
-            font-family: "Fira Code", monospace;
+            font-family: var(--font-family-body);
             font-optical-sizing: auto;
             font-weight: 400;
             font-style: normal;
@@ -209,7 +217,10 @@
 
             text-shadow: 2px 0 8px var(--brand-color-light-ghost);
             box-shadow: 2px 0 8px var(--brand-color-light-ghost);
+
+
         }
+
 
         html::-webkit-scrollbar {
             width: var(--spacing-content);
@@ -226,38 +237,31 @@
 
         h2 {
             font-family: 'Roc Grotesk Wide Bold', 'Space Mono', 'Fira Code', monospace;
-            font-size: clamp( 0.825rem, 8vw, 5rem);
+            font-size: clamp(1rem, 7.5vw, 5rem);
             margin: 0;
             text-transform: uppercase;
             letter-spacing: -0.05rem;
             font-weight: normal;
-            color: var(--text-color);
+            color: var(--heading-color);
             text-align: left;
             line-height: 98%;
         }
 
-        h2 span.boost {
-            color: var(--heading-color);
-        }
-
-        h2 svg {
-            display: block;
-            margin-right: auto;
-            height: clamp(35px, 10vw, 160px);
-            width: auto;
-            max-width: 100%;
+        h2 .boost {
+            color: var(--heading-color-highlight);
         }
 
         h3 {
             font-family: 'Roc Grotesk Wide Bold', 'Space Mono', 'Fira Code', monospace;
-            font-size: clamp( 1.25rem, 3vw, 1.5rem);
+            font-size: clamp(1.25rem, 3vw, 1.5rem);
+            line-height: 1.25;
             color: var(--heading-color);
             text-transform: uppercase;
             letter-spacing: 0.5pt;
         }
 
-        h3 span.boost {
-            color: var(--text-color);
+        h3 .boost {
+            color: var(--text-color-highlight);
         }
 
         p {
@@ -265,25 +269,23 @@
         }
 
         a {
-            color: var(--text-color);
+            color: var(--text-color-highlight);
             text-decoration: none;
             border-bottom: 1px solid var(--highlight-color);
-            font-weight: bold;
+            font-weight: 500;
         }
 
         ul {
             margin-left: var(--spacing-small);
             position: relative;
-            color: var(--list-text-color);
-        }
+            display: flex;
+            flex-direction: column;
+            gap: var(--spacing-teeny);
 
-        ul a {
-            color: var(--list-text-color);
         }
 
         li {
-            margin: var(--spacing-smaller) auto;
-            line-height: normal;
+            margin: 0;
         }
 
         ul.plus {
@@ -328,9 +330,11 @@
         strong {
             color: var(--highlight-color);
         }
+
         .break-text {
             word-break: break-all;
         }
+
         code {
             border: 1px solid var(--brand-color-light-ghost);
             padding: 0.125em 0.325em;
@@ -338,23 +342,6 @@
             border-radius: 0.25em;
         }
 
-        details {
-            margin-left: var(--spacing-small);
-        }
-
-        details h3 {
-            margin-top: var(--spacing-default);
-        }
-        details p, details ul {
-            margin-top: var(--spacing-small);
-        }
-
-        summary {
-            position: relative;
-            left: calc(0px - var(--spacing-small));
-            font-family: 'Roc Grotesk Wide Bold', 'Space Mono', 'Fira Code', monospace;
-            margin-bottom: var(--spacing-default);
-        }
 
         img {
             display: block;
@@ -406,10 +393,6 @@
         }
 
         .main {
-            background-image: url("assets/images/rustforge-background-overlay.jpg");
-            background-size: 1200px;
-            background-position: bottom;
-            background-repeat: no-repeat;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -431,7 +414,7 @@
             flex-direction: column;
             justify-content: center;
             align-items: flex-start;
-            padding: var(--row-spacing) var(--spacing-small) var(--row-spacing) calc(var(--viewport-gutter) +
+            padding: 0 var(--spacing-small) 0 calc(var(--viewport-gutter) +
             var(--spacing-small));
             max-width: var(--col-width-narrow-screen);
             gap: var(--spacing-default);
@@ -448,9 +431,10 @@
             display: flex;
             flex-direction: column;
             justify-content: center;
-            gap: calc(3 * var(--spacing-content));
+            gap: calc(2 * var(--spacing-content));
             padding: calc(3 * var(--spacing-content)) 0;
         }
+
 
         .blocks-regular {
             display: flex;
@@ -577,19 +561,7 @@
             width: var(--viewport-gutter);
             padding-top: var(--spacing-default);
 
-            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%231ab78f' fill-opacity='0.2' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
-        }
-
-
-        .right-gutter {
-            position: fixed;
-            bottom: 0;
-            right: 0;
-            height: 100vh;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: space-between;
+            background-image: var(--background-pattern);
         }
 
         .navigation-icons {
@@ -599,7 +571,10 @@
             display: flex;
             flex-direction: column;
             gap: var(--spacing-tiny);
+        }
 
+        .navigation-icons li {
+            margin: 0;
         }
 
         .navigation-icons a {
@@ -629,11 +604,15 @@
 
         .social-icons {
             list-style: none;
-            padding: 0;
+            padding: var(--spacing-small) 0;
             margin: 0;
             display: flex;
             flex-direction: column;
+            gap: var(--spacing-tiny);
+        }
 
+        .social-icons li {
+            margin: 0;
         }
 
         .social-icons a {
@@ -643,12 +622,16 @@
             display: block;
             color: var(--brand-color-light);
         }
+
         .social-icons a:hover {
             color: white;
         }
 
         .social-icons svg {
             fill: currentColor;
+            width: 100%;
+            height: auto;
+            display: block;
         }
 
         .right-gutter {
@@ -661,42 +644,299 @@
             grid-template-columns: 1fr;
         }
 
-        @media screen and (min-width:800px) {
+        @media screen and (min-width: 800px) {
             .image-row {
                 flex-direction: row;
                 gap: var(--spacing-small);
             }
         }
 
-        /*
-        * SMALL SCREEN HACKS
-        **/
-        @media screen and (max-width: 640px) {
-            .hide-on-small-screens {
-                display: none;
+
+        /**
+         * TAGS
+         * -------------------------------------------------------- */
+        details {
+            margin: 0;
+            padding: 0;
+            background-image: var(--background-pattern);
+            display: block;
+            width: 100%;
+            box-sizing: border-box;
+
+        }
+
+        details summary {
+            outline: 1px solid var(--brand-color-light-ghost);
+            cursor: pointer;
+            padding: var(--spacing-small) var(--spacing-small) var(--spacing-small) var(--spacing-small);
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        details[closed] summary {
+            background-color: var(--brand-color-light);
+        }
+
+        details summary::marker {
+            color: var(--brand-color-light);
+            margin-right: 10px;
+        }
+
+        details summary span {
+            padding-left: 4px;
+        }
+
+        .details__body {
+            outline: 1px solid var(--brand-color-light-ghost);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .details__body div {
+            display: flex;
+            flex-direction: column;
+            gap: var(--spacing-content);
+            padding: var(--spacing-default);
+        }
+
+        .details__body div:not(:first-child) {
+            border-top: 1px solid var(--brand-color-light-ghost);
+        }
+
+
+        figure img {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+
+        figure figcaption {
+            background-image: var(--background-pattern);
+            padding: var(--spacing-teeny);
+            font-size: 0.75em;
+            color: var(--text-color-muted);
+        }
+
+
+        /**
+         * TEXT TREATMENTS
+         * -------------------------------------------------------- */
+        strong {
+            color: var(--text-color-highlight);
+        }
+
+        em {
+            font-family: var(--font-family-body);
+            font-size: var(--font-size-regular);
+            font-style: normal;
+            line-height: var(--line-height-regular);
+            border: 1px solid var(--brand-color-light-ghost);
+            background: var(--background-pattern);
+            font-weight: 500;
+            color: var(--brand-color-light);
+            padding: var(--spacing-hairline) var(--spacing-teeny);
+            display: inline-block;
+            border-radius: var(--spacing-hairline);
+            text-transform: none;
+        }
+
+        .small {
+            font-size: 0.75em;
+        }
+
+        /**
+         * COMPONENT > FORM BOX
+         * -------------------------------------------------------- */
+        .form-box {
+            border: 1px solid var(--brand-color-light);
+            box-shadow: 10px 10px 0px var(--brand-color-light);
+            width: 100%;
+            box-sizing: border-box;
+            margin: 0 auto;
+            max-width: min(100%, 30rem);
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            gap: var(--spacing-default);
+            padding: var(--spacing-default);
+        }
+
+        a:has(> .form-box ) {
+            border-bottom: none;
+        }
+
+        a .form-box:hover {
+            background-color: var(--brand-color-light-ghost);
+        }
+
+
+        /**
+         * COMPONENT > PRODUCT BOX
+         * -------------------------------------------------------- */
+
+        .product-block {
+            outline: 2px solid var(--framework-color);
+            display: flex;
+            width: auto;
+            flex-direction: column;
+            gap: 1px;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%231ab78f' fill-opacity='0.2' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
+        }
+
+        .product-name {
+            padding: var(--spacing-small);
+            flex-grow: 1;
+            color: var(--text-color-highlight);
+        }
+
+        .product-name strong {
+            color: var(--brand-color-light);
+            font-weight: normal;
+        }
+
+        .product-name em {
+            font-style: normal;
+            color: var(--highlight-color);
+        }
+
+        .product-price {
+            background-color: var(--framework-color);
+            color: var(--background-color);
+            padding: 1rem;
+            text-align: right;
+            font-weight: bold;
+        }
+
+        @media screen and (min-width: 680px) {
+            .product-block {
+                flex-direction: row;
             }
         }
 
 
-        @media screen and (max-width:640px ) {
+        /**
+         * COMPONENT > FEATURE BOX
+         * -------------------------------------------------------- */
 
+        .feature-box {
+            display: flex;
+            flex-direction: column;
+            position: relative;
+        }
 
+        .feature-box.dashed .feature-box__body {
+            border: var(--framework-width) dashed var(--brand-color-light-ghost);
+        }
 
-            .col li {
-                font-size: 14pt;
-            }
+        .feature-box__body {
+            border: var(--framework-width) solid var(--framework-color);
+            padding: var(--spacing-small);
+            flex-grow: 1;
+        }
 
-            .col p {
-                font-size: 16pt;
-            }
+        .feature-box__heading {
+            font-weight: normal;
+            margin-bottom: var(--spacing-small);
+        }
 
-            .row {
-                overflow-x: hidden;
+        .feature-box__heading strong {
+            font-style: normal;
+            color: var(--heading-color-highlight);
+            border-bottom: var(--framework-width) solid var(--framework-color);
+        }
+
+        .feature-box__footer {
+            flex-shrink: 1;
+            right: 0;
+            display: flex;
+            justify-content: flex-end;
+            align-items: flex-start;
+        }
+
+        .feature-box__footer-blocks {
+            background-color: var(--background-color);
+            position: relative;
+            top: calc(var(--spacing-small) * -1);
+            border: var(--framework-width) solid var(--framework-color);
+            display: flex;
+            flex-direction: row;
+            max-width: calc(100% - var(--spacing-default));
+            justify-content: flex-end;
+        }
+
+        @media screen and (max-width: 720px) {
+            .feature-box__footer-blocks {
+                flex-direction: column;
+                align-items: stretch;
             }
         }
+
+        .feature-box__footer-block-shaded {
+            padding: var(--spacing-smaller) var(--spacing-small);
+            text-align: right;
+            font-weight: bold;
+            background-image: var(--background-pattern);
+        }
+
+        .feature-box__footer-block-solid {
+            background-color: var(--framework-color);
+            color: var(--background-color);
+            padding: var(--spacing-smaller) var(--spacing-small);
+            text-align: right;
+            font-weight: bold;
+        }
+
+        a.feature-box__footer-block-solid:hover {
+            background-color: var(--text-color-highlight);
+        }
+
+
+        /**
+         * SECTION > BACKGROUND
+         * -------------------------------------------------------- */
+        #background {
+            display: none;
+            background-attachment: fixed;
+            background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+            background-size: 400% 400%;
+            animation: gradient 15s ease infinite;
+            position: fixed;
+            height: 100vh;
+            width: 100vw;
+            top: 0;
+            left: 0;
+            z-index: -10;
+
+        }
+
+        @keyframes gradient {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        #background-overlay-pattern {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-size: 5px;
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='rgba(6,37,47,1)' fill-opacity='1' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E");
+        }
+
+
+        /**
+         * SECTION > INTRO
+         * -------------------------------------------------------- */
 
         #intro {
-            height: 100vh;
+            min-height: 50vh;
             justify-content: center;
             align-items: center;
             display: flex;
@@ -761,28 +1001,7 @@
             display: block;
         }
 
-        .form-box {
-            border: 1px solid var(--brand-color-light);
-            box-shadow: 10px 10px 0px var(--brand-color-light);
-            width: 100%;
-            box-sizing: border-box;
-            margin: 0 auto;
-            max-width: min(100%, 30rem);
-            justify-content: center;
-            align-items: center;
-            display: flex;
-            flex-direction: column;
-            gap: var(--spacing-default);
-            padding: var(--spacing-default);
-        }
 
-        a:has(> .form-box )  {
-            border-bottom: none;
-        }
-
-        a .form-box:hover {
-            background-color: var(--brand-color-light-ghost);
-        }
 
         #footer-layout {
             justify-content: center;
@@ -792,43 +1011,24 @@
             gap: var(--spacing-default);
         }
 
-        .product-block {
-            outline: 2px solid var(--framework-color);
-            display: flex;
-            width: auto;
-            flex-direction: column;
-            gap: 1px;
-            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%231ab78f' fill-opacity='0.2' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
+
+        /**
+         * SECTION > GET INVOLVED
+         * -------------------------------------------------------- */
+        #ways-to-get-involved {
+            display: grid;
+            grid-gap: var(--spacing-default);
         }
 
-        .product-name {
-            padding: var(--spacing-small);
-            flex-grow: 1;
-        }
-
-        .product-name em {
-            font-style: normal;
-            color: var(--highlight-color);
-        }
-
-        .product-price {
-            background-color: var(--framework-color);
-            color: var(--background-color);
-            padding: 1rem;
-            text-align: right;
-            font-weight: bold;
-        }
-
-        @media screen and (min-width: 680px) {
-            .product-block {
-                flex-direction: row;
+        @media screen and (min-width: 980px) {
+            #ways-to-get-involved {
+                grid-template-columns: 1fr 1fr;
             }
-
         }
 
 
         /**
-         * WHERE AND WHEN
+         * SECTION > WHERE AND WHEN
          * -------------------------------------------------------- */
         #where-and-when-layout {
             display: grid;
@@ -848,7 +1048,7 @@
 
 
         /**
-         * PARTICIPATION
+         * SECTION > PARTICIPATION
          * -------------------------------------------------------- */
         #participate-layout {
             display: grid;
@@ -862,7 +1062,7 @@
         }
 
         /**
-         * WORKSHOP
+         * SECTION > WORKSHOP
          * -------------------------------------------------------- */
         #workshop-layout {
             display: grid;
@@ -880,198 +1080,116 @@
         }
 
         /**
-         * SPACES
+         * SECTION > SPACES
          * -------------------------------------------------------- */
         #spaces-layout {
             display: grid;
             grid-gap: var(--spacing-default);
         }
-
-        @media screen and (max-width: 640px) {
-            .hide-on-small-screens {
-                display: none;
-            }
+        #spaces-layout > div {
+            display: flex;
+            flex-direction: column;
+            gap: var(--spacing-default);
         }
-
         @media screen and (min-width: 980px) {
             #spaces-layout {
                 grid-template-columns: 2fr 1fr;
             }
         }
 
-
-        /**
-         * SUPPORT
-         * -------------------------------------------------------- */
-        .spaces-levels__layout,
-        .support-levels__layout,
-        #spaces-levels__addons,
-        #ember-and-spark-support-levels {
+        #available-spaces {
             display: grid;
-            grid-row-gap: var(--spacing-medium);
-            grid-column-gap: var(--spacing-regular);
+            grid-row-gap: var(--spacing-small);
+            grid-column-gap: var(--spacing-default);
         }
 
-        @media screen and (max-width: 960px) {
-            .deals-levels__layout,
-            .support-levels__layout,
-            #spaces-levels__addons            
-             {
-                grid-template-columns: 1fr;
-            }
-
-            #ember-and-spark-support-levels {
-                grid-column: 1;
-                grid-template-columns: 1fr;
-            }
-        }
-
-        @media screen and (min-width: 960px) and (max-width: 1239px) {
-            .deals-levels__layout {
-                grid-template-columns: 1fr;
-            }
-
-            .support-levels__layout {
-                grid-template-columns: 1fr 1fr;
-            }
-
-            #ember-and-spark-support-levels {
-                grid-column: 1 / span 2;
-                grid-template-columns: 1fr 1fr;
-            }
-
-        }
-
-        @media screen and (min-width: 1240px) {
-            .deals-levels__layout {
-                grid-template-columns: 1fr;
-            }
-
-            .spaces-levels__layout,
-            .support-levels__layout {
+        @media screen and (min-width: 980px) {
+            #available-spaces {
                 grid-template-columns: 1fr 1fr 1fr;
             }
-
         }
 
-        .spaces-level,
-        .support-level {
-            outline: 2px solid var(--framework-color);
-            padding: var(--spacing-small);
-            display: flex;
-            flex-direction: column;
-            position: relative;
-            /* align-content: stretch; */
-
-        }
-
-        .deals-level__heading,
-        .spaces-level__heading,
-        .support-level__heading {
-            font-weight: normal;
-            margin-bottom: var(--spacing-small);
-        }
-
-        .deals-level__heading em,
-        .spaces-level__heading em,
-        .support-level__heading em {
-            font-style: normal;
-            color: white;
-            border-bottom: 2px solid var(--framework-color);
-        }
-
-        .spaces-level__footer,
-        .support-level__footer {
-            position: relative;
-            flex-grow: 1;
-            padding-bottom: var(--spacing-default);
-            right: 0;
-        }
-
-        .spaces-level__amount,
-        .support-level__amount {
-            background-color: var(--framework-color);
-            color: var(--background-color);
-            padding: var(--spacing-smaller) var(--spacing-small);
-            text-align: right;
-            font-weight: bold;
-            display: block;
-            position: absolute;
-            right: calc((-1 * var(--spacing-small)) - 1px);
-            bottom: calc(-1 * var(--spacing-medium));
-        }
-
-        .spaces-level__amount a,
-        .support-level__amount a {
-            color: var(--background-color);
-            text-decoration: underline;
-            text-underline-offset: 20%;
-        }
-
-        #spaces-levels__food {
-            outline-style: dashed;
-        }
-
-        #spaces-levels__food {
-            outline-style: dashed;
-        }
-
-        /*
-        * OFFERS
-        *
-        * -------------------------------------------------------- */
-        .deals-level__footer {
-            display: flex;
-            position: relative;
-            gap: -2px;
-            padding-bottom: var(--spacing-default);
-            position: absolute;
-            right: 0;
-        }
-
-        .deals-level {
-            outline: 2px solid var(--framework-color);
-            padding: var(--spacing-small);
-            flex-direction: column;
-            position: relative;
-            align-content: stretch;
-            margin-bottom: calc(3*var(--spacing-default));
-        }
-
-        .deals-level__amount {
-            outline: solid 2px var(--framework-color);
-            background-color: var(--framework-color);
-            padding: var(--spacing-smaller) var(--spacing-small);
-            text-align: right;
-            font-weight: bold;
-            display: inline;
-        }
-
-        .deals-level__amount a {
-            color: var(--background-color);
-            text-decoration: underline;
-            text-underline-offset: 20%;
-        }
-
-        .deals-levels__code {
-            outline: solid 2px;
-            background-color: var(--background-color);
-            color: var(--heading-color);
-            text-align: center;
-            font-weight: bold;
-            display: inline;
-        }
 
         /**
-         * CONFERENCE
+         * SECTION > SUPPORT
          * -------------------------------------------------------- */
-        .conference-product {
-            float: right;
+        #support-levels {
+            display: grid;
+            grid-row-gap: var(--spacing-medium);
+            grid-column-gap: var(--spacing-default);
+        }
+
+        @media screen and (min-width: 980px) {
+            #support-levels {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        #support-paths {
+            display: grid;
+            grid-gap: var(--spacing-default);
+        }
+
+        @media screen and (min-width: 980px) {
+            #support-paths {
+                grid-template-columns: 1fr 1fr;
+            }
         }
 
 
         /**
-         * WHO
+         * SECTION > TRAVEL OFFERS
+         * -------------------------------------------------------- */
+        #travel-offers {
+            display: grid;
+            grid-gap: var(--spacing-default);
+        }
+
+        @media screen and (min-width: 980px) {
+            #travel-offers {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+
+        /**
+        * SECTION > FAMILIES
+        * -------------------------------------------------------- */
+        #families-photos {
+            display: grid;
+            grid-gap: var(--spacing-default);
+        }
+
+        @media screen and (min-width: 980px) {
+            #families-photos {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+
+        /**
+        * SECTION > CONDUCT AND SAFETY
+        * -------------------------------------------------------- */
+        #conduct-blocks {
+            display: grid;
+            gap: var(--spacing-medium);
+        }
+
+        #conduct-blocks div {
+            display: flex;
+            flex-direction: column;
+            gap: var(--spacing-content);
+        }
+
+        @media screen and (min-width: 980px) {
+            #conduct-blocks {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+
+        /**
+         * SECTION > WHO
          * -------------------------------------------------------- */
         #who-layout {
             display: grid;
@@ -1090,12 +1208,13 @@
             }
         }
 
+
         /**
-         * DETAILS
-         * -------------------------------------------------------- */
+          * SECTION > DETAILS
+          * -------------------------------------------------------- */
         #details-layout {
             display: grid;
-            grid-gap: var(--spacing-default);
+            grid-gap: var(--spacing-medium);
         }
 
         @media screen and (min-width: 980px) {
@@ -1104,14 +1223,19 @@
             }
         }
 
+
     </style>
 </head>
 <body>
+<div id="background">
+    <div id="background-overlay-pattern">
 
-<div class="main h-event">
-    <div id="intro" class="row">
+    </div>
+</div>
+
+    <div class="row">
         <div class="col">
-            <div class="section">
+            <div class="section" id="intro">
                 <div id="intro-layout">
                     <svg id="intro-logo" viewBox="0 0 763.18 317.17" style="enable-background:new 0 0 763.18 317.17;" xml:space="preserve">
                         <g>
@@ -1188,8 +1312,8 @@
                     <div id="intro-body">
                         <p class="p-summary">
                         <span class="p-name">Rust Forge 2025</span> is a <span class="p-category">conference</span> for
-                        developers building with the Rust&nbsp;programming&nbsp;language that is being hosted in <strong>
-                            <a href="#location">
+                        developers building with the Rust&nbsp;programming&nbsp;language that is being hosted in
+                        <strong> <a href="#location">
                                     <span class="p-location h-hdr">
                                         <span class="p-locality">Wellington</span>,
                                         <span class="p-country-name">New&nbsp;Zealand</span>
@@ -1201,120 +1325,33 @@
             </div>
         </div>
     </div>
-</div>
+
 
 <div class="row">
     <div class="col">
-        <div class="section">
+
+
+        <div class="section" id="get-involved">
             <h2><span class="boost">Get involved</span> in the event</h2>
 
-            <div style="display: flex; flex-direction: column; gap: 55px; align-content: center; width: 100%;">
+            <div id="ways-to-get-involved">
                 <div class="form-box">
                     <h3>Register</h3>
-                    <p>Visit <a href="https://rust-forge-2025.lilregie.com/">our booking page</a> to reserve your place.</p>
-                </div></a>
-    
+                    <p>Visit <a href="https://rust-forge-2025.lilregie.com/">our booking page</a> to reserve your place.
+                    </p>
+                </div>
+
                 <div class="form-box">
                     <h3>Join the Discord server</h3>
                     <p><a href="https://discord.gg/fwd8tGC4Ya">Chat with people</a> from around the world.</p>
                 </div>
-
-                <!-- <div class="form-box">
-                    <h3>Join mailing list</h2>
-                    <p>Keep up to date with announcements</p>
-                    <form enctype="multipart/form-data" id="form01" method="post2" target="https://hooks.zapier.com/hooks/catch/19805528/263afdp/" data-autofocus="1">
-    
-                        <div class="field" data-type="email">
-                            <input type="email" name="email" id="interest-email" placeholder="iloverust@example.com" maxlength="128" required="">
-                        </div>
-    
-                        <div class="field" data-type="select">
-                            <select name="interested-in" id="interest-area">
-                                <option value="">– Interested In ... (optional) –</option>
-                                <option value="Attending">Attending</option>
-                                <option value="Speaking">Speaking</option>
-                                <option value="Sponsoring">Sponsoring</option>
-                                <option value="Organising">Organising</option>
-                                <option value="Volunteering">Volunteering</option>
-                                <option value="Something Else">Something Else</option>
-                            </select>
-                        </div>
-    
-                        <div class="field" style="display: none;">
-                            <input type="text" name="fax" id="form01-fax" placeholder="Fax" maxlength="128" disabled="">
-                        </div>
-    
-                        <div class="actions">
-                            <button type="submit" class="button">
-                                form.submit()
-                            </button>
-                        </div>
-    
-                        <input type="hidden" name="id" value="form01">
-                    </form>
-                </div> -->
-
             </div>
+        </div> <!-- /#get-involved -->
 
-
-        </div>
-    </div>
-</div>
-
-<div class="row">
-    <div class="col">
 
         <div class="section" id="what">
             <h2>
-                <span class="boost">What</span> is Rust Forge?
-                <!-- <svg alt="What is Rust Forge" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1140.22058px" height="245.48px" viewBox="0 0 1140.22058 245.48" style="enable-background:new 0 0 1140.22058 245.48;" xml:space="preserve">
-                        <g>
-                            <path style="fill:#FFFFFF;" d="M1071.34058,243.8h24.92004v-22.12001h-24.92004V243.8z M1074.00049,215.51999h17.92004v-10.22
-                                h0.28003c2.23999,5.18001,7.41992,10.36002,18.62,10.36002c17.35999,0,29.40002-13.3,29.40002-33.04001
-                                c0-18.76001-10.92004-32.89999-35.97998-32.89999c-22.68005,0-35.14001,10.5-35.14001,26.17999
-                                c0,2.23999,0.27991,4.20001,0.41992,4.89999h20.44006c-0.14001-1.25999-0.14001-1.95999-0.14001-2.66
-                                c0-6.43999,4.62-11.34,14.28003-11.34c10.64001,0,15.3999,7,15.3999,16.38c0,12.60001-6.29993,17.36-14.69995,17.36
-                                c-6.16003,0-10.92004-2.24001-12.88-7.7h-17.92004V215.51999z M970.20551,243.8h88.48004v-19.88h-61.60004v-18.62001h46.19904
-                                V189.62h-46.19904v-18.06h60.19904v-19.88h-87.07904V243.8z M896.88745,245.48c22.96002,0,34.02002-8.39999,37.10004-20.3h0.27997
-                                c0,6.72-0.13995,14.56-0.27997,18.62001h20.71997V196.2h-56.56v14.28h29.67999v0.42c0,6.58-7.27997,16.8-26.45996,16.8
-                                c-22.54004,0-30.94-13.02-30.94-28.56c0-16.52,10.21997-29.25999,31.35999-29.25999c20.44,0,27.58002,8.95999,27.58002,16.09999
-                                v0.98h23.94c0.14001-0.98,0.14001-1.53999,0.14001-1.95999c0-17.22-12.18005-35-52.5-35c-40.04004,0-58.10004,22.39999-58.10004,49
-                                C842.84747,223.22,857.54749,245.48,896.88745,245.48 M756.53845,194.94v-23.38h29.96002c15.53998,0,20.44,4.75999,20.44,11.34
-                                c0,7.14-4.76001,12.04001-18.06,12.04001H756.53845z M729.65851,243.8h26.87994V210.62h33.32001c11.48004,0,15.12,4.34,15.12,13.86
-                                V243.8h26.88V224.48c0-9.66-1.53998-19.88-16.09998-23.24001v-0.28c12.73999-3.78,16.65997-12.73999,16.65997-21.98
-                                c0-16.52-10.63995-27.3-44.79999-27.3h-57.95996V243.8z M656.80347,225.59999c-21.97998,0-32.20001-11.62-32.20001-28.14
-                                c0-14.98,10.36005-27.57999,32.20001-27.57999c21.84003,0,32.20001,12.59999,32.20001,27.57999
-                                C689.00348,213.28,679.34351,225.59999,656.80347,225.59999 M656.80347,245.48c42.98004,0,60.48004-21.98,60.48004-48.16
-                                c0-25.48-18.90002-47.31999-60.48004-47.31999c-41.57996,0-60.47998,21.84-60.47998,47.31999
-                                C596.32349,224.89999,615.0835,245.48,656.80347,245.48 M508.2085,243.8h26.88v-34.72002h48.01996V192H535.0885v-20.44h57.82001
-                                v-19.88H508.2085V243.8z M391.59048,243.8h26.88V171.56h36.25998v-19.88h-99.39999v19.88h36.26001V243.8z M295.45447,245.48
-                                c47.46002,0,55.30002-17.22,55.30002-31.78c0-8.81999-5.04001-16.10001-13.86002-19.74001
-                                c-7.84-3.22-19.31998-4.34-32.75998-5.17999c-10.36002-0.70001-24.22-1.26001-29.26001-2.8c-3.92001-1.25999-5.88-3.36-5.88-6.86
-                                c0-6.58,7.70001-10.64,26.17999-10.64c19.04001,0,27.30002,4.90001,27.30002,13.3h24.07999c0-16.66-7.56-31.78-51.38-31.78
-                                c-36.53998,0-53.05998,14-53.05998,31.07999c0,8.96001,4.48,15.54001,11.2,19.04001c7.56,3.92,21,5.45999,33.17999,6.16
-                                c10.22,0.56,24.36002,1.12,30.10001,2.38c4.89999,1.12,7.28,3.35999,7.28,7.13998c0,6.3-4.06,11.20001-28.42001,11.20001
-                                c-23.09998,0-28.69998-6.3-28.69998-14.14h-24.08C242.67448,225.17999,247.57448,245.48,295.45447,245.48 M176.09148,245.48
-                                c33.74001,0,54.18001-13.72,54.18001-42.84v-50.96001h-24.08v48.02c0,17.64-10.92,24.5-28.84,24.5s-28.84001-6.86-28.84001-24.5
-                                v-48.02h-26.87999V202.64C121.63148,231.75999,142.49149,245.48,176.09148,245.48 M32.06049,194.94v-23.38h29.96
-                                c15.54,0,20.44,4.75999,20.44,11.34c0,7.14-4.76,12.04001-18.06,12.04001H32.06049z M5.18049,243.8h26.88V210.62h33.32
-                                c11.48,0,15.12,4.34,15.12,13.86V243.8h26.88V224.48c0-9.66-1.53999-19.88-16.1-23.24001v-0.28
-                                c12.74-3.78,16.66-12.73999,16.66-21.98c0-16.52-10.64-27.3-44.8-27.3h-57.96V243.8z"/>
-                            <path style="fill:#FFFFFF;" d="M674.40247,95.48c47.46002,0,55.30005-17.22,55.30005-31.78
-                                c0-8.82001-5.04004-16.10001-13.86005-19.74001c-7.83997-3.22-19.32001-4.34-32.76001-5.17999
-                                c-10.35999-0.7-24.21997-1.26001-29.25995-2.8c-3.92004-1.25999-5.88-3.36-5.88-6.86c0-6.58,7.70001-10.64,26.17999-10.64
-                                c19.03998,0,27.29999,4.89999,27.29999,13.3h24.08002c0-16.66-7.56-31.78-51.38-31.78c-36.54004,0-53.06,14-53.06,31.08
-                                c0,8.95999,4.47998,15.53999,11.20001,19.03999c7.56,3.92,21,5.46001,33.17999,6.16c10.21997,0.56,24.35999,1.12,30.09998,2.37999
-                                c4.90002,1.12001,7.28003,3.36,7.28003,7.14001c0,6.29999-4.06,11.2-28.42004,11.2c-23.09998,0-28.69995-6.3-28.69995-14.14
-                                H621.6225C621.6225,75.17999,626.52246,95.48,674.40247,95.48 M580.53351,93.8h26.88v-92.12h-26.88V93.8z"/>
-                        </g>
-                    <path style="fill:#1AB78F;" d="M153.29999,1.6799l-23.379,63.28h-0.28101L105.561,1.6799H78.39999L53.901,64.9599h-0.28l-24.5-63.28
-                            H0l36.961,92.12001h29.54001L90.16098,34.2999h0.28l22.819,59.50002h29.54102l36.959-92.12001H153.29999z M273.979,1.6799v34.72
-                            h-59.08002v-34.72H188.019v92.12001h26.87999V56.27989H273.979v37.52002h26.88V1.6799H273.979z M373.00098,21.8399h0.14001
-                            l19.17902,37.52H353.961L373.00098,21.8399z M359.00098,1.6799L308.88,93.79991h27.72098L346.121,75.0399h54.17999l9.51999,18.76001
-                            h31.22l-50.12-92.12001H359.00098z M426.95599,1.6799v19.88H463.216v72.24001h26.879V21.55991h36.26102v-19.88H426.95599z"/>
-                        </svg> -->
-
-            </h2>
+                <span class="boost">What</span> is Rust Forge? </h2>
             <div class="blocks-regular">
                 <p>Rust Forge is a two part conference held over four days for those interested in building with the
                 Rust programming language.</p>
@@ -1327,93 +1364,19 @@
                 opportunities to meet community members, share ideas, and enjoy the beautiful surroundings of
                 Wellington.</p>
             </div>
-        </div>
+        </div> <!-- /#what -->
 
-    </div>
-</div>
 
-<div class="row">
-    <div class="col">
         <div class="section" id="where-and-when">
-            <img src="assets/images/shed6-500x260.png" alt="Shed 6 from across the harbour." style="opacity: 0.8;" >
+            <img src="assets/images/shed6-500x260.png" alt="Shed 6 from across the harbour." style="opacity: 0.8;">
 
             <h2>
-                <span class="boost">Where and When</span> is Rust Forge?
-                <!-- <svg alt="Where and When is Rust Forge?" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1345.66602px" height="255.28px" viewBox="0 0 1345.66602 255.28" style="enable-background:new 0 0 1345.66602 255.28;" xml:space="preserve">
-                <g>
-                    <path style="fill:#FFFFFF;" d="M1276.78601,253.60001h24.92004V231.48h-24.92004V253.60001z M1279.44604,225.32001h17.91992v-10.22
-                        h0.28003c2.23999,5.17999,7.42004,10.35999,18.62,10.35999c17.35999,0,29.40002-13.29999,29.40002-33.03999
-                        c0-18.75999-10.92004-32.90001-35.97998-32.90001c-22.68005,0-35.14001,10.5-35.14001,26.18001
-                        c0,2.24001,0.28003,4.2,0.41992,4.90001h20.44006c-0.14001-1.26001-0.14001-1.96001-0.14001-2.66c0-6.44,4.62-11.34,14.28003-11.34
-                        c10.64001,0,15.40002,7,15.40002,16.37999c0,12.60001-6.30005,17.36-14.70007,17.36c-6.15991,0-10.91992-2.23999-12.88-7.7
-                        h-17.91992V225.32001z M1175.65002,253.60001H1264.13v-19.88h-61.59998v-18.62h46.19995V199.42h-46.19995v-18.06h60.19995v-19.88
-                        h-87.07996V253.60001z M1102.33301,255.28c22.95996,0,34.02002-8.39999,37.09998-20.3h0.28003
-                        c0,6.72-0.14001,14.56-0.28003,18.62001h20.71997V206h-56.55994v14.28h29.67993v0.42c0,6.58-7.27991,16.8-26.45996,16.8
-                        c-22.54004,0-30.93994-13.02-30.93994-28.56c0-16.52,10.21997-29.26001,31.35999-29.26001
-                        c20.43994,0,27.57996,8.96001,27.57996,16.10001v0.98h23.94006c0.13989-0.98,0.13989-1.53999,0.13989-1.95999
-                        c0-17.22-12.17993-35.00002-52.5-35.00002c-40.03992,0-58.09998,22.40001-58.09998,49.00002
-                        C1048.29297,233.02,1062.99304,255.28,1102.33301,255.28 M961.98401,204.73999V181.36h29.95996
-                        c15.54004,0,20.44,4.75999,20.44,11.34c0,7.14-4.75995,12.03999-18.06,12.03999H961.98401z M935.104,253.60001h26.88V220.42
-                        h33.32001c11.47998,0,15.12,4.34,15.12,13.86v19.32001h26.87994V234.28c0-9.66-1.53992-19.88-16.09998-23.24001v-0.28
-                        c12.73999-3.78,16.66003-12.73999,16.66003-21.98c0-16.51999-10.64001-27.3-44.79999-27.3H935.104V253.60001z M862.24902,235.39999
-                        c-21.98004,0-32.20001-11.62-32.20001-28.14c0-14.98,10.35999-27.58,32.20001-27.58c21.83997,0,32.19995,12.60001,32.19995,27.58
-                        C894.44897,223.08,884.789,235.39999,862.24902,235.39999 M862.24902,255.28c42.97998,0,60.47998-21.98,60.47998-48.16
-                        c0-25.48-18.90002-47.32001-60.47998-47.32001c-41.58002,0-60.48004,21.84001-60.48004,47.32001
-                        C801.76898,234.7,820.52899,255.28,862.24902,255.28 M713.65302,253.60001h26.88v-34.72h48.01996V201.8h-48.01996v-20.44h57.82001
-                        v-19.88h-84.70001V253.60001z M597.03601,253.60001h26.88V181.36h36.26001v-19.88H560.776v19.88h36.26001V253.60001z
-                         M500.89999,255.28c47.45999,0,55.30002-17.22,55.30002-31.78c0-8.82001-5.04004-16.10001-13.85999-19.74001
-                        c-7.84003-3.22-19.32001-4.34-32.76004-5.17999c-10.35999-0.7-24.22-1.25999-29.25998-2.8c-3.92001-1.25999-5.88-3.36-5.88-6.86
-                        c0-6.58,7.70001-10.64,26.17999-10.64c19.03998,0,27.29999,4.89999,27.29999,13.3H552c0-16.66-7.56-31.78001-51.38-31.78001
-                        c-36.54001,0-53.06,14-53.06,31.08002c0,8.95999,4.48001,15.53999,11.20001,19.03999c7.56,3.92,21,5.46001,33.17999,6.16
-                        c10.22,0.56,24.35999,1.12,30.09998,2.37999c4.90002,1.12001,7.28003,3.36002,7.28003,7.14001c0,6.29999-4.06,11.2-28.42001,11.2
-                        c-23.10001,0-28.69998-6.3-28.69998-14.14H448.12C448.12,234.98,453.01999,255.28,500.89999,255.28 M381.53699,255.28
-                        c33.74002,0,54.18002-13.72,54.18002-42.84V161.48h-24.08002v48.02c0,17.64-10.91998,24.5-28.84,24.5
-                        c-17.91998,0-28.84-6.86-28.84-24.5v-48.02h-26.88V212.44C327.077,241.56,347.93701,255.28,381.53699,255.28 M237.506,204.73999
-                        V181.36H267.466c15.54001,0,20.44,4.75999,20.44,11.34c0,7.14-4.76001,12.03999-18.06,12.03999H237.506z M210.62601,253.60001
-                        H237.506V220.42h33.31999c11.48001,0,15.12003,4.34,15.12003,13.86v19.32001h26.87997V234.28
-                        c0-9.66-1.53998-19.88-16.09998-23.24001v-0.28c12.73999-3.78,16.65997-12.73999,16.65997-21.98
-                        c0-16.51999-10.63998-27.3-44.79999-27.3h-57.95999V253.60001z M99.749,255.28c47.46,0,55.3-17.22,55.3-31.78
-                        c0-8.82001-5.03999-16.10001-13.86-19.74001c-7.84-3.22-19.31999-4.34-32.75999-5.17999c-10.36-0.7-24.22-1.25999-29.26-2.8
-                        c-3.92-1.25999-5.88-3.36-5.88-6.86c0-6.58,7.7-10.64,26.18-10.64c19.04,0,27.3,4.89999,27.3,13.3h24.08
-                        c0-16.66-7.56-31.78001-51.38-31.78001c-36.54,0-53.06,14-53.06,31.08002c0,8.95999,4.48,15.53999,11.2,19.03999
-                        c7.56,3.92,21,5.46001,33.18,6.16c10.22,0.56,24.36,1.12,30.1,2.37999c4.9,1.12001,7.28001,3.36002,7.28001,7.14001
-                        c0,6.29999-4.06001,11.2-28.42001,11.2c-23.1,0-28.7-6.3-28.7-14.14h-24.08C46.969,234.98,51.869,255.28,99.749,255.28
-                         M5.88,253.60001h26.88V161.48H5.88V253.60001z"/>
-                    <path style="fill:#1AB78F;" d="M1108.17896,103.60001h26.04004V35.84h0.14001l60.05896,67.76001h26.60095v-92.12H1194.979v55.44
-                        h-0.14001l-49.14001-55.44h-37.52002V103.60001z M1006.37103,103.60001h88.47992V83.72h-61.59998v-18.62h46.19995V49.42001
-                        h-46.19995v-18.06h60.19995v-19.88h-87.0799V103.60001z M876.68903,103.60001h26.88V66.08h59.08002v37.52h26.87994v-92.12
-                        h-26.87994v34.72h-59.08002v-34.72h-26.88V103.60001z M725.63,103.60001h29.54004l23.65997-59.5h0.28003l22.81995,59.5h29.54004
-                        l36.95996-92.12h-26.45996l-23.38,63.28H818.31l-24.07996-63.28h-27.16003l-24.5,63.28h-0.27997l-24.5-63.28h-29.12
-                        L725.63,103.60001z M622.53503,131.60001H636.255L689.875,0h-13.71997L622.53503,131.60001z M537.77899,103.60001h88.48004V83.72
-                        H564.659v-18.62h46.20001V49.42001H564.659v-18.06h60.20001v-19.88h-87.08002V103.60001z M446.388,54.74001V31.36002h29.95999
-                        c15.54001,0,20.44,4.75998,20.44,11.34c0,7.14-4.76001,12.03999-18.06,12.03999H446.388z M419.508,103.60001h26.88V70.42001
-                        h33.31998c11.48001,0,15.12003,4.34,15.12003,13.85999v19.32001h26.88V84.28c0-9.65999-1.53998-19.87999-16.10001-23.23999v-0.28
-                        c12.74002-3.78,16.66-12.74001,16.66-21.98001c0-16.51999-10.64001-27.29999-44.80002-27.29999H419.508V103.60001z
-                         M317.69998,103.60001h88.48001V83.72h-61.60001v-18.62H390.78V49.42001h-46.20001v-18.06H404.78v-19.88h-87.08002V103.60001z
-                         M188.01901,103.60001h26.87997V66.08H273.979v37.52h26.87997v-92.12H273.979v34.72h-59.08002v-34.72h-26.87997V103.60001z
-                         M36.96,103.60001H66.5l23.66-59.5h0.28l22.82,59.5h29.53999l36.96002-92.12h-26.46002l-23.37999,63.28h-0.28l-24.08-63.28h-27.16
-                        L53.9,74.76001h-0.28l-24.5-63.28H0L36.96,103.60001z"/>
-                </g>
-                </svg> -->
-
-<!-- 
-            <div style="display: flex; gap: 2px">
-                <div style="width: calc(99% - 4px); padding: 1px; background-color: var(--brand-color-light-ghost); color: var(--text-color-muted); font-size: 10pt;">
-                    <img src="assets/images/mt-victoria-cyclists-500x533.png" alt="Cyclists at the top of Mt Victoria" >
-                    <div style="padding: 2px;">Cyclists looking out across Wellington Harbour from the Mt Victoria summit.</div>
-                </div>
-                <div style="width: calc(99% - 4px); padding: 1px; background-color: var(--brand-color-light-ghost); color: var(--text-color-muted); font-size: 10pt;">
-                    <img src="assets/images/princess-bay-500x333.png" alt="A couple sitting at Princess Bay at dusk.">
-                    <div style="padding: 2px;">A couple sitting at Princess Bay at dusk.</div>
-                </div>
-            </div> -->
-
-            </h2>
+                <span class="boost">Where and When</span> is Rust Forge? </h2>
             <div id="where-and-when-layout">
                 <div class="blocks-regular">
-                    <img src="assets/images/wel_ington-500x533.png" alt="Cyclists at the top of Mt Victoria"  style="opacity: 0.8;">
-                    <p class="highlight">Rust Forge will take place on <em>August 27-30, 2025</em> at <em>Shed 6 in
-                        Wellington, New Zealand.</em></p>
+                    <img src="assets/images/wel_ington-500x533.png" alt="Cyclists at the top of Mt Victoria" style="opacity: 0.8;">
+                    <p class="highlight">Rust Forge will take place on <strong>August 27-30, 2025</strong> at
+                    <strong>Shed6 in Wellington, New Zealand.</strong></p>
                     <dl id="where-and-when-dates">
                         <dt>27–28:</dt>
                         <dd>Training + Coding</dd>
@@ -1430,51 +1393,13 @@
                 </div>
             </div>
 
-        </div>
-    </div>
-</div>
+        </div> <!-- /#where-and-when -->
 
-<div class="row">
-    <div class="col">
+
         <div class="section" id="participate">
 
             <h2>
-                <span class="boost">How</span> to Participate
-                <!-- <svg alt="How to Participate" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1067.83997px" height="245.48px" viewBox="0 0 1067.83997 245.48" style="enable-background:new 0 0 1067.83997 245.48;" xml:space="preserve">
-                    <g>
-                        <path style="fill:#FFFFFF;" d="M979.35999,243.8h88.47998v-19.88h-61.59998v-18.62001h46.19995V189.62h-46.19995v-18.06h60.19995
-                            v-19.88h-87.07996V243.8z M907.96002,243.8h26.88V171.56h36.25995v-19.88h-99.39996v19.88h36.26001V243.8z M798.70502,209.36
-                            l19.03998-37.52h0.14001l19.17999,37.52H798.70502z M854.565,243.8h31.21997l-50.12-92.12001H803.745L753.625,243.8h27.71997
-                            l9.52002-18.76001h54.17999L854.565,243.8z M687.33698,199.56v-28h27.44c14.98004,0,21,4.89999,21,14
-                            c0,9.51999-6.71997,14-21.13995,14H687.33698z M660.45697,243.8h26.88v-27.16h27.86005c32.47998,0,46.06-10.92,46.06-31.92
-                            c0-21.98001-13.86005-33.04001-45.36005-33.04001h-55.44V243.8z M616.83398,243.8h26.88v-92.12001h-26.88V243.8z M549.55103,245.48
-                            c39.33997,0,53.89996-19.74001,53.89996-37.66c0-0.28,0-1.25999-0.14001-1.95999h-23.94v0.84
-                            c0,10.22-9.65997,18.89999-28.69995,18.89999c-22.26001,0-30.94-13.01999-30.94-27.71999c0-15.82001,10.63995-28,30.79999-28
-                            c19.88,0,28.41998,10.78,28.41998,19.31999v0.56h23.94c0.14001-0.84,0.14001-1.96001,0.14001-2.24001
-                            C603.03101,172.12,589.87097,150,549.271,150c-38.35999,0-57.82001,20.57999-57.82001,47.88
-                            C491.45099,221.67999,505.871,245.48,549.55103,245.48 M452.056,243.8h26.88v-92.12001h-26.88V243.8z M380.34799,243.8h26.88
-                            V171.56h36.26001v-19.88h-99.39999v19.88h36.25998V243.8z M260.229,194.94v-23.38H290.189c15.54001,0,20.44,4.75999,20.44,11.34
-                            c0,7.14-4.76001,12.04001-18.06,12.04001H260.229z M233.349,243.8h26.88V210.62h33.32001c11.47998,0,15.12,4.34,15.12,13.86V243.8
-                            h26.88V224.48c0-9.66-1.54001-19.88-16.10001-23.24001v-0.28c12.73999-3.78,16.66-12.73999,16.66-21.98
-                            c0-16.52-10.64001-27.3-44.80002-27.3H233.349V243.8z M138.248,209.36l19.03999-37.52h0.14l19.18001,37.52H138.248z M194.108,243.8
-                            h31.22l-50.12001-92.12001h-31.92L93.168,243.8h27.72l9.52-18.76001H184.588L194.108,243.8z M26.88,199.56v-28h27.44
-                            c14.98,0,21,4.89999,21,14c0,9.51999-6.72,14-21.14,14H26.88z M0,243.8h26.88v-27.16h27.86c32.48,0,46.06-10.92,46.06-31.92
-                            c0-21.98001-13.86-33.04001-45.36-33.04001H0V243.8z"/>
-                        <path style="fill:#FFFFFF;" d="M637.1203,75.60001c-21.98004,0-32.20001-11.62001-32.20001-28.14
-                            c0-14.98001,10.35999-27.58,32.20001-27.58s32.20001,12.59999,32.20001,27.58
-                            C669.32031,63.28,659.66028,75.60001,637.1203,75.60001 M637.1203,95.48c42.97998,0,60.47998-21.98,60.47998-48.15999
-                            C697.60028,21.84001,678.70032,0,637.1203,0s-60.48004,21.84001-60.48004,47.32001
-                            C576.64026,74.90001,595.40027,95.48,637.1203,95.48 M510.01529,93.8h26.87997V21.56001h36.26001v-19.88h-99.39999v19.88h36.26001
-                            V93.8z"/>
-                        <path style="fill:#1AB78F;" d="M282.65799,93.8H312.198l23.66-59.5h0.28l22.82001,59.5h29.53998l36.96002-92.12h-26.46002
-                            l-23.37997,63.28h-0.28l-24.08002-63.28h-27.16l-24.5,63.28h-0.28l-24.5-63.28h-29.12L282.65799,93.8z M185.696,75.60001
-                            c-21.98,0-32.2-11.62001-32.2-28.14c0-14.98001,10.36-27.58,32.2-27.58s32.2,12.59999,32.2,27.58
-                            C217.896,63.28,208.23599,75.60001,185.696,75.60001 M185.696,95.48c42.98,0,60.48-21.98,60.48-48.15999
-                            C246.17599,21.84001,227.276,0,185.696,0s-60.48,21.84001-60.48,47.32001C125.216,74.90001,143.976,95.48,185.696,95.48 M0,93.8
-                            h26.88V56.28h59.08V93.8h26.88v-92.12H85.96v34.72H26.88v-34.72H0V93.8z"/>
-                    </g>
-                    </svg> -->
-            </h2>
+                <span class="boost">How</span> to Participate </h2>
             <div id="participate-layout">
                 <div>
                     <p class="highlight">The people make the place, and we hope you’ll join us!</p>
@@ -1491,93 +1416,25 @@
                 </div>
             </div>
 
-        </div>
-    </div>
-</div>
-
-
-<div class="row">
-    <div class="col">
+        </div> <!-- /#participate -->
 
 
         <div class="section" id="workshop">
 
             <h2>
                 How to Adopt Rust <span class="boost">Workshop</span>
-                <!-- <svg alt="How to Adopt Rust Workshop" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1530.08765px" height="245.48px" viewBox="0 0 1530.08765 245.48" style="enable-background:new 0 0 1530.08765 245.48;" xml:space="preserve">
-                    <g>
-                        <path style="fill:#1AB78F;" d="M1456.16772,199.56v-28h27.43994c14.97998,0,21,4.89999,21,14c0,9.51999-6.71997,14-21.14001,14
-                            H1456.16772z M1429.2876,243.8h26.88013v-27.16h27.85986c32.4801,0,46.06006-10.92001,46.06006-31.92001
-                            c0-21.98-13.85999-33.03999-45.35999-33.03999h-55.44006V243.8z M1356.43359,225.59999c-21.97998,0-32.20093-11.62-32.20093-28.14
-                            c0-14.98,10.36108-27.58,32.20093-27.58c21.84009,0,32.20007,12.60001,32.20007,27.58
-                            C1388.63367,213.28,1378.97266,225.59999,1356.43359,225.59999 M1356.43359,245.48c42.9801,0,60.4801-21.98,60.4801-48.16
-                            c0-25.48-18.90002-47.31999-60.4801-47.31999c-41.57983,0-60.47998,21.84-60.47998,47.31999
-                            C1295.95361,224.89999,1314.71265,245.48,1356.43359,245.48 M1170.73767,243.8h26.88v-37.52h59.08008v37.52h26.87988v-92.12001
-                            h-26.87988v34.72h-59.08008v-34.72h-26.88V243.8z M1102.53174,245.48c47.45996,0,55.29895-17.22,55.29895-31.78
-                            c0-8.82001-5.03894-16.10001-13.85901-19.74001c-7.84106-3.22-19.32104-4.34-32.76001-5.17999
-                            c-10.35999-0.70001-24.21997-1.26001-29.26099-2.8c-3.91895-1.26001-5.88-3.36-5.88-6.86c0-6.58,7.70105-10.64,26.18103-10.64
-                            c19.04004,0,27.30005,4.89999,27.30005,13.3h24.07886c0-16.66-7.55994-31.78-51.37891-31.78
-                            c-36.54004,0-53.06104,13.99998-53.06104,31.07999c0,8.96001,4.47998,15.54001,11.19995,19.04001
-                            c7.56006,3.92,21,5.45999,33.18005,6.16c10.22107,0.56,24.35999,1.12,30.09998,2.37999c4.90002,1.12001,7.28003,3.36,7.28003,7.14
-                            c0,6.3-4.06006,11.20001-28.41895,11.20001c-23.10107,0-28.70105-6.3-28.70105-14.14h-24.07898
-                            C1049.75171,225.17999,1054.65063,245.48,1102.53174,245.48 M928.97363,243.8h26.88v-20.44l20.02002-15.54001L1013.67371,243.8
-                            h37.66003l-55.58008-51.52l52.21997-40.60001h-33.87994l-57.96002,46.06h-0.28003v-46.06h-26.88V243.8z M837.58264,194.93999
-                            V171.56h29.96002c15.53998,0,20.44,4.75999,20.44,11.34c0,7.14-4.76001,12.03999-18.06,12.03999H837.58264z M810.70264,243.8h26.88
-                            V210.62h33.32007c11.47998,0,15.12,4.34,15.12,13.86V243.8h26.88V224.48c0-9.66-1.54004-19.88-16.10004-23.24001v-0.28
-                            c12.73999-3.78,16.65997-12.74001,16.65997-21.98c0-16.52-10.63995-27.3-44.79993-27.3h-57.96008V243.8z M737.84869,225.59999
-                            c-21.98004,0-32.20001-11.62-32.20001-28.14c0-14.98,10.35999-27.58,32.20001-27.58c21.83997,0,32.20001,12.60001,32.20001,27.58
-                            C770.04871,213.28,760.38867,225.59999,737.84869,225.59999 M737.84869,245.48c42.97998,0,60.47998-21.98,60.47998-48.16
-                            c0-25.48-18.89996-47.31999-60.47998-47.31999s-60.48004,21.84-60.48004,47.31999
-                            C677.36865,224.89999,696.12866,245.48,737.84869,245.48 M534.80768,243.8h29.53998l23.66003-59.50002h0.27997L611.10767,243.8
-                            h29.54004l36.95996-92.12001h-26.45996l-23.38,63.28h-0.28003l-24.08002-63.28h-27.15997l-24.5,63.28h-0.28003l-24.5-63.28
-                            h-29.11996L534.80768,243.8z"/>
-                        <path style="fill:#FFFFFF;" d="M386.41,243.8h26.88V171.56h36.25998v-19.88h-99.39999v19.88H386.41V243.8z M290.27399,245.48
-                            c47.46002,0,55.30002-17.22,55.30002-31.78c0-8.82001-5.04001-16.10001-13.86002-19.74001
-                            c-7.84-3.22-19.31998-4.34-32.75998-5.17999c-10.36002-0.70001-24.22-1.26001-29.26001-2.8c-3.92001-1.26001-5.88-3.36-5.88-6.86
-                            c0-6.58,7.70001-10.64,26.17999-10.64c19.04001,0,27.30002,4.89999,27.30002,13.3h24.07999c0-16.66-7.56-31.78-51.38-31.78
-                            c-36.53999,0-53.05998,13.99998-53.05998,31.07999c0,8.96001,4.48,15.54001,11.2,19.04001c7.56,3.92,21,5.45999,33.17999,6.16
-                            c10.22,0.56,24.36002,1.12,30.10001,2.37999c4.89999,1.12001,7.28,3.36,7.28,7.14c0,6.3-4.06,11.20001-28.42001,11.20001
-                            c-23.09998,0-28.69998-6.3-28.69998-14.14h-24.08C237.494,225.17999,242.394,245.48,290.27399,245.48 M170.911,245.48
-                            c33.74001,0,54.18001-13.72,54.18001-42.84v-50.96001h-24.08v48.02c0,17.64-10.92,24.5-28.84,24.5s-28.84001-6.86-28.84001-24.5
-                            v-48.02h-26.88V202.64C116.451,231.75999,137.311,245.48,170.911,245.48 M26.88,194.93999V171.56h29.96
-                            c15.54,0,20.44,4.75999,20.44,11.34c0,7.14-4.76,12.03999-18.06,12.03999H26.88z M0,243.8h26.88V210.62H60.2
-                            c11.48,0,15.12,4.34,15.12,13.86V243.8h26.88V224.48c0-9.66-1.53999-19.88-16.1-23.24001v-0.28
-                            c12.74-3.78,16.66-12.74001,16.66-21.98c0-16.52-10.64-27.3-44.8-27.3H0V243.8z"/>
-                        <path style="fill:#FFFFFF;" d="M1276.521,93.8h26.88V21.56001h36.26001v-19.88h-99.40002v19.88h36.26001V93.8z M1160.78503,49.56
-                            V21.56001h27.43994c14.97998,0,21,4.89999,21,13.99998c0,9.52-6.71997,14-21.14001,14H1160.78503z M1133.90503,93.8h26.88V66.64
-                            h27.85999c32.47998,0,46.05994-10.92,46.05994-31.92c0-21.98-13.85999-33.03999-45.35999-33.03999h-55.43994V93.8z
-                             M1061.05005,75.60001c-21.9801,0-32.20007-11.62001-32.20007-28.14c0-14.98001,10.35999-27.58,32.20007-27.58
-                            c21.83997,0,32.19995,12.59999,32.19995,27.58C1093.25,63.28,1083.58997,75.60001,1061.05005,75.60001 M1061.05005,95.48
-                            c42.97998,0,60.47998-21.98,60.47998-48.15999C1121.53003,21.84001,1102.63,0,1061.05005,0
-                            c-41.58008,0-60.48004,21.84001-60.48004,47.32001C1000.57001,74.90001,1019.33002,95.48,1061.05005,95.48 M914.35901,73.92
-                            V21.56001h21.41998c21.70001,0,29.53998,11.62,29.53998,26.17999c0,16.94-7.83997,26.17999-27.71997,26.17999H914.35901z
-                             M887.479,93.8h50.96002c38.91998,0,53.75995-16.52,53.75995-46.06c0-26.04001-14.56-46.06-57.81995-46.06H887.479V93.8z
-                             M792.37799,59.36l19.039-37.51999h0.14001L830.737,59.36H792.37799z M848.237,93.8h31.22101l-50.12-92.12h-31.92102l-50.12,92.12
-                            h27.72101l9.51898-18.75999h54.18103L848.237,93.8z M637.12097,75.60001c-21.97998,0-32.19995-11.62001-32.19995-28.14
-                            c0-14.98001,10.35999-27.58,32.19995-27.58c21.84003,0,32.20001,12.59999,32.20001,27.58
-                            C669.32098,63.28,659.66101,75.60001,637.12097,75.60001 M637.12097,95.48c42.98004,0,60.48004-21.98,60.48004-48.15999
-                            C697.60101,21.84001,678.70099,0,637.12097,0c-41.57996,0-60.47998,21.84001-60.47998,47.32001
-                            C576.64099,74.90001,595.401,95.48,637.12097,95.48 M510.01501,93.8h26.88V21.56001h36.26001v-19.88H473.755v19.88h36.26001V93.8z
-                             M282.65799,93.8H312.198l23.66-59.5h0.28l22.82001,59.5h29.53998l36.96002-92.12h-26.46002l-23.37997,63.28h-0.28l-24.08002-63.28
-                            h-27.16l-24.5,63.28h-0.28l-24.5-63.28h-29.12L282.65799,93.8z M185.696,75.60001c-21.98,0-32.2-11.62001-32.2-28.14
-                            c0-14.98001,10.36-27.58,32.2-27.58s32.2,12.59999,32.2,27.58C217.896,63.28,208.23599,75.60001,185.696,75.60001 M185.696,95.48
-                            c42.98,0,60.48-21.98,60.48-48.15999C246.17599,21.84001,227.276,0,185.696,0s-60.48,21.84001-60.48,47.32001
-                            C125.216,74.90001,143.976,95.48,185.696,95.48 M0,93.8h26.88V56.28h59.08V93.8h26.88v-92.12H85.96v34.72H26.88v-34.72H0V93.8z"/>
-                    </g>
-                    </svg> -->
-
-
             </h2>
+
             <div id="workshop-layout">
                 <div>
                     <p class="highlight">Learn directly from the author of <em>Rust in Action</em> and conference
                     organizer Tim McNamara!</p>
                 </div>
-                <div>
+                <div class="blocks-regular">
 
-                    <div id="workshop-product" class="product-block">
+                    <div class="product-block">
                         <div class="product-name">
-                            PART 1 <em>August 27–28, 2025</em>
+                            PART 1 <strong>August 27–28, 2025</strong>
                         </div>
                         <div class="product-price">
                             $450 USD
@@ -1592,53 +1449,18 @@
                 </div>
             </div>
 
-        </div>
-    </div>
-</div>
+        </div> <!-- /#workshop -->
 
-<div class="row">
-    <div class="col">
 
         <div class="section" id="spaces">
 
             <h2>
                 Team <span class="boost">Spaces</span>
-                <!-- <svg alt="Team Spaces" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="677.20349px" height="243.80009px" viewBox="0 0 677.20349 243.80009" style="enable-background:new 0 0 677.20349 243.80009;" xml:space="preserve">
-                <g>
-                    <path style="fill:#1AB78F;" d="M621.9035,243.80009c47.45996,0,55.29999-17.22,55.29999-31.78
-		c0-8.82001-5.03998-16.10001-13.85999-19.74001c-7.84003-3.22-19.32001-4.34-32.76001-5.17999
-		c-10.35999-0.70001-24.22003-1.26001-29.26001-2.8c-3.91998-1.25999-5.88-3.36-5.88-6.86c0-6.58,7.70001-10.64,26.17999-10.64
-		c19.04004,0,27.29999,4.89999,27.29999,13.3h24.08002c0-16.66-7.56-31.78-51.38-31.78c-36.53998,0-53.06,13.99998-53.06,31.07999
-		c0,8.96001,4.48004,15.54001,11.20001,19.04001c7.56,3.92,21,5.45999,33.17999,6.16c10.22003,0.56,24.35999,1.12,30.10004,2.37999
-		c4.89996,1.12001,7.27997,3.36,7.27997,7.14c0,6.3-4.06,11.20001-28.41998,11.20001c-23.10004,0-28.70001-6.3-28.70001-14.14
-		h-24.08002C569.12347,223.50009,574.0235,243.80009,621.9035,243.80009 M471.47348,242.1201h88.48001v-19.88h-61.60001v-18.62001
-		h46.19998v-15.67999h-46.19998v-18.06h60.19998v-19.88h-87.07999V242.1201z M404.70749,243.80009
-		c39.34,0,53.89999-19.74001,53.89999-37.66c0-0.28,0-1.25999-0.13998-1.95999h-23.94v0.84c0,10.22-9.66,18.89999-28.70001,18.89999
-		c-22.259,0-30.94-13.02-30.94-27.72c0-15.81999,10.64001-28,30.80002-28c19.88098,0,28.41998,10.78,28.41998,19.32001v0.56h23.94
-		c0.14001-0.84,0.14001-1.96001,0.14001-2.24001c0-15.39999-13.16-37.51999-53.76001-37.51999
-		c-38.35901,0-57.82001,20.57999-57.82001,47.87999C346.60748,220.00009,361.0275,243.80009,404.70749,243.80009
-		 M261.89447,207.6801l19.04001-37.52h0.14001l19.17999,37.52H261.89447z M317.75449,242.1201h31.22l-50.12-92.12001h-31.92001
-		l-50.12,92.12001h27.72l9.52-18.76001h54.18001L317.75449,242.1201z M150.52649,197.8801v-28h27.44c14.98,0,21,4.89999,21,14
-		c0,9.51999-6.72,14-21.14,14H150.52649z M123.64648,242.1201h26.88v-27.16h27.86c32.48,0,46.06-10.92,46.06-31.92
-		c0-21.98001-13.86-33.04001-45.36-33.04001h-55.44V242.1201z M55.44049,243.80009c47.46,0,55.3-17.22,55.3-31.78
-		c0-8.82001-5.04-16.10001-13.86-19.74001c-7.84-3.22-19.32-4.34-32.76-5.17999c-10.36-0.70001-24.22-1.26001-29.25999-2.8
-		c-3.92-1.25999-5.88-3.36-5.88-6.86c0-6.58,7.7-10.64,26.18-10.64c19.04,0,27.3,4.89999,27.3,13.3h24.07999
-		c0-16.66-7.56-31.78-51.37999-31.78c-36.54,0-53.06,13.99998-53.06,31.07999c0,8.96001,4.48,15.54001,11.2,19.04001
-		c7.56,3.92,21,5.45999,33.18,6.16c10.22,0.56,24.36,1.12,30.1,2.37999c4.89999,1.12001,7.28,3.36,7.28,7.14
-		c0,6.3-4.06,11.20001-28.42,11.20001c-23.1,0-28.7-6.3-28.7-14.14h-24.08C2.66049,223.50009,7.56049,243.80009,55.44049,243.80009"/>
-                </g>
-                    <path style="fill:#FFFFFF;" d="M0,0v19.88h36.26099v72.24001h26.88V19.88h36.259V0H0z M107.659,0v92.12001h88.48v-19.88h-61.59898
-	V53.62h46.19897V37.94h-46.19897V19.88h60.19998V0H107.659z M266.742,20.16h0.13998l19.18002,37.52h-38.36102L266.742,20.16z
-	 M252.741,0l-50.119,92.12001h27.72l9.519-18.76001h54.18002l9.51996,18.76001h31.22101L284.66199,0H252.741z M436.883,0
-	l-24.35999,64.12001h-0.14102L387.46201,0h-44.66v92.12001h26.04099V18.34h0.28L398.383,92.12001h25.05899l29.121-73.78001h0.28
-	v73.78001h26.88V0H436.883z"/>
-                </svg> -->
-
             </h2>
 
-            <div id="spaces-product" class="product-block">
+            <div class="product-block">
                 <div class="product-name">
-                    PART 1 <em>August 27–28, 2025</em>
+                    PART 1 <strong>August 27–28, 2025</strong>
                 </div>
                 <div class="product-price">
                     $4,000 USD
@@ -1650,35 +1472,43 @@
 
             <div id="spaces-layout">
                 <div class="blocks-regular">
-                    <p class="highlight">
-                    Bring your team together and gather in one of our two batteries included team spaces. </p>
-                    <ul class="arrow">
-                        <li>Team offsite/allhands meeting</li>
-                        <li>Presentations to customers & prospects + create a branded satellite event for the public,
-                            conference attendees or just your team
-                        </li>
-                    </ul>
-                    <h3>2 Day Team Spaces Include:</h3>
-                    <ul class="plus">
-                        <li>Access on August 27–28, 2025 from 9am to 6pm</li>
-                        <li>A/V support</li>
-                        <li>Branded conference badges</li>
-                        <li>Security/registration</li>
-                    </ul>
+                    <div class="blocks-regular">
+                        <p class="highlight">
+                        Bring your team together and gather in one of our two batteries included team spaces. </p>
+                        <ul class="arrow">
+                            <li>Team offsite/allhands meeting</li>
+                            <li>Presentations to customers & prospects + create a branded satellite event for the public,
+                                conference attendees or just your team
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3>2 Day Team Spaces Include:</h3>
+                        <ul class="plus">
+                            <li>Access on August 27–28, 2025 from 9am to 6pm</li>
+                            <li>A/V support</li>
+                            <li>Branded conference badges</li>
+                            <li>Security/registration</li>
+                        </ul>
+                    </div>
                 </div>
 
                 <div>
+                    <div>
                     <h3>Did you know?!</h3>
                     <p class="highlight">Reserving a team space is the best way to support Rust Forge. Each room
                     includes a sponsorship credit!</p>
+                    </div>
                 </div>
 
             </div>
-            <div class="spaces-levels__layout">
-                <div id="spaces-levels__one" class="support-level">
-                    <div class="spaces-level__body">
-                        <h3 class="spaces-level__heading">
-                            <em>Room 1:</em></h3>
+
+            <div id="available-spaces">
+
+                <div class="feature-box">
+                    <div class="feature-box__body">
+                        <h3 class="feature-box__heading">
+                            <strong>Room 1:</strong></h3>
                         <ul class="plus">
                             <li class="highlight">$5,000k USD Sponsorship Credit</li>
                             <li>Main conference room</li>
@@ -1687,17 +1517,17 @@
                             <li>5 conference passes</li>
                         </ul>
                     </div>
-                    <div class="spaces-level__footer">
-                        <div class="spaces-level__amount">
-                            $6,250 USD
+                    <div class="feature-box__footer">
+                        <div class="feature-box__footer-blocks">
+                            <div class="feature-box__footer-block-solid">$6,250 USD</div>
                         </div>
                     </div>
-                </div>
+                </div> <!-- /.feature-box -->
 
-                <div id="spaces-levels__two" class="support-level">
-                    <div class="spaces-level__body">
-                        <h3 class="spaces-level__heading">
-                            <em>Room 2:</em></h3>
+                <div class="feature-box">
+                    <div class="feature-box__body">
+                        <h3 class="feature-box__heading">
+                            <strong>Room 2:</strong></h3>
                         <ul class="plus">
                             <li class="highlight">$3,000k USD Sponsorship Credit</li>
                             <li>Breakout room</li>
@@ -1706,102 +1536,47 @@
                             <li>2 conference passes</li>
                         </ul>
                     </div>
-                    <div class="spaces-level__footer">
-                        <div class="spaces-level__amount">
-                            $4,000 USD
+                    <div class="feature-box__footer">
+                        <div class="feature-box__footer-blocks">
+                            <div class="feature-box__footer-block-solid">
+                                $4,000 USD
+                            </div>
                         </div>
                     </div>
-                </div>
+                </div> <!-- /.feature-box -->
 
-
-                <div id="spaces-levels__addons">
-                    <div id="spaces-levels__food" class="support-level">
-                        <div class="spaces-level__body">
-                            <h3 class="spaces-level__heading">
-                                <span class="hide-on-small-screens">Option&lt;</span><em>Catering</em><span class="hide-on-small-screens">&gt;</span></span></h3>
-                            <ul class="plus">
-                                <li>Lunch</li>
-                                <li>In room refreshments</li>
-                                <li>Drinks and snacks</li>
-                            </ul>
-                        </div>
-                        <div class="spaces-level__footer">
-                            <div class="spaces-level__amount">
+                <div class="feature-box dashed">
+                    <div class="feature-box__body">
+                        <h3 class="feature-box__heading">
+                            <em>Option&lt;Catering&gt;</em></h3>
+                        <ul class="plus">
+                            <li>Lunch</li>
+                            <li>In room refreshments</li>
+                            <li>Drinks and snacks</li>
+                        </ul>
+                    </div>
+                    <div class="feature-box__footer">
+                        <div class="feature-box__footer-blocks">
+                            <div class="feature-box__footer-block-solid">
                                 $60 USD/pp/day
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
+                </div> <!-- /.feature-box -->
 
-        </div>
+            </div> <!-- /#available-spaces -->
 
-    </div>
-</div>
+        </div> <!-- /#spaces -->
 
-<div class="row">
-    <div class="col">
+
         <div class="section" id="conference">
 
             <h2>
-                <span class="boost">Rust&nbsp;Forge</span> Conference
-                <!-- <svg alt="Rust Forge Conference" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1137.95703px" height="245.48px" viewBox="0 0 1137.95703 245.48" style="enable-background:new 0 0 1137.95703 245.48;" xml:space="preserve">
-                <g>
-                    <path style="fill:#FFFFFF;" d="M1049.47705,243.8h88.47998v-19.88h-61.59998v-18.62001h46.19995V189.62h-46.19995v-18.06h60.19995
-                        v-19.88h-87.07996V243.8z M982.71198,245.48c39.34003,0,53.90009-19.74001,53.90009-37.66c0-0.28,0-1.25999-0.14001-1.95999
-                        h-23.94006v0.84c0,10.22-9.66003,18.89999-28.70001,18.89999c-22.26001,0-30.94-13.02-30.94-27.72
-                        c0-15.81999,10.64001-28,30.79999-28c19.88,0,28.42004,10.78,28.42004,19.32001v0.56h23.94
-                        c0.14001-0.84,0.14001-1.96001,0.14001-2.24001c0-15.39999-13.16003-37.51999-53.76007-37.51999
-                        c-38.35999,0-57.81995,20.57999-57.81995,47.87999C924.612,221.67999,939.03198,245.48,982.71198,245.48 M799.396,243.8h26.03998
-                        v-67.76001h0.14001l60.06,67.76001h26.59998v-92.12001h-26.03998v55.44h-0.14001l-49.14001-55.44H799.396V243.8z M697.58795,243.8
-                        h88.48004v-19.88h-61.60004v-18.62001h46.20001V189.62h-46.20001v-18.06h60.20001v-19.88h-87.08002V243.8z M606.19696,194.93999
-                        V171.56h29.96002c15.53998,0,20.44,4.75999,20.44,11.34c0,7.14-4.76001,12.03999-18.06,12.03999H606.19696z M579.31696,243.8h26.88
-                        V210.62h33.32001c11.47998,0,15.12,4.34,15.12,13.86V243.8h26.88V224.48c0-9.66-1.53998-19.88-16.09998-23.24001v-0.28
-                        c12.73999-3.78,16.65997-12.73999,16.65997-21.98c0-16.52-10.64001-27.3-44.79999-27.3h-57.96002V243.8z M477.509,243.8h88.48001
-                        v-19.88h-61.60001v-18.62001h46.19998V189.62h-46.19998v-18.06h60.19998v-19.88H477.509V243.8z M382.95401,243.8h26.88v-34.72002
-                        H457.854V192h-48.01999v-20.44h57.81998v-19.88h-84.69998V243.8z M253.272,243.8h26.04001v-67.76001h0.13998l60.06,67.76001
-                        H366.112v-92.12001h-26.04001v55.44h-0.13998l-49.14001-55.44H253.272V243.8z M180.41699,225.59999c-21.98,0-32.2-11.62-32.2-28.14
-                        c0-14.98,10.36-27.58,32.2-27.58s32.20001,12.60001,32.20001,27.58C212.617,213.28,202.957,225.59999,180.41699,225.59999
-                         M180.41699,245.48c42.98001,0,60.48001-21.98,60.48001-48.16C240.897,171.84,221.99701,150,180.41699,150
-                        s-60.48,21.84-60.48,47.31999C119.937,224.89999,138.69699,245.48,180.41699,245.48 M58.1,245.48c39.34,0,53.9-19.74001,53.9-37.66
-                        c0-0.28,0-1.25999-0.14-1.95999H87.92v0.84c0,10.22-9.66,18.89999-28.7,18.89999c-22.26,0-30.94-13.02-30.94-27.72
-                        c0-15.81999,10.64-28,30.8-28c19.88,0,28.42,10.78,28.42,19.32001v0.56h23.94c0.14-0.84,0.14-1.96001,0.14-2.24001
-                        C111.58,172.12,98.42,150,57.82,150C19.46,150,0,170.57999,0,197.87999C0,221.67999,14.42,245.48,58.1,245.48"/>
-                    <path style="fill:#1AB78F;" d="M968.10504,93.8h88.47992V73.92h-61.59991V55.3h46.19891V39.62001h-46.19891v-18.06h60.19891v-19.88
-                        h-87.07892V93.8z M894.78699,95.48c22.96002,0,34.02002-8.39999,37.10004-20.29999h0.27997c0,6.72-0.13995,14.56-0.27997,18.62
-                        h20.71997V46.2h-56.56v14.28h29.67999v0.42001c0,6.57999-7.27997,16.79999-26.45996,16.79999
-                        c-22.54004,0-30.94-13.01999-30.94-28.56c0-16.51999,10.21997-29.25999,31.35999-29.25999
-                        c20.44,0,27.58002,8.96001,27.58002,16.09999v0.98001h23.94C951.34705,35.98,951.34705,35.42,951.34705,35
-                        c0-17.21999-12.18005-35-52.5-35c-40.04004,0-58.10004,22.40001-58.10004,49C840.74701,73.22,855.44702,95.48,894.78699,95.48
-                         M754.43799,44.94V21.56001h29.96002c15.53998,0,20.44,4.75998,20.44,11.34c0,7.14-4.76001,12.03999-18.06,12.03999H754.43799z
-                         M727.55804,93.8h26.87994V60.62001H787.758c11.48004,0,15.12,4.34,15.12,13.85999V93.8h26.88V74.48
-                        c0-9.65999-1.53998-19.87999-16.09998-23.23999v-0.28c12.73999-3.78,16.65997-12.74001,16.65997-21.98001
-                        c0-16.51999-10.63995-27.29999-44.79999-27.29999h-57.95996V93.8z M654.703,75.60001c-21.97998,0-32.20001-11.62001-32.20001-28.14
-                        c0-14.98001,10.36005-27.58,32.20001-27.58c21.84003,0,32.20001,12.59999,32.20001,27.58
-                        C686.90302,63.28,677.24304,75.60001,654.703,75.60001 M654.703,95.48c42.98004,0,60.48004-21.98,60.48004-48.15999
-                        C715.18304,21.84001,696.28302,0,654.703,0c-41.57996,0-60.47998,21.84001-60.47998,47.32001
-                        C594.22302,74.90001,612.98303,95.48,654.703,95.48 M506.108,93.8h26.88004V59.08H581.008V42h-48.01996V21.56001h57.82001v-19.88
-                        H506.108V93.8z M389.48999,93.8h26.88V21.56001h36.25998v-19.88h-99.39999v19.88h36.26001V93.8z M293.35397,95.48
-                        c47.46002,0,55.30002-17.21999,55.30002-31.78c0-8.81999-5.04001-16.09999-13.86002-19.73999
-                        c-7.84-3.22-19.31998-4.34-32.75998-5.18001c-10.36002-0.7-24.22-1.25999-29.26001-2.8c-3.92001-1.25999-5.88-3.35999-5.88-6.85999
-                        c0-6.58002,7.70001-10.64001,26.17999-10.64001c19.04001,0,27.30002,4.90001,27.30002,13.3h24.07999
-                        c0-16.65999-7.56-31.78-51.38-31.78c-36.53998,0-53.05997,14-53.05997,31.08c0,8.96001,4.48,15.54001,11.2,19.04001
-                        c7.55998,3.92,20.99998,5.45999,33.17998,6.15999c10.22,0.56001,24.36002,1.12001,30.10001,2.38c4.89999,1.12,7.28,3.36,7.28,7.14
-                        c0,6.3-4.06,11.2-28.42001,11.2c-23.09998,0-28.69998-6.3-28.69998-14.14h-24.07999
-                        C240.57401,75.18001,245.474,95.48,293.35397,95.48 M173.991,95.48c33.74001,0,54.18001-13.71999,54.18001-42.84V1.68001h-24.08
-                        V49.7c0,17.64001-10.92,24.5-28.84,24.5S146.411,67.34001,146.411,49.7V1.68001h-26.88V52.64
-                        C119.531,81.76001,140.39101,95.48,173.991,95.48 M29.96,44.94V21.56001h29.96c15.54,0,20.44,4.75998,20.44,11.34
-                        c0,7.14-4.76,12.03999-18.06,12.03999H29.96z M3.08,93.8h26.88V60.62001h33.32c11.48,0,15.12,4.34,15.12,13.85999V93.8h26.88V74.48
-                        c0-9.65999-1.53999-19.87999-16.1-23.23999v-0.28c12.74-3.78,16.66-12.74001,16.66-21.98001
-                        c0-16.51999-10.64-27.29999-44.8-27.29999H3.08V93.8z"/>
-                </g>
-                </svg> -->
+                <span class="boost">Rust&nbsp;Forge</span> Conference </h2>
 
-            </h2>
-
-            <div id="conference-product" class="product-block">
+            <div class="product-block">
                 <div class="product-name">
-                    PART 2 <em>August 29–30, 2025</em>
+                    PART 2 <strong>August 29–30, 2025</strong>
                 </div>
                 <div class="product-price">
                     $275 USD
@@ -1817,60 +1592,17 @@
                 <p>Lunch and refreshments included.</p>
             </div>
 
-        </div>
-    </div>
-</div>
+        </div> <!-- /#conference -->
 
-<div class="row">
-    <div class="col">
+
         <div class="section" id="networking">
 
             <h2>
-                <span class="boost">Spaces</span> In-between
-                <!-- <svg alt="Space In-between" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1048.93201px" height="243.8px" viewBox="0 0 1048.93201 243.8" style="enable-background:new 0 0 1048.93201 243.8;" xml:space="preserve">
-                    <g>
-                        <path style="fill:#FFFFFF;" d="M936.09198,243.8h26.04004v-67.75999h0.13995l60.06,67.75999h26.60004v-92.12001h-26.03998v55.44
-                            h-0.14001l-49.14001-55.44h-37.52002V243.8z M834.284,243.8h88.47998v-19.88H861.164V205.3h46.20001V189.62H861.164v-18.06
-                            h60.20001v-19.88H834.284V243.8z M732.47601,243.8h88.47998v-19.88h-61.59998V205.3h46.20001V189.62h-46.20001v-18.06h60.20001
-                            v-19.88h-87.08002V243.8z M581.41699,243.8h29.53998l23.66003-59.5h0.27997l22.82001,59.5h29.54004l36.95996-92.12001h-26.45996
-                            l-23.38,63.28001h-0.28003l-24.07996-63.28001h-27.16003l-24.5,63.28001h-0.27997l-24.5-63.28001h-29.12006L581.41699,243.8z
-                             M475.38199,243.8h26.88V171.56h36.25998v-19.88h-99.39996v19.88h36.25998V243.8z M344.608,243.8h88.48001v-19.88h-61.60001V205.3
-                            h46.19998V189.62h-46.19998v-18.06h60.19998v-19.88H344.608V243.8z M256.56201,225.46001v-20.72h33.03998
-                            c12.46002,0,16.94,4.62,16.94,9.66c0,6.71999-3.91998,11.06-17.5,11.06H256.56201z M256.56201,189.06V170.16h30.65997
-                            c12.46002,0,16.80002,4.06,16.80002,9.38c0,5.87999-3.92001,9.51999-15.12,9.51999H256.56201z M229.68201,243.8h60.62
-                            c33.88,0,41.72-12.03999,41.72-27.02c0-8.25999-4.89999-18.34-20.44-21v-0.14c12.32001-3.22,15.82001-12.17999,15.82001-19.59999
-                            c0-10.78-5.18002-24.36002-39.20001-24.36002h-58.51999V243.8z M174.60699,211.32001H214.927v-14.28h-40.32001V211.32001z
-                             M46.703,243.8h26.04v-67.75999H72.883L132.94299,243.8H159.543v-92.12001h-26.03999v55.44h-0.14l-49.14001-55.44h-37.52V243.8z
-                             M3.08,243.8h26.88v-92.12001H3.08V243.8z"/>
-                        <path style="fill:#1AB78F;" d="M619.80304,95.48c47.45996,0,55.29999-17.22,55.29999-31.78
-                            c0-8.82001-5.03998-16.10001-13.85999-19.74001c-7.84003-3.22-19.32001-4.34-32.76001-5.17999
-                            c-10.35999-0.7-24.22003-1.25999-29.26001-2.8c-3.91998-1.25999-5.88-3.36-5.88-6.86c0-6.58,7.70001-10.64,26.17999-10.64
-                            c19.04004,0,27.29999,4.89999,27.29999,13.3h24.08002c0-16.66-7.56-31.78001-51.38-31.78001c-36.53998,0-53.06,14-53.06,31.08002
-                            c0,8.95999,4.48004,15.53999,11.20001,19.03999c7.56,3.92,21,5.46001,33.17999,6.16c10.22003,0.56,24.35999,1.12,30.10004,2.37999
-                            C645.84302,59.78,648.22302,62.02,648.22302,65.8c0,6.29999-4.06,11.2-28.41998,11.2c-23.10004,0-28.70001-6.3-28.70001-14.14
-                            h-24.08002C567.02301,75.17999,571.92303,95.48,619.80304,95.48 M469.37299,93.8h88.48004V73.92h-61.60004V55.3H542.453V39.62
-                            h-46.20001V21.56H556.453v-19.88h-87.08002V93.8z M402.60699,95.48c39.34,0,53.89999-19.74001,53.89999-37.66
-                            c0-0.28,0-1.25999-0.13998-1.95999h-23.94v0.84c0,10.22-9.66,18.89999-28.70001,18.89999c-22.259,0-30.94-13.01999-30.94-27.72
-                            c0-15.81999,10.64001-28,30.80002-28c19.88098,0,28.41998,10.78,28.41998,19.32001v0.56h23.94
-                            c0.14001-0.84,0.14001-1.95999,0.14001-2.23999c0-15.40001-13.16-37.52002-53.76001-37.52002
-                            c-38.35901,0-57.82001,20.58002-57.82001,47.88C344.50699,71.67999,358.927,95.48,402.60699,95.48 M259.79401,59.36l19.04001-37.52
-                            h0.13998l19.17999,37.52H259.79401z M315.65399,93.8h31.22l-50.12-92.12001h-31.91998L214.71399,93.8h27.72l9.52-18.76001H306.134
-                            L315.65399,93.8z M148.42599,49.56v-28h27.44c14.98,0,21,4.90001,21,14c0,9.52-6.72,14-21.14,14H148.42599z M121.54601,93.8
-                            h26.87999V66.64h27.86c32.48,0,46.06-10.92,46.06-31.92c0-21.98-13.86-33.04001-45.35999-33.04001h-55.44V93.8z M53.34,95.48
-                            c47.46,0,55.3-17.22,55.3-31.78c0-8.82001-5.04-16.10001-13.86-19.74001c-7.84-3.22-19.32-4.34-32.76-5.17999
-                            c-10.36-0.7-24.22-1.25999-29.26-2.8c-3.92-1.25999-5.88-3.36-5.88-6.86c0-6.58,7.7-10.64,26.18-10.64
-                            c19.04,0,27.3,4.89999,27.3,13.3h24.08c0-16.66-7.56-31.78001-51.38-31.78001c-36.54,0-53.06,14-53.06,31.08002
-                            C0,40.03999,4.48,46.62,11.2,50.12c7.56,3.92,21,5.46001,33.18,6.16c10.22,0.56,24.36,1.12,30.09999,2.37999
-                            C79.38,59.78,81.76,62.02,81.76,65.8C81.76,72.09999,77.7,77,53.34,77c-23.1,0-28.7-6.3-28.7-14.14H0.56
-                            C0.56,75.17999,5.46,95.48,53.34,95.48"/>
-                    </g>
-                </svg> -->
+                <span class="boost">Spaces</span> In-between </h2>
 
-            </h2>
-
-            <div id="networking-product" class="product-block">
+            <div class="product-block">
                 <div class="product-name">
-                    PART 0 <em>August 27–30, 2025</em>
+                    PART 0 <strong>August 27–30, 2025</strong>
                 </div>
                 <div class="product-price">
                     $0 USD
@@ -1884,84 +1616,51 @@
                 where those relationships can grow.</p>
             </div>
 
+        </div> <!-- /#networking -->
 
-
-        </div>
-    </div>
-</div>
-
-<div class="row">
-    <div class="col">
 
         <div class="section" id="support">
 
             <h2>
                 It takes a <span class="boost">community</span>
-                <!-- <svg alt="It takes a community" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1081.88599px" height="245.48px" viewBox="0 0 1081.88599 245.48" style="enable-background:new 0 0 1081.88599 245.48;" xml:space="preserve">
-                    <g>
-                        <path style="fill:#1AB78F;" d="M1004.88599,243.8h26.88v-37.38l50.12-54.74001H1050.526L1020.98596,185.14h-0.41998
-                            l-29.82001-33.46001h-35.83997l49.97998,54.74001V243.8z M885.82996,243.8h26.88V171.56h36.26001v-19.88h-99.40002v19.88h36.26001
-                            V243.8z M814.43097,243.8h26.88v-92.12001h-26.88V243.8z M684.45496,243.8h26.04102v-67.76001h0.13898l60.06,67.76001h26.60004
-                            v-92.12001h-26.039v55.44h-0.14001l-49.14099-55.44h-37.52002V243.8z M614.45697,245.48c33.73999,0,54.17999-13.72,54.17999-42.84
-                            v-50.96001h-24.08002v48.02c0,17.64-10.91998,24.5-28.83997,24.5s-28.84003-6.86-28.84003-24.5v-48.02h-26.87994V202.64
-                            C559.99701,231.75999,580.85699,245.48,614.45697,245.48 M407.103,243.8h26.04001v-73.78001h0.28L462.68301,243.8h25.06
-                            l29.11996-73.78001h0.28003V243.8h26.88v-92.12001h-42.84l-24.36002,64.12h-0.13998l-24.92001-64.12h-44.66V243.8z M253.272,243.8
-                            h26.04001v-73.78001h0.28L308.85199,243.8h25.06003l29.12-73.78001h0.28V243.8h26.88v-92.12001h-42.84l-24.36002,64.12h-0.13998
-                            l-24.92001-64.12h-44.66V243.8z M180.41699,225.59999c-21.98,0-32.2-11.62-32.2-28.14c0-14.98,10.36-27.58,32.2-27.58
-                            s32.20001,12.60001,32.20001,27.58C212.617,213.28,202.957,225.59999,180.41699,225.59999 M180.41699,245.48
-                            c42.98001,0,60.48001-21.98,60.48001-48.16c0-25.48-18.89999-47.32001-60.48001-47.32001s-60.48,21.84001-60.48,47.32001
-                            C119.937,224.89999,138.69699,245.48,180.41699,245.48 M58.1,245.48c39.34,0,53.9-19.74001,53.9-37.66
-                            c0-0.28,0-1.25999-0.14-1.95999H87.92v0.84c0,10.22-9.66,18.89999-28.7,18.89999c-22.26,0-30.94-13.02-30.94-27.72
-                            c0-15.81999,10.64-28,30.8-28c19.88,0,28.42,10.78,28.42,19.32001v0.56h23.94c0.14-0.84,0.14-1.96001,0.14-2.24001
-                            c0-15.39999-13.16-37.52-53.76-37.52c-38.36,0-57.82,20.58-57.82,47.88C0,221.67999,14.42,245.48,58.1,245.48"/>
-                        <path style="fill:#FFFFFF;" d="M843.70099,59.36l19.04004-37.52h0.13995l19.17999,37.52H843.70099z M899.56097,93.8h31.22003
-                            l-50.12-92.12001h-31.91998L798.62097,93.8H826.341l9.52002-18.76001h54.17999L899.56097,93.8z M692.92401,95.48
-                            c47.45996,0,55.29999-17.22,55.29999-31.78c0-8.82001-5.03998-16.10001-13.85999-19.74001
-                            c-7.84003-3.22-19.32001-4.34-32.76001-5.17999c-10.35999-0.7-24.22003-1.26001-29.26001-2.8c-3.91998-1.25999-5.88-3.36-5.88-6.86
-                            c0-6.58,7.70001-10.64,26.17999-10.64c19.04004,0,27.29999,4.89999,27.29999,13.3h24.08002c0-16.66-7.56-31.78-51.38-31.78
-                            c-36.53998,0-53.06,14-53.06,31.08c0,8.95999,4.48004,15.53999,11.20001,19.03999c7.56,3.92,21,5.46001,33.17999,6.16
-                            c10.22003,0.56,24.35999,1.12,30.10004,2.37999c4.89996,1.12001,7.27997,3.36,7.27997,7.14001c0,6.29999-4.06,11.2-28.41998,11.2
-                            c-23.10004,0-28.70001-6.3-28.70001-14.14h-24.08002C640.14398,75.17999,645.04401,95.48,692.92401,95.48 M542.49402,93.8H630.974
-                            V73.92h-61.59998V55.3h46.19995V39.62h-46.19995V21.56h60.19995v-19.88h-87.07996V93.8z M412.74301,93.8h26.87997V73.36
-                            l20.02002-15.54001L497.44299,93.8h37.66003l-55.58002-51.52l52.21997-40.60001h-33.87997l-57.95999,46.06h-0.28003v-46.06
-                            h-26.87997V93.8z M317.642,59.36l19.04001-37.52h0.13998l19.18002,37.52H317.642z M373.50201,93.8h31.21997l-50.12-92.12001
-                            h-31.91998L272.56201,93.8h27.72l9.51999-18.76001h54.17999L373.50201,93.8z M223.577,93.8h26.88V21.56h36.26001v-19.88H187.317
-                            v19.88H223.577V93.8z M75.179,93.8h26.88V21.56h36.26v-19.88h-99.4v19.88h36.26V93.8z M3.78,93.8h26.88v-92.12H3.78V93.8z"/>
-                    </g>
-                    </svg> -->
-
             </h2>
 
-            <div class="blocks-regular">
-                <p>Our hope is that Rust Forge will be a place where
-                developers of all levels and walks of life can join together to celebrate their differences, learn from
-                each other, and leave the conference feeling inspired and connected.</p>
-                <p>To achieve this, <span class="highlight">Rust Forge needs your support</span>.</p>
-                <p>How to help:</p>
+            <p>
+            Our hope is that Rust Forge will be a place where developers of all levels and walks of life can join
+            together to celebrate their differences, learn from each other, and leave the conference feeling inspired
+            and connected.</p>
+
+            <p>To achieve this, <span class="highlight">Rust Forge needs your support</span>.</p>
+
+            <div>
+                <h3>How to help:</h3>
                 <ul class="plus">
                     <li><a href="https://rust-forge-2025.lilregie.com/">Register early</a></li>
                     <li><a href="https://discord.gg/fwd8tGC4Ya">Join the event's Discord server</a></li>
                     <li>Ask your workspace to <a href="#support-levels">sponsor the event</a></li>
-                    <li><a href="#support-levels">Join the mailing list</a> and </li>
+                    <li><a href="#support-levels">Join the mailing list</a> and</li>
                     <li>Tell others about Rust Forge</li>
                 </ul>
             </div>
-        </div>
+        </div> <!-- /#support -->
 
-        <div class="section" id="support-levels">
+        <div class="section" id="sponsorship">
 
-            <h2><span class="boost">Sponsorship</span> Levels</h2>
+            <h2>
+                <span class="boost">Sponsorship</span> Levels </h2>
 
-            <p id="support-levels__cta">
-            Connect with us to set-up your sponsorship! &lt;<a class="break-text" href="mailto:sponsor@rustforgeconf.com">sponsor@rustforgeconf.com</a>&gt;
-            </p>
+            <p>
+            Connect with us to set-up your sponsorship!
+            &lt;<a class="break-text" href="mailto:sponsor@rustforgeconf.com">sponsor@rustforgeconf.com</a>&gt; </p>
 
-            <div class="support-levels__layout">
-                <div id="forge-support-level" class="support-level">
-                    <div class="support-level__body">
-                        <h3 class="support-level__heading">
-                            <em>Forge</em> Sponsor </h3>
-                        
+            <div id="support-levels">
+                <div class="feature-box">
+                    <div class="feature-box__body">
+
+                        <h3 class="feature-box__heading">
+                            <strong>Forge</strong> <em>Sponsor</em>
+                        </h3>
+
                         <p>Exclusivity with maximal visibility and impact.</p>
 
                         <ul class="plus">
@@ -1969,23 +1668,31 @@
                             <li>Logo appearing solo in recording pre-roll and livestream breaks</li>
                             <li>200 word blurb beside logo on website</li>
                             <li>Dedicated public channel in Discord server</li>
-                            <li>Right of first refusal for any branded event opportunities, e.g. evening function, group dinner</li>
-                            <li>30 second pre-roll ad in the planned Rust Forge podcast for speaker interviews for the 2025 season</li>
+                            <li>Right of first refusal for any branded event opportunities, e.g. evening function, group
+                                dinner
+                            </li>
+                            <li>30 second pre-roll ad in the planned Rust Forge podcast for speaker interviews for the
+                                2025 season
+                            </li>
                             <li>20 minute speaking slot at the conference</li>
                         </ul>
                     </div>
-                    <div class="support-level__footer">
 
-                        <div class="support-level__amount">
-                            $12k USD (1 max)
+                    <div class="feature-box__footer">
+                        <div class="feature-box__footer-blocks">
+                            <div class="feature-box__footer-block-solid">$12k USD (1 max)</div>
                         </div>
                     </div>
-                </div>
 
-                <div id="furnace-support-level" class="support-level">
-                    <div class="support-level__body">
-                        <h3 class="support-level__heading">
-                            <em>Furnace</em> Sponsor</h3>
+                </div><!-- /.feature-box -->
+
+                <div class="feature-box">
+                    <div class="feature-box__body">
+
+                        <h3 class="feature-box__heading">
+                            <strong>Furnace</strong> <em>Sponsor</em>
+                        </h3>
+
                         <p>Major visibility and a lasting record of your support.</p>
                         <ul class="plus">
                             <li>Ember perks, plus</li>
@@ -1999,328 +1706,330 @@
                             <li>2 conference passes (4 total)</li>
                         </ul>
                     </div>
-                    <div class="support-level__footer">
-                        <div class="support-level__amount">
-                            $8k USD (3 max)
-                        </div>
-                    </div>
-                </div>
 
-                <div id="ember-and-spark-support-levels">
-                    <div id="ember-support-level" class="support-level">
-                        <div class="support-level__body">
-                            <h3 class="support-level__heading">
-                                <em>Ember</em> sponsor</h3>
-                            <p>Let delegates contact you.</p>
-                            <ul class="plus">
-                                <li>Spark perks, plus</li>
-                                <li>Shoutouts at beginning/end</li>
-                                <li>Custom role in Discord server</li>
-                                <li>1 conference pass (2 total)</li>
-                            </ul>
-                            <p style="font-size: small;">Payment options: credit card & SWIFT.</p>
-                        </div>
-                        <div class="support-level__footer">
-                            <div class="support-level__amount">
-                                <a href="#ember-sponsorship-info">$3k USD</a>
-                            </div>
+                    <div class="feature-box__footer">
+                        <div class="feature-box__footer-blocks">
+                            <div class="feature-box__footer-block-solid">$8k USD (3 max)</div>
                         </div>
                     </div>
 
-                    <div id="spark-support-level" class="support-level">
-                        <div class="support-level__body">
-                            <h3 class="support-level__heading">
-                                <em>Spark</em> sponsor</h3>
-                            <p>Perfect for small businesses and individuals.</p>
-                            <ul class="plus">
-                                <li>Logo or name on website</li>
-                                <li>1 conference pass</li>
-                            </ul>
-                            <p>Payment options: credit card.</p>
-                        </div>
-                        <div class="support-level__footer">
-                            <div class="support-level__amount">
-                                $1k USD
-                            </div>
+                </div><!-- /.feature-box -->
+
+                <div class="feature-box">
+                    <div class="feature-box__body">
+                        <h3 class="feature-box__heading">
+                            <strong>Ember</strong> <em>sponsor</em>
+                        </h3>
+
+                        <p>Let delegates contact you.</p>
+                        <ul class="plus">
+                            <li>Spark perks, plus</li>
+                            <li>Shoutouts at beginning/end</li>
+                            <li>Custom role in Discord server</li>
+                            <li>1 conference pass (2 total)</li>
+                        </ul>
+                        <p class="small">Payment options: credit card.</p>
+                    </div>
+                    <div class="feature-box__footer">
+                        <div class="feature-box__footer-blocks">
+                            <div class="feature-box__footer-block-solid">$3k USD</div>
                         </div>
                     </div>
-                </div>
+                </div><!-- /.feature-box -->
+
+                <div class="feature-box">
+                    <div class="feature-box__body">
+                        <h3 class="feature-box__heading">
+                            <strong>Spark</strong> <em>sponsor</em>
+                        </h3>
+
+                        <p>Perfect for small businesses and individuals.</p>
+
+                        <ul class="plus">
+                            <li>Logo or name on website</li>
+                            <li>1 conference pass</li>
+                        </ul>
+                        <p class="small">Payment options: credit card.</p>
+                    </div>
+                    <div class="feature-box__footer">
+                        <div class="feature-box__footer-blocks">
+                            <div class="feature-box__footer-block-solid">$1k USD</div>
+                        </div>
+                    </div>
+                </div><!-- /.feature-box -->
 
             </div>
+
+        </div> <!-- /#sponsorship -->
+
+        <div id="support-paths">
+
+            <div>
+                <h3>How to <span class="boost">Sponsor</span></h3>
+                <p>
+                Please email <a href="mailto:sponsor@rustforgeconf.com?Subject=Sponsoring Rust
+                    Forge 2025">&lt;sponsor@rustforgeconf.com&gt;</a> to set-up your sponsorship. We'll discuss how to
+                enable all of your perks and to make sure that you're making the most of your support for the event and
+                the local Rust community. </p>
+            </div>
+
+            <div>
+                <h3><span class="boost">Easy Path</span> for Ember and Spark</h3>
+                <p>
+                For Ember and Spark levels, you can also use the <a href="https://rust-forge-2025.lilregie.com/">registration
+                    portal</a> and select <em>Ember</em> or <em>Spark</em> in the ticket type field. This will allow you
+                to pay via credit card. </p>
+            </div>
+
         </div>
 
-        <div class="blocks-regular section">
-            <h3>How to <span class="boost">Sponsor</span></h3>
-            <p>
-                Please email <a
-                href="mailto:sponsor@rustforgeconf.com?Subject=Sponsoring Rust
-                Forge 2025">&lt;sponsor@rustforgeconf.com&gt;</a> to set-up your
-                sponsorship. We'll discuss how to enable all of your perks and
-                to make sure that you're making the most of your support for the
-                event and the local Rust community.
-            </p>
-
-            <h3><span class="highlight">Easy Path</span> for Ember and Spark</h3>
-            <p>
-                For Ember and Spark levels, you can also use the <a
-                href="https://rust-forge-2025.lilregie.com/">registration
-                portal</a> and select <span class="ghost">Ember</span> or <span
-                class="ghost">Spark</span> in the ticket type field. This will
-                allow you to pay via credit card.
-            </p>
-            <details>
-                <summary>Further details for sponsors</summary>    
-            
-                <h3>Making Payment</h3>
-                <p>
-                    Once you've been in contact, we'll generate an invoice from 
-                    <a href="https://accelerant.dev/">Accelerant Limited</a> (the event's sponsoring organization) that's 
-                    payable via these payment systems:
-
-                    <ul>
+        <details>
+            <summary><span>Further details for sponsors</span></summary>
+            <div class="details__body">
+                <div>
+                    <h3>Making Payments</h3>
+                    <p>
+                    Once you've been in contact, we'll generate an invoice from <a href="https://accelerant.dev/">Accelerant
+                        Limited</a> (the event's sponsoring organization) that's payable via these payment systems: </p>
+                    <ul class="arrow">
                         <li><b>Australia</b> - Direct Entry (BECS) in AUD from a business bank account</li>
                         <li><b>New Zealand</b> - Direct credit in NZD</li>
                         <li><b>USA</b> - ACH in USD from a business bank account</li>
                         <li><b>Worldwide</b> - SWIFT (wire) transfers in USD</li>
                     </ul>
-                </p>
-                <p>
-                    If you use one of the local payment options, we will convert the
-                    USD amount to the local currency and include the conversion rate
-                    in the body of the invoice.
-                </p>
+                    <p>
+                    If you use one of the local payment options, we will convert the USD amount to the local currency
+                    and include the conversion rate in the body of the invoice. </p>
+                </div>
+                <div>
+                    <h3>Submitting Content</h3>
+                    <p>
+                    Content should be uploaded to the Google Drive folder that was created for you. You are also welcome
+                    to send files to <a href="mailto:sponsor@rustforgeconf.com?Subject=Sponsor content
+                        submission">&lt;sponsor@rustforgeconf.com&gt;</a>
+                    </p>
+                    <p>
+                    All content is subject to review by the Rust Forge 2025 team. </p>
+                </div>
+                <div>
+                    <h3>Logo Specs</h3>
 
-                <h3>Submitting Content</h3>
-                <p>
-                    Content should be uploaded to the Google Drive folder that was
-                    created for you. You are also welcome to send files to <a
-                    href="mailto:sponsor@rustforgeconf.com?Subject=Sponsor content
-                    submission">&lt;sponsor@rustforgeconf.com&gt;</a>
-                </p>
-                <p>
-                    All content is subject to review by the Rust Forge 2025 team.
-                </p>
+                    <p>
+                    At a minimum, please provide a horizontal logo that's suitable for use on a dark background. </p>
 
-                <h3>Logo Specs</h3>
-                
-                <p>
-                    At a minimum, please provide a horizontal logo that's suitable
-                    for use on a dark background.
-                </p>
+                    <p>
+                    For optimal treatment of your brand, please provide horizontal and square aspect ratios in
+                    monochrome, full color (light), full color (dark) palettes. Logos should preferably be exported as
+                    vector file formats such as <abbr title="Adobe Illustrator">.ai</abbr> or
+                    <abbr title="Scalable Vector Graphics">.svg</abbr>. </p>
+                </div>
+            </div>
+        </details>
 
-                <p>
-                    For optimal treatment of your brand, please provide horizontal and square aspect
-                    ratios in monochrome, full color (light), full color (dark) palettes. Logos should 
-                    preferably be exported as vector file formats such as 
-                    <abbr title="Adobe Illustrator">.ai</abbr> or
-                    <abbr title="Scalable Vector Graphics">.svg</abbr>.
-                </p>
-            </details>
-        </div>
-    </div>
-</div>
 
-<div class="row">
-    <div class="col">
-        <div class="section" id="conduct">
-                <h2>Travel <span class="boost">Guidance</span></h2>
-            <div class="blocks-regular">
-                <p class="highlight">The city's airport is <b class="ghost">WLG</b> (Wellington International Airport).</p>
+        <div class="section" id="travel">
+
+            <h2>Travel <span class="boost">Guidance</span></h2>
+
+            <p>The city's airport is <em>WLG</em> (Wellington International Airport).</p>
+
+            <div>
+                <h3>Travel Offers</h3>
+                <p>Rust Forge 2025 is delighted to have Cathay Pacific Airways and Qantas as international travel
+                partners.</p>
             </div>
 
-            <h3>Travel Offers</h3>
+            <div id="travel-offers">
 
-            <p class="highlight"> Rust Forge 2025 is delighted to have Cathay
-                Pacific Airways and Qantas as international travel partners.</p>
+                <div class="feature-box">
+                    <div class="feature-box__body">
 
-            <div class="deals-levels__layout">
-                <div class="deals-level">
-                    <div class="deals-levels__body">
-                        <h3 class="support-level__heading ghost"><em >Worldwide</em> - Cathay Pacific</h3>
-                        <p>Up to 10% off the listed sale price on CX-ticketed
-                        return flights to New Zealand from ports worldwide.</p>
-    
+                        <h3 class="feature-box__heading">
+                            <strong>Worldwide</strong> <em>Cathay Pacific</em>
+                        </h3>
+
+                        <p>Up to 10% off the listed sale price on CX-ticketed return flights to New Zealand from ports
+                        worldwide.</p>
+
                         <ul class="plus">
-                            <li>Flight bookings must be made via <a
-                            href="https://eventsoffer.cathaypacific.com/"> Cathay
-                            Pacific's dedicated online booking page</a> using
-                            code <b class="ghost">MICE08B</b>.</li>
-                            <li>In-bound flights to New Zealand must be within
-                            the 18-30 Aug 2025 period.</li>
+                            <li>Flight bookings must be made via <a href="https://eventsoffer.cathaypacific.com/">
+                                Cathay Pacific's dedicated online booking page</a> using code <em>MICE08B</em>.
+                            </li>
+                            <li>In-bound flights to New Zealand must be within the 18-30 Aug 2025 period.</li>
                         </ul>
-
-                        <div class="deals-level__footer">
-                            <div class="deals-level__amount deals-levels__code">Code: MICE08B</div>
-
-                            <div class="deals-level__amount">
-                                <a href="https://eventsoffer.cathaypacific.com/">Book Cathay Pacific</a>
+                    </div>
+                    <div class="feature-box__footer">
+                        <div class="feature-box__footer-blocks">
+                            <div class="feature-box__footer-block-shaded">
+                                Code: MICE08B
                             </div>
+                            <a class="feature-box__footer-block-solid" href="https://eventsoffer.cathaypacific.com/">
+                                Book Cathay Pacific </a>
                         </div>
                     </div>
+
                 </div>
-                <div class="deals-level">
-                    <div class="deals-levels__body">
-                        <h3 class="deals-level__heading ghost"><em>Australia</em> - Qantas</h3>
+
+                <div class="feature-box">
+                    <div class="feature-box__body">
+
+                        <h3 class="feature-box__heading">
+                            <strong>Australia</strong> <em>Qantas</em>
+                        </h3>
 
                         <p>AUD $100 off trans-tasman return tickets on QF-ticketed flights. </p>
-    
+
                         <ul class="plus">
-                            <li>Flight bookings must be made via the <a href="https://www.qantas.com/">Qantas website</a> using code <b class="ghost">TAKINA</b>.</li>
+                            <li>Flight bookings must be made via the <a href="https://www.qantas.com/">Qantas
+                                website</a> using code <em>TAKINA</em>.
+                            </li>
                             <li>Valid for all Australian ports to WLG.</li>
                             <li>Flight credits, points and secondary promo codes are excluded forms of payment.</li>
                         </ul>
+                    </div>
 
-                        <div class="deals-level__footer">
-                            <div class="deals-level__amount deals-levels__code">Code: TAKINA</div>
-
-                            <div class="deals-level__amount">
-                                <a href="https://www.qantas.com/">Book Qantas</a>
-                            </div>
+                    <div class="feature-box__footer">
+                        <div class="feature-box__footer-blocks">
+                            <div class="feature-box__footer-block-shaded">Code: TAKINA</div>
+                            <a class="feature-box__footer-block-solid" href="https://www.qantas.com/">Book Qantas</a>
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
 
-<div class="row">
-    <div class="col">
+                </div>
+
+            </div> <!-- /#travel-offers -->
+
+        </div> <!-- /#travel -->
+
         <div class="section" id="families">
-            <h2><span class="boost">Bring</span> your family</h2>
 
-            <div style="display: flex; gap: 2px;" class="image-row">
-                <div style="width: calc(99% - 4px); padding: 1px; background-color: var(--brand-color-light-ghost); color: var(--text-color-muted); font-size: 10pt;">
-                    <img src="assets/images/capitale-interior-500-334.png" alt="Children playing and laughing at Capital-E" >
-                    <div style="padding: 2px;">Children playing and laughing at Capital-E. Photo by Celeste Fontein/WellingtonNZ.</div>
-                </div>
-                <div style="width: calc(99% - 4px); padding: 1px; background-color: var(--brand-color-light-ghost); color: var(--text-color-muted); font-size: 10pt;">
+            <h2>
+                <span class="boost">Bring</span> your family </h2>
+
+            <div id="families-photos">
+
+                <figure>
+                    <img src="assets/images/capitale-interior-500-334.png" alt="Children playing and laughing at Capital-E">
+                    <figcaption>
+                        Children playing and laughing at Capital-E. Photo by Celeste Fontein/WellingtonNZ.
+                    </figcaption>
+                </figure>
+
+                <figure>
                     <img src="assets/images/trail-with-kids-500x333.png" alt="Child riding a tricycle along a natural path with a parent.">
-                    <div style="padding: 2px;">A child and parent exploring the Spicer Link trail. Photo by Mark Tantrum.</div>
-                </div>
+                    <figcaption>
+                        A child and parent exploring the Spicer Link trail. Photo by Mark Tantrum.
+                    </figcaption>
+                </figure>
             </div>
 
-            <div class="blocks-regular">
-                <p>While Rust Forge itself is intended for adults, the surrounding area provides many opportunities for young explorers to have fun.</p>
-                
-                <p>Here are some ideas: </p>
+            <p>While Rust Forge itself is intended for adults, the surrounding area provides many opportunities for
+            young explorers to have fun.</p>
+
+            <div>
+                <h3>Here are some ideas: </h3>
 
                 <ul class="plus">
-                    <li><a href="https://wellington.govt.nz/recreation/outdoors/parks-and-reserves/city-and-suburban-reserves/frank-kitts-park">Frank Kitts Park</a> playground is next door to the venue.</li>
-                    <li><a href="https://www.tepapa.govt.nz/">Te Papa Tongarewa</a> and <a href="https://www.museumswellington.org.nz/wellington-museum/">Wellington Museum</a> are within 10 minutes' walk and can easily absorb hours.</li>
-                    <li>Visiting <a href="">Wellington Zoo</a> and/or <a href="https://visitzealandia.com/">Zealandia Te Māra a Tāne</a> ecosanctuary provides opportunities to explore the country's wildlife.</li>
-                    <li>The children's play space <a href="https://www.capitale.org.nz/">Nōku te Ao Capital-E</a> is next door. Check out <a href="">PlayHQ</a> for under 5s.</li>
-                    <li>A trip up the top of <a href="https://www.wellingtoncablecar.co.nz/">Wellington Cable Car</a> will take you to Wellington Botanic Garden</li>
+                    <li>
+                        <a href="https://wellington.govt.nz/recreation/outdoors/parks-and-reserves/city-and-suburban-reserves/frank-kitts-park">Frank
+                            Kitts Park</a> playground is next door to the venue.
+                    </li>
+                    <li><a href="https://www.tepapa.govt.nz/">Te Papa Tongarewa</a> and
+                        <a href="https://www.museumswellington.org.nz/wellington-museum/">Wellington Museum</a> are
+                        within 10 minutes' walk and can easily absorb hours.
+                    </li>
+                    <li>Visiting <a href="">Wellington Zoo</a> and/or <a href="https://visitzealandia.com/">Zealandia Te
+                        Māra a Tāne</a> ecosanctuary provides opportunities to explore the country's wildlife.
+                    </li>
+                    <li>The children's play space <a href="https://www.capitale.org.nz/">Nōku te Ao Capital-E</a> is
+                        next door. Check out <a href="">PlayHQ</a> for under 5s.
+                    </li>
+                    <li>A trip up the top of <a href="https://www.wellingtoncablecar.co.nz/">Wellington Cable Car</a>
+                        will take you to Wellington Botanic Garden
+                    </li>
                 </ul>
+
             </div>
         </div>
-    </div>
-</div>
 
-
-<div class="row">
-    <div class="col">
         <div class="section" id="conduct">
             <h2>Conduct and Safety</h2>
 
-            <div class="blocks-regular">
-            <p class="highlight">Everyone participating in the event and its
-            online spaces agrees to the <a href="https://www.rust-lang.org/policies/code-of-conduct">Rust Project&rsquo;s Code of
-            Conduct</a>. While in New Zealand, you are also subject to New
-            Zealand law.</p>
+            <p>Everyone participating in the event and its online spaces agrees to the
+            <a href="https://www.rust-lang.org/policies/code-of-conduct">Rust Project&rsquo;s Code of Conduct</a>. While
+            in New Zealand, you are also subject to New Zealand law.</p>
 
-            <h3>Active incidents</h3>
+            <div id="conduct-blocks">
 
-            <p>
-                <b class="ghost">In an emergency, dial 111</b> from any phone and ask to speak to the
-                Police.<ul class="plus"><li>111 is New Zealand's emergency number.</li><li>The event venue's
-                    address as "Shed 6, Queens Wharf, Wellington".</li></ul>
-            </p>
+                <div>
+                    <h3>Active incidents</h3>
 
-            <p>
-                <b class="ghost">In non-emergency situations</b>, please use whichever channel you prefer:</b>
-                <ul class="plus">
-                    <li>Come to the reception desk</li>
-                    <li>Speak to a security guard</li>
-                    <li>Contact an event volunteer</li>
-                    <li>Email <a href="mailto:safety@rustforgeconf.com">safety@rustforgeconf.com</a></li>
-                    <li>In the Discord server, tag members with the #safety role</li>
-                </ul>
-            </p>
+                    <div>
+                        <p>
+                        <em>In an emergency, dial 111</em> from any phone and ask to speak to the Police. </p>
+                        <ul class="arrow">
+                            <li>111 is New Zealand's emergency number.</li>
+                            <li>The event venue's address as "Shed 6, Queens Wharf, Wellington".</li>
+                        </ul>
+                    </div>
 
-            <h3>Preventing incidents</h3>
+                    <div>
+                        <p>
+                        <em>In non-emergency situations</em>, please use whichever channel you prefer: </p>
+                        <ul class="arrow">
+                            <li>Come to the reception desk</li>
+                            <li>Speak to a security guard</li>
+                            <li>Contact an event volunteer</li>
+                            <li>Email <a href="mailto:safety@rustforgeconf.com">safety@rustforgeconf.com</a></li>
+                            <li>In the Discord server, tag members with the #safety role</li>
+                        </ul>
 
-            <p>
-                If you would like to raise a possible safety concern before the event or offer
-                advice to prevent breaches of the code of conduct:
+                    </div>
+                </div>
 
-                <ul class="plus">
-                    <li>Email <a href="mailto:safety@rustforgeconf.com">safety@rustforgeconf.com</a></li>
-                </ul>
-            </p>
-            
-            <h3>Retrospective Reports</h3>
-            <p>
-                To notify us of an issue after the event has finished, then
-                please use one of these channels:
-                <ul class="plus">
-                    <li>Email <a href="mailto:safety@rustforgeconf.com">safety@rustforgeconf.com</a></li>
-                    <li>Contact the New Zealand <a href="https://www.police.govt.nz/use-105">Police via 105</a></li>
-                </ul>
-            </p>
+                <div>
+                    <h3>Preventing incidents</h3>
 
-            <h3>Anonymous Reports</h3>
+                    <p>
+                    If you would like to raise a possible safety concern before the event or offer advice to prevent
+                    breaches of the code of conduct: </p>
+                    <ul class="arrow">
+                        <li>Email <a href="mailto:safety@rustforgeconf.com">safety@rustforgeconf.com</a></li>
+                    </ul>
+                </div>
 
-            <p>If you would like to raise a complaint avoid revealing your name
-            to the event's organizers, then please:</p>
+                <div>
+                    <h3>Retrospective Reports</h3>
+                    <p>
+                    To notify us of an issue after the event has finished, then please use one of these channels: </p>
+                    <ul class="arrow">
+                        <li>Email <a href="mailto:safety@rustforgeconf.com">safety@rustforgeconf.com</a></li>
+                        <li>Contact the New Zealand <a href="https://www.police.govt.nz/use-105">Police via 105</a></li>
+                    </ul>
+                </div>
 
-            <ul class="plus">
-                <li>Contact the Rust Project's moderation team <a href="mailto:rust-mods@rust-lang.org">rust-mods@rust-lang.org</a></li>
-            </ul>
-        </div>
-    </div>
-</div>
+                <div>
 
-<div class="row">
-    <div class="col">
+                    <h3>Anonymous Reports</h3>
+
+                    <p>If you would like to raise a complaint avoid revealing your name to the event's organizers, then
+                    please:</p>
+
+                    <ul class="arrow">
+                        <li>Contact the Rust Project's moderation team <a href="mailto:rust-mods@rust-lang.org">rust-mods@rust-lang.org</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div> <!-- /#conduct-blocks -->
+
+        </div> <!-- /#conduct -->
+
+
         <div class="section" id="who">
 
-            <h2><span class="boost">Who</span> is Involved?
-                <!-- <svg alt="Who is Involved" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="925.99701px" height="245.48px" viewBox="0 0 925.99701 245.48" style="enable-background:new 0 0 925.99701 245.48;" xml:space="preserve">
-                    <g>
-                        <path style="fill:#FFFFFF;" d="M857.117,243.8h24.91998v-22.12001H857.117V243.8z M859.77698,215.51999h17.92004v-10.22h0.27997
-                            c2.23999,5.18001,7.41998,10.36,18.62,10.36c17.35999,0,29.40002-13.29999,29.40002-33.03999
-                            c0-18.76001-10.91998-32.90001-35.97998-32.90001c-22.68005,0-35.14001,10.5-35.14001,26.18001
-                            c0,2.24001,0.27997,4.2,0.41998,4.89999h20.44c-0.14001-1.25999-0.14001-1.95999-0.14001-2.65999
-                            c0-6.44,4.62-11.34001,14.28003-11.34001c10.64001,0,15.39996,7,15.39996,16.38c0,12.60001-6.29999,17.36-14.69995,17.36
-                            c-6.16003,0-10.92004-2.24001-12.88-7.7h-17.92004V215.51999z M767.30701,223.92v-52.36h21.41998
-                            c21.70001,0,29.54004,11.62,29.54004,26.17999c0,16.94-7.84003,26.18001-27.72003,26.18001H767.30701z M740.427,243.8h50.96002
-                            c38.91998,0,53.75995-16.52,53.75995-46.06001c0-26.03999-14.56-46.06-57.81995-46.06H740.427V243.8z M638.61902,243.8H727.099
-                            v-19.88h-61.59998v-18.62001h46.19995V189.62h-46.19995v-18.06h60.19995v-19.88h-87.07996V243.8z M549.11798,243.8h32.20001
-                            l49.28003-92.12001h-27.44l-35.98004,70.56h-0.13995l-36.54004-70.56h-30.65997L549.11798,243.8z M431.939,243.8h81.48001
-                            v-21.28001H458.819v-70.84h-26.88V243.8z M359.08499,225.59999c-21.97998,0-32.19998-11.62-32.19998-28.14
-                            c0-14.98,10.35999-27.58,32.19998-27.58s32.20001,12.60001,32.20001,27.58C391.285,213.28,381.625,225.59999,359.08499,225.59999
-                             M359.08499,245.48c42.98001,0,60.48001-21.98,60.48001-48.16c0-25.48-18.89999-47.32001-60.48001-47.32001
-                            s-60.47998,21.84001-60.47998,47.32001C298.60501,224.89999,317.36499,245.48,359.08499,245.48 M219.645,243.8h32.2l49.28-92.12001
-                            h-27.44l-35.98,70.56h-0.14l-36.54001-70.56h-30.65999L219.645,243.8z M49.503,243.8h26.04v-67.76001h0.14L135.743,243.8H162.343
-                            v-92.12001h-26.04001v55.44h-0.14l-49.13999-55.44h-37.52V243.8z M5.88,243.8h26.88v-92.12001H5.88V243.8z"/>
-                        <path style="fill:#FFFFFF;" d="M583.64099,95.48c47.46002,0,55.29901-17.22,55.29901-31.78
-                            c0-8.82001-5.039-16.10001-13.85901-19.74001c-7.83997-3.22-19.32098-4.34-32.76099-5.17999
-                            c-10.35901-0.7-24.21899-1.26001-29.26001-2.8c-3.91901-1.25999-5.88-3.36-5.88-6.86c0-6.58,7.70001-10.64,26.18103-10.64
-                            c19.03998,0,27.29895,4.89999,27.29895,13.3h24.08105c0-16.66-7.56104-31.78-51.38-31.78c-36.54102,0-53.06104,14-53.06104,31.08
-                            c0,8.95999,4.48102,15.53999,11.20001,19.03999c7.56,3.92,21,5.46001,33.17999,6.16c10.22101,0.56,24.35999,1.12,30.10101,2.37999
-                            C609.67999,59.78,612.06,62.01999,612.06,65.8c0,6.29999-4.06,11.2-28.41901,11.2C560.53998,77,554.94,70.7,554.94,62.86h-24.07898
-                            C530.86102,75.17999,535.76001,95.48,583.64099,95.48 M489.771,93.8h26.88v-92.12h-26.88V93.8z"/>
-                        <path style="fill:#1AB78F;" d="M373.71399,75.60001c-21.98001,0-32.20001-11.62001-32.20001-28.14
-                            c0-14.98001,10.36002-27.58,32.20001-27.58S405.914,32.48,405.914,47.46001C405.914,63.28,396.254,75.60001,373.71399,75.60001
-                             M373.71399,95.48c42.98001,0,60.48001-21.98,60.48001-48.15999C434.194,21.84001,415.29401,0,373.71399,0
-                            s-60.48001,21.84001-60.48001,47.32001C313.23398,74.90001,331.99399,95.48,373.71399,95.48 M188.01901,93.8h26.87997V56.28
-                            H273.979V93.8h26.87997v-92.12H273.979v34.72h-59.08002v-34.72h-26.87997V93.8z M36.96,93.8H66.5l23.66-59.5h0.28l22.82,59.5
-                            h29.53999l36.96002-92.12h-26.46002l-23.37999,63.28h-0.28l-24.08-63.28h-27.16L53.9,64.96001h-0.28l-24.5-63.28H0L36.96,93.8z"/>
-                    </g>
-                    </svg> -->
-            </h2>
-
+            <h2>
+                <span class="boost">Who</span> is Involved? </h2>
 
             <div id="who-layout">
                 <div>
@@ -2340,7 +2049,7 @@
                 </div>
             </div>
 
-        </div>
+        </div> <!-- #who -->
 
 
         <div class="section" id="details">
@@ -2357,7 +2066,7 @@
                 </div>
                 <div>
                     <h3>Business Identifiers</h3>
-                    <ul class="plus">
+                    <ul class="arrow">
                         <li>D-U-N-S Number 758620449</li>
                         <li>GST Number 139-343-670</li>
                         <li>NZBN 9429051341565</li>
@@ -2372,15 +2081,10 @@
                 </div>
             </div>
 
-        </div>
-
-    </div>
-</div>
+        </div> <!-- /#details -->
 
 
-<div class="row">
-    <div class="col">
-        <div class="section">
+        <div class="section" id="interested">
             <div class="form-box">
                 <h2>Let's do this!</h2>
                 <p>Show your interest, let us know if you'd like to attend, speak, volunteer, or any of the above.
@@ -2414,9 +2118,10 @@
                     <input type="hidden" name="id" value="form01">
                 </form>
 
-
             </div>
-        </div>
+        </div> <!-- /#interested -->
+
+
     </div>
 </div>
 
@@ -2432,7 +2137,7 @@
         </div>
     </div>
 </div>
-</div>
+
 
 <div class="left-gutter">
     <div class="left-top">
@@ -2440,55 +2145,76 @@
             <li>
                 <a href="#intro">
                     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 186.27 317.17" style="enable-background:new 0 0 186.27 317.17;" xml:space="preserve">
-<g>
-	<path d="M158.32,28.04h-32.09v59.09c0,17.39-7.94,26-22.76,28.48v25.79c34.11-2.63,54.85-19.03,54.85-50.76V69.6h20.31v239.93H7.64
-		V69.6h20.31v21.03c0,31.72,20.73,48.12,54.82,50.76V115.6c-14.8-2.48-22.73-11.09-22.73-28.47V28.04H27.95v33.92H0v255.21h186.27
-		V61.96h-27.95V28.04z"/>
-    <path d="M79.59,159.43c-0.68,0.14-1.25,0.62-1.48,1.28l-2.31,6.45c-0.6,0.17-1.2,0.35-1.79,0.54l-5.5-4.07
-		c-0.56-0.42-1.3-0.5-1.94-0.24c-0.64,0.27-1.1,0.85-1.2,1.54l-1.01,6.8c-0.55,0.28-1.09,0.57-1.63,0.87l-6.21-2.93
-		c-0.63-0.3-1.37-0.24-1.95,0.15c-0.58,0.39-0.91,1.05-0.88,1.74l0.33,6.88c-0.47,0.38-0.94,0.76-1.41,1.15l-6.68-1.67
-		c-0.68-0.17-1.39,0.03-1.88,0.52c-0.49,0.49-0.69,1.21-0.52,1.88l1.67,6.68c-0.39,0.46-0.77,0.93-1.15,1.41l-6.88-0.33
-		c-0.7-0.04-1.36,0.3-1.74,0.88c-0.39,0.58-0.44,1.32-0.15,1.95l2.93,6.21c-0.3,0.54-0.58,1.08-0.87,1.63l-6.8,1.01
-		c-0.69,0.1-1.27,0.56-1.54,1.2c-0.27,0.64-0.18,1.38,0.24,1.94l4.07,5.5c-0.19,0.59-0.36,1.19-0.53,1.79l-6.45,2.31
-		c-0.66,0.24-1.14,0.8-1.28,1.48c-0.14,0.68,0.1,1.39,0.61,1.85l5.07,4.6c-0.07,0.61-0.12,1.23-0.18,1.85l-5.88,3.53
-		c-0.6,0.36-0.96,1-0.96,1.7c0,0.7,0.36,1.34,0.96,1.7l5.88,3.53c0.05,0.62,0.11,1.24,0.18,1.85l-5.07,4.6
-		c-0.52,0.47-0.75,1.17-0.61,1.86c0.14,0.68,0.62,1.24,1.28,1.48l6.45,2.31c0.17,0.6,0.35,1.2,0.54,1.79l-4.08,5.5
-		c-0.42,0.56-0.51,1.29-0.24,1.94c0.27,0.64,0.85,1.1,1.54,1.2l6.8,1.01c0.28,0.55,0.57,1.09,0.87,1.63l-2.93,6.21
-		c-0.3,0.63-0.24,1.37,0.15,1.95c0.37,0.55,0.99,0.88,1.65,0.88c0.03,0,0.06,0,0.1,0l6.88-0.34c0.38,0.47,0.76,0.94,1.15,1.41
-		l-1.67,6.68c-0.17,0.68,0.03,1.39,0.52,1.88c0.38,0.38,0.88,0.58,1.4,0.58c0.16,0,0.32-0.02,0.48-0.06l6.68-1.67
-		c0.46,0.39,0.93,0.77,1.41,1.15l-0.33,6.88c-0.03,0.7,0.3,1.36,0.88,1.75c0.33,0.22,0.72,0.33,1.1,0.33c0.29,0,0.58-0.06,0.85-0.19
-		l6.21-2.93c0.54,0.3,1.08,0.58,1.63,0.87l1.01,6.79c0.1,0.69,0.56,1.27,1.2,1.54c0.24,0.1,0.5,0.15,0.76,0.15
-		c0.42,0,0.83-0.13,1.18-0.39l5.5-4.07c0.59,0.19,1.19,0.36,1.79,0.53l2.31,6.45c0.24,0.66,0.8,1.14,1.48,1.27
-		c0.13,0.03,0.26,0.04,0.39,0.04c0.55,0,1.09-0.23,1.47-0.65l4.6-5.07c0.61,0.07,1.23,0.12,1.85,0.18l3.53,5.88
-		c0.36,0.6,1,0.96,1.7,0.96c0.7,0,1.34-0.37,1.7-0.96l3.53-5.88c0.62-0.05,1.24-0.11,1.85-0.18l4.6,5.07
-		c0.38,0.42,0.92,0.65,1.47,0.65c0.13,0,0.26-0.01,0.39-0.04c0.68-0.14,1.24-0.62,1.48-1.28l2.31-6.45c0.6-0.17,1.2-0.35,1.79-0.53
-		l5.5,4.07c0.35,0.26,0.76,0.39,1.18,0.39c0.26,0,0.51-0.05,0.76-0.15c0.64-0.27,1.1-0.85,1.2-1.54l1.01-6.79
-		c0.55-0.28,1.09-0.57,1.63-0.87l6.21,2.93c0.27,0.13,0.56,0.19,0.85,0.19c0.39,0,0.77-0.11,1.1-0.33c0.58-0.39,0.91-1.05,0.88-1.75
-		l-0.33-6.88c0.47-0.38,0.94-0.76,1.41-1.15l6.68,1.67c0.16,0.04,0.32,0.06,0.48,0.06c0.52,0,1.03-0.2,1.4-0.58
-		c0.49-0.49,0.69-1.21,0.52-1.88l-1.67-6.68c0.39-0.46,0.78-0.93,1.15-1.41l6.88,0.34c0.03,0,0.06,0,0.1,0
-		c0.66,0,1.28-0.33,1.65-0.88c0.39-0.58,0.44-1.32,0.14-1.95l-2.93-6.21c0.3-0.54,0.58-1.08,0.87-1.63l6.8-1.01
-		c0.69-0.1,1.27-0.56,1.54-1.2c0.27-0.64,0.17-1.38-0.24-1.94l-4.07-5.5c0.19-0.59,0.36-1.19,0.53-1.79l6.45-2.31
-		c0.66-0.23,1.14-0.8,1.28-1.48c0.14-0.68-0.1-1.39-0.61-1.86l-5.07-4.6c0.07-0.61,0.12-1.23,0.17-1.85l5.88-3.53
-		c0.6-0.36,0.96-1,0.96-1.7c0-0.7-0.37-1.34-0.96-1.7l-5.88-3.53c-0.05-0.62-0.11-1.24-0.18-1.85l5.08-4.6
-		c0.52-0.47,0.75-1.17,0.61-1.85c-0.14-0.68-0.62-1.25-1.28-1.48l-6.45-2.31c-0.17-0.6-0.34-1.2-0.53-1.79l4.07-5.5
-		c0.41-0.56,0.51-1.3,0.24-1.94c-0.27-0.64-0.85-1.1-1.54-1.2l-6.8-1.01c-0.28-0.55-0.57-1.09-0.87-1.63l2.93-6.21
-		c0.3-0.63,0.24-1.37-0.14-1.95c-0.39-0.58-1.06-0.93-1.74-0.88l-6.88,0.33c-0.38-0.47-0.76-0.94-1.15-1.41l1.67-6.68
-		c0.17-0.68-0.03-1.39-0.52-1.88c-0.49-0.49-1.21-0.69-1.88-0.52l-6.68,1.67c-0.46-0.39-0.93-0.77-1.41-1.15l0.33-6.88
-		c0.03-0.7-0.3-1.36-0.88-1.74c-0.58-0.39-1.32-0.44-1.95-0.15l-6.21,2.93c-0.54-0.3-1.08-0.58-1.63-0.87l-1.01-6.8
-		c-0.1-0.69-0.56-1.27-1.2-1.54c-0.65-0.27-1.38-0.18-1.94,0.24l-5.5,4.07c-0.59-0.19-1.19-0.36-1.79-0.53l-2.31-6.45
-		c-0.24-0.66-0.8-1.14-1.48-1.28c-0.68-0.14-1.39,0.1-1.86,0.61l-1.35,1.49v27.98c10.46,2.85,19.2,9.87,24.3,19.18l-3.26,6.4
-		c-0.77,1.51-0.17,3.37,1.34,4.14l6.4,3.26c0.22,1.67,0.34,3.36,0.34,5.09c0,10.49-4.12,20.04-10.83,27.12l-7.07-1.12
-		c-1.68-0.27-3.25,0.88-3.52,2.56l-1.12,7.1c-5.14,2.45-10.88,3.82-16.93,3.82c-6.06,0-11.8-1.38-16.93-3.82l-1.12-7.1
-		c-0.13-0.81-0.57-1.53-1.23-2.01c-0.66-0.48-1.49-0.68-2.29-0.55l-7.08,1.12c-6.7-7.08-10.83-16.62-10.83-27.12
-		c0-1.73,0.12-3.42,0.34-5.09l6.4-3.26c1.51-0.77,2.12-2.62,1.34-4.14l-3.26-6.4c5.1-9.32,13.85-16.34,24.32-19.19v-28l-1.32-1.46
-		C80.98,159.53,80.27,159.3,79.59,159.43"/>
-    <path d="M103.2,227.5c0,5.55-4.52,10.07-10.07,10.07s-10.07-4.52-10.07-10.07s4.52-10.07,10.07-10.07S103.2,221.95,103.2,227.5
-		 M89.31,210.21c-7.94,1.75-13.89,8.84-13.89,17.29c0,9.76,7.94,17.71,17.71,17.71s17.71-7.94,17.71-17.71
-		c0-8.45-5.95-15.54-13.89-17.29v-102.6V7.64h20.63V0H68.6v7.64h20.71v99.98V210.21z"/>
-</g>
-</svg>
-
+                        <g>
+                            <path d="M158.32,28.04h-32.09v59.09c0,17.39-7.94,26-22.76,28.48v25.79c34.11-2.63,54.85-19.03,54.85-50.76V69.6h20.31v239.93H7.64
+                                V69.6h20.31v21.03c0,31.72,20.73,48.12,54.82,50.76V115.6c-14.8-2.48-22.73-11.09-22.73-28.47V28.04H27.95v33.92H0v255.21h186.27
+                                V61.96h-27.95V28.04z"/>
+                            <path d="M79.59,159.43c-0.68,0.14-1.25,0.62-1.48,1.28l-2.31,6.45c-0.6,0.17-1.2,0.35-1.79,0.54l-5.5-4.07
+                                c-0.56-0.42-1.3-0.5-1.94-0.24c-0.64,0.27-1.1,0.85-1.2,1.54l-1.01,6.8c-0.55,0.28-1.09,0.57-1.63,0.87l-6.21-2.93
+                                c-0.63-0.3-1.37-0.24-1.95,0.15c-0.58,0.39-0.91,1.05-0.88,1.74l0.33,6.88c-0.47,0.38-0.94,0.76-1.41,1.15l-6.68-1.67
+                                c-0.68-0.17-1.39,0.03-1.88,0.52c-0.49,0.49-0.69,1.21-0.52,1.88l1.67,6.68c-0.39,0.46-0.77,0.93-1.15,1.41l-6.88-0.33
+                                c-0.7-0.04-1.36,0.3-1.74,0.88c-0.39,0.58-0.44,1.32-0.15,1.95l2.93,6.21c-0.3,0.54-0.58,1.08-0.87,1.63l-6.8,1.01
+                                c-0.69,0.1-1.27,0.56-1.54,1.2c-0.27,0.64-0.18,1.38,0.24,1.94l4.07,5.5c-0.19,0.59-0.36,1.19-0.53,1.79l-6.45,2.31
+                                c-0.66,0.24-1.14,0.8-1.28,1.48c-0.14,0.68,0.1,1.39,0.61,1.85l5.07,4.6c-0.07,0.61-0.12,1.23-0.18,1.85l-5.88,3.53
+                                c-0.6,0.36-0.96,1-0.96,1.7c0,0.7,0.36,1.34,0.96,1.7l5.88,3.53c0.05,0.62,0.11,1.24,0.18,1.85l-5.07,4.6
+                                c-0.52,0.47-0.75,1.17-0.61,1.86c0.14,0.68,0.62,1.24,1.28,1.48l6.45,2.31c0.17,0.6,0.35,1.2,0.54,1.79l-4.08,5.5
+                                c-0.42,0.56-0.51,1.29-0.24,1.94c0.27,0.64,0.85,1.1,1.54,1.2l6.8,1.01c0.28,0.55,0.57,1.09,0.87,1.63l-2.93,6.21
+                                c-0.3,0.63-0.24,1.37,0.15,1.95c0.37,0.55,0.99,0.88,1.65,0.88c0.03,0,0.06,0,0.1,0l6.88-0.34c0.38,0.47,0.76,0.94,1.15,1.41
+                                l-1.67,6.68c-0.17,0.68,0.03,1.39,0.52,1.88c0.38,0.38,0.88,0.58,1.4,0.58c0.16,0,0.32-0.02,0.48-0.06l6.68-1.67
+                                c0.46,0.39,0.93,0.77,1.41,1.15l-0.33,6.88c-0.03,0.7,0.3,1.36,0.88,1.75c0.33,0.22,0.72,0.33,1.1,0.33c0.29,0,0.58-0.06,0.85-0.19
+                                l6.21-2.93c0.54,0.3,1.08,0.58,1.63,0.87l1.01,6.79c0.1,0.69,0.56,1.27,1.2,1.54c0.24,0.1,0.5,0.15,0.76,0.15
+                                c0.42,0,0.83-0.13,1.18-0.39l5.5-4.07c0.59,0.19,1.19,0.36,1.79,0.53l2.31,6.45c0.24,0.66,0.8,1.14,1.48,1.27
+                                c0.13,0.03,0.26,0.04,0.39,0.04c0.55,0,1.09-0.23,1.47-0.65l4.6-5.07c0.61,0.07,1.23,0.12,1.85,0.18l3.53,5.88
+                                c0.36,0.6,1,0.96,1.7,0.96c0.7,0,1.34-0.37,1.7-0.96l3.53-5.88c0.62-0.05,1.24-0.11,1.85-0.18l4.6,5.07
+                                c0.38,0.42,0.92,0.65,1.47,0.65c0.13,0,0.26-0.01,0.39-0.04c0.68-0.14,1.24-0.62,1.48-1.28l2.31-6.45c0.6-0.17,1.2-0.35,1.79-0.53
+                                l5.5,4.07c0.35,0.26,0.76,0.39,1.18,0.39c0.26,0,0.51-0.05,0.76-0.15c0.64-0.27,1.1-0.85,1.2-1.54l1.01-6.79
+                                c0.55-0.28,1.09-0.57,1.63-0.87l6.21,2.93c0.27,0.13,0.56,0.19,0.85,0.19c0.39,0,0.77-0.11,1.1-0.33c0.58-0.39,0.91-1.05,0.88-1.75
+                                l-0.33-6.88c0.47-0.38,0.94-0.76,1.41-1.15l6.68,1.67c0.16,0.04,0.32,0.06,0.48,0.06c0.52,0,1.03-0.2,1.4-0.58
+                                c0.49-0.49,0.69-1.21,0.52-1.88l-1.67-6.68c0.39-0.46,0.78-0.93,1.15-1.41l6.88,0.34c0.03,0,0.06,0,0.1,0
+                                c0.66,0,1.28-0.33,1.65-0.88c0.39-0.58,0.44-1.32,0.14-1.95l-2.93-6.21c0.3-0.54,0.58-1.08,0.87-1.63l6.8-1.01
+                                c0.69-0.1,1.27-0.56,1.54-1.2c0.27-0.64,0.17-1.38-0.24-1.94l-4.07-5.5c0.19-0.59,0.36-1.19,0.53-1.79l6.45-2.31
+                                c0.66-0.23,1.14-0.8,1.28-1.48c0.14-0.68-0.1-1.39-0.61-1.86l-5.07-4.6c0.07-0.61,0.12-1.23,0.17-1.85l5.88-3.53
+                                c0.6-0.36,0.96-1,0.96-1.7c0-0.7-0.37-1.34-0.96-1.7l-5.88-3.53c-0.05-0.62-0.11-1.24-0.18-1.85l5.08-4.6
+                                c0.52-0.47,0.75-1.17,0.61-1.85c-0.14-0.68-0.62-1.25-1.28-1.48l-6.45-2.31c-0.17-0.6-0.34-1.2-0.53-1.79l4.07-5.5
+                                c0.41-0.56,0.51-1.3,0.24-1.94c-0.27-0.64-0.85-1.1-1.54-1.2l-6.8-1.01c-0.28-0.55-0.57-1.09-0.87-1.63l2.93-6.21
+                                c0.3-0.63,0.24-1.37-0.14-1.95c-0.39-0.58-1.06-0.93-1.74-0.88l-6.88,0.33c-0.38-0.47-0.76-0.94-1.15-1.41l1.67-6.68
+                                c0.17-0.68-0.03-1.39-0.52-1.88c-0.49-0.49-1.21-0.69-1.88-0.52l-6.68,1.67c-0.46-0.39-0.93-0.77-1.41-1.15l0.33-6.88
+                                c0.03-0.7-0.3-1.36-0.88-1.74c-0.58-0.39-1.32-0.44-1.95-0.15l-6.21,2.93c-0.54-0.3-1.08-0.58-1.63-0.87l-1.01-6.8
+                                c-0.1-0.69-0.56-1.27-1.2-1.54c-0.65-0.27-1.38-0.18-1.94,0.24l-5.5,4.07c-0.59-0.19-1.19-0.36-1.79-0.53l-2.31-6.45
+                                c-0.24-0.66-0.8-1.14-1.48-1.28c-0.68-0.14-1.39,0.1-1.86,0.61l-1.35,1.49v27.98c10.46,2.85,19.2,9.87,24.3,19.18l-3.26,6.4
+                                c-0.77,1.51-0.17,3.37,1.34,4.14l6.4,3.26c0.22,1.67,0.34,3.36,0.34,5.09c0,10.49-4.12,20.04-10.83,27.12l-7.07-1.12
+                                c-1.68-0.27-3.25,0.88-3.52,2.56l-1.12,7.1c-5.14,2.45-10.88,3.82-16.93,3.82c-6.06,0-11.8-1.38-16.93-3.82l-1.12-7.1
+                                c-0.13-0.81-0.57-1.53-1.23-2.01c-0.66-0.48-1.49-0.68-2.29-0.55l-7.08,1.12c-6.7-7.08-10.83-16.62-10.83-27.12
+                                c0-1.73,0.12-3.42,0.34-5.09l6.4-3.26c1.51-0.77,2.12-2.62,1.34-4.14l-3.26-6.4c5.1-9.32,13.85-16.34,24.32-19.19v-28l-1.32-1.46
+                                C80.98,159.53,80.27,159.3,79.59,159.43"/>
+                            <path d="M103.2,227.5c0,5.55-4.52,10.07-10.07,10.07s-10.07-4.52-10.07-10.07s4.52-10.07,10.07-10.07S103.2,221.95,103.2,227.5
+                                 M89.31,210.21c-7.94,1.75-13.89,8.84-13.89,17.29c0,9.76,7.94,17.71,17.71,17.71s17.71-7.94,17.71-17.71
+                                c0-8.45-5.95-15.54-13.89-17.29v-102.6V7.64h20.63V0H68.6v7.64h20.71v99.98V210.21z"/>
+                        </g>
+                        </svg>
                     <label>Rust Forge 2025</label> </a>
+            </li>
+
+
+
+            <li>
+                <a href="#workshop">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M13.895 10.623l1.37-2.054c.35-.525 1.06-.667 1.585-.317.524.35.667 1.06.316 1.585l-1.369 2.054c-.35.525-1.06.667-1.585.317s-.667-1.06-.317-1.585zm-1.881-.684c.525.351 1.236.208 1.587-.317l1.383-2.074c.352-.526.209-1.237-.317-1.588-.525-.351-1.236-.208-1.587.318l-1.383 2.074c-.352.526-.21 1.237.317 1.587zm7.007 3.949l-1.212 1.817c-.322.483-.191 1.136.292 1.458s1.136.191 1.458-.292l1.211-1.817c.323-.483.192-1.136-.291-1.458-.483-.322-1.136-.192-1.458.292zm-3.071-.84c-.35.523-.208 1.231.315 1.58.524.349 1.231.208 1.58-.316l1.312-1.968c.35-.524.208-1.231-.316-1.58-.523-.349-1.23-.208-1.579.316l-1.312 1.968zm5.665 10.952c-.609 0-1.22-.232-1.686-.698l-7.022-7.144c1.088-1.203.56-3.279-1.182-3.588l-3.074-.546-1.058-1.058c-.601-.6-1.427-.916-2.273-.871-1.382.074-2.787-.417-3.842-1.472-.986-.987-1.478-2.279-1.478-3.572 0-.56.092-1.12.277-1.655l3.214 3.214c1.253.074 3.192-1.865 3.118-3.119l-3.213-3.214c.535-.185 1.094-.277 1.654-.277 1.293 0 2.586.493 3.572 1.479 1.055 1.055 1.545 2.46 1.472 3.842-.045.846.271 1.674.871 2.273l.027.027c-1.243 2.083.433 3.51 1.806 3.457-.247 1.181 1.017 2.411 2.102 2.411-.269 1.04.536 2.125 1.789 2.371-.505 1.822 2.258 3.767 3.857 1.315l2.756 2.755c.466.466.698 1.076.698 1.686 0 1.316-1.066 2.384-2.385 2.384zm.885-2.5c0-.552-.448-1-1.001-1-.552 0-1 .448-1 1s.448 1 1 1c.553 0 1.001-.448 1.001-1zm-9.631-3.939c-.667-.688-1.701-.739-3.584-.864-.286-.019-.462.165-.485.443l-.458 4.208s2.794 1.888 3.94 2.652c1.064-1.921 2.699-2.037 3.921-3.002l-3.334-3.437zm-1.622-1.692c1.457 0 1.678-2.064.303-2.308-5.171-.919-4.899-.889-5.069-.889-.635 0-1.186.453-1.309 1.078l-.446 3.946c-.061.631.145 1.176.633 1.532.487.354 2.026 1.449 2.026 1.449s.328-2.835.42-3.651c.093-.815.551-1.378 1.424-1.335.092.004 1.859.178 2.018.178z"/></svg>
+                    <label>Workshop</label> </a>
+            </li>
+            <li>
+                <a href="#conference">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <path d="M16.488 20l3.414 4h-2.627l-3.42-4h2.633zm-5.488 4h2v-4h-2v4zm-6.918 0h2.627l3.42-4h-2.633l-3.414 4zm4.918-18v7l7-3.398-7-3.602zm13-3v13h1v2h-22v-2h1v-13h-1v-3h22v3h-1zm-2 0h-16v13h16v-13z"/>
+                    </svg>
+                    <label>The Conference</label> </a>
+            </li>
+            <li>
+                <a href="#networking">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <path d="M21 9c-1.656 0-3 1.343-3 3s1.344 3 3 3 3-1.343 3-3-1.344-3-3-3zm-15 9c-1.657 0-3 1.343-3 3s1.343 3 3 3c1.656 0 3-1.343 3-3s-1.344-3-3-3zm3-15c0 1.657-1.344 3-3 3s-3-1.343-3-3 1.344-3 3-3 3 1.343 3 3zm1.588-1.979l.412-.021c4.281 0 7.981 2.45 9.8 6.021-.717.029-1.39.21-1.998.511-1.555-2.703-4.466-4.532-7.802-4.532 0-.703-.149-1.372-.412-1.979zm10.212 15.958c-1.819 3.571-5.519 6.021-9.8 6.021l-.412-.021c.263-.607.412-1.276.412-1.979 3.336 0 6.247-1.829 7.802-4.532.608.302 1.281.483 1.998.511zm-18.91 1.186c-1.193-1.759-1.89-3.88-1.89-6.165s.697-4.406 1.89-6.165c.392.566.901 1.039 1.487 1.403-.867 1.383-1.377 3.012-1.377 4.762s.51 3.379 1.377 4.762c-.586.364-1.096.837-1.487 1.403z"/>
+                    </svg>
+                    <label>Space In-Between</label> </a>
             </li>
             <li>
                 <a href="#support">
@@ -2497,15 +2223,41 @@
                     </svg>
                     <label>Support</label> </a>
             </li>
-
-
+            <li>
+                <a href="#travel">
+                    <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd">
+                        <path d="M13.777 19.49l-.466 1.739-12.569-3.378c-.447-.119-.742-.523-.742-.965l.035-.26c.626-2.338 2.22-8.286 2.847-10.625.143-.533.691-.85 1.224-.707 2.381.638 7.892 2.12 12.571 3.371l-.473 1.768.965.262.474-1.772 5.613 1.501c.446.12.741.524.741.966l-.034.259-2.847 10.61c-.12.446-.525.741-.966.741l-.26-.034-5.613-1.478.465-1.736-.965-.262zm5.665 1.301l.259-.966-2.716-.717-.259.966 2.716.717zm-5.406-2.267l.965.261.444-1.658-.965-.262-.444 1.659zm-8.907-4.783l2.594-1.037-2.384-2.386.822-.328 4.03 1.727 2.055-.822c.542-.22 1.399-.081 1.563.329l.028.215c-.034.403-.481.917-.932 1.101l-2.057.822-1.727 4.029-.823.329.083-3.372-2.594 1.038-.614 1.199-.575.23-.044-1.89-1.271-1.399.575-.231 1.271.446zm15.349 3.186l.259-.966-2.717-.717-.259.966 2.717.717zm-5.739-1.028l.965.262.503-1.876-.965-.261-.503 1.875zm6.257-.904l.259-.966-2.717-.717-.259.966 2.717.717zm-5.495-1.937l.964.261.445-1.659-.965-.261-.444 1.659zm6.012.005l.259-.966-2.717-.716-.258.965 2.716.717zm-14.083-8.681l12.528-3.348.259-.034c.442 0 .846.294.966.741l1.833 6.828-15.586-4.187z"/>
+                    </svg>
+                    <label>Travel</label> </a>
+            </li>
+            <li>
+                <a href="#families">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <path d="M21.174 8.205c-.427-4.943-4.082-7.205-9.174-7.205-5.143 0-8.751 2.311-9.174 7.205-2.026.142-2.826 2.079-2.826 4.221 0 1.888.861 4.627 3.176 5.159 1.193 3.546 4.229 5.415 8.824 5.415s7.631-1.869 8.824-5.415c2.315-.532 3.176-3.271 3.176-5.159 0-2.128-.794-4.079-2.826-4.221zm-1.141 7.471c-.449.009-.836.315-.949.749-.787 3.036-3.17 4.575-7.084 4.575s-6.297-1.539-7.083-4.575c-.113-.434-.5-.74-.949-.749-2.135-.041-2.438-4.65-1.336-5.367.272-.177.614-.104.756-.041.671.3 1.427-.207 1.406-.941-.071-2.526.931-4.647 3.23-5.706-.663 2.823 2.205 5.638 6.672 4.598-4.012-1.098-1.056-6.221 2.352-3.954 1.608 1.217 2.214 3.072 2.16 5.063-.021.739.743 1.239 1.406.941.142-.064.483-.137.756.041 1.101.716.798 5.325-1.337 5.366zm-3.533-4.176c0 .828-.56 1.5-1.25 1.5s-1.25-.672-1.25-1.5.56-1.5 1.25-1.5 1.25.672 1.25 1.5zm-7.75 1.5c-.69 0-1.25-.672-1.25-1.5s.56-1.5 1.25-1.5 1.25.672 1.25 1.5-.56 1.5-1.25 1.5zm-.75 3h8s-.844 2.875-4 2.875c-3.25 0-4-2.875-4-2.875z"/>
+                    </svg>
+                    <label>Travel</label> </a>
+            </li>
+            <li>
+                <a href="#who">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm0 18.25c-.69 0-1.25-.56-1.25-1.25s.56-1.25 1.25-1.25c.691 0 1.25.56 1.25 1.25s-.559 1.25-1.25 1.25zm1.961-5.928c-.904.975-.947 1.514-.935 2.178h-2.005c-.007-1.475.02-2.125 1.431-3.468.573-.544 1.025-.975.962-1.821-.058-.805-.73-1.226-1.365-1.226-.709 0-1.538.527-1.538 2.013h-2.01c0-2.4 1.409-3.95 3.59-3.95 1.036 0 1.942.339 2.55.955.57.578.865 1.372.854 2.298-.016 1.383-.857 2.291-1.534 3.021z"/>
+                    </svg>
+                    <label>Who is Involved</label> </a>
+            </li>
+            <li>
+                <a href="#interested">
+                    <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd">
+                        <path d="M24 23h-24v-13.275l2-1.455v-7.27h20v7.272l2 1.453v13.275zm-20-10.472v-9.528h16v9.527l-8 5.473-8-5.472zm14-.528h-12v-1h12v1zm0-3v1h-12v-1h12zm-7-1h-5v-3h5v3zm7 0h-6v-1h6v1zm0-2h-6v-1h6v1z"/>
+                    </svg>
+                    <label>Interested</label> </a>
+            </li>
         </ul>
     </div>
     <div class="left-bottom">
         <ul class="social-icons">
             <li><a href="http://x.com/rustforgeconf">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                    <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
+                <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 300 300" width="24" height="24" version="1.1">
+                    <path d="M178.57 127.15 290.27 0h-26.46l-97.03 110.38L89.34 0H0l117.13 166.93L0 300.25h26.46l102.4-116.59 81.8 116.59h89.34M36.01 19.54H76.66l187.13 262.13h-40.66"/>
                 </svg>
             </a></li>
             <li><a href="https://discord.gg/fwd8tGC4Ya">
@@ -2514,15 +2266,6 @@
                 </svg>
             </a></li>
         </ul>
-    </div>
-</div>
-
-<div class="right-gutter">
-    <div class="right-top">
-
-    </div>
-    <div class="right-bottom">
-
     </div>
 </div>
 
