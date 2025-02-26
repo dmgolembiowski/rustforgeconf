@@ -163,6 +163,7 @@
             --brand-color-light: rgba(26, 183, 143, 1);
             --brand-color-light-ghost: rgba(26, 183, 143, 0.2);
             --background-pattern: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%231ab78f' fill-opacity='0.2' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
+            --background-color-dark: hsl(from var(--brand-color-dark) h s calc(l - 4) );
             --background-color: var(--brand-color-dark);
             --highlight-color: var(--brand-color-light);
             --heading-color: var(--brand-color-light);
@@ -1005,7 +1006,9 @@
             display: block;
         }
 
-
+        footer {
+            background-color: var(--background-color-dark);
+        }
 
         #footer-layout {
             justify-content: center;
@@ -2121,6 +2124,7 @@
     </div>
 </div>
 
+<footer>
 <div class="row">
     <div class="col">
         <div class="section">
@@ -2133,7 +2137,7 @@
         </div>
     </div>
 </div>
-
+</footer>
 
 <div class="left-gutter">
     <div class="left-top">
