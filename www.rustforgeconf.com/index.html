@@ -2287,27 +2287,6 @@
 </div>
 
 <script>
-function elementsUsingCssVar(variableName, propertyName) {
-  const cssValue = getComputedStyle(document.documentElement)
-    .getPropertyValue(variableName)
-    .trim();
-  
-  // Get all elements in the document
-  const allElements = document.querySelectorAll('*');
-  
-  // Filter elements that use the CSS variable for the specified property
-  const matchingElements = Array.from(allElements).filter(element => {
-    const computedStyle = getComputedStyle(element);
-    const propertyValue = computedStyle.getPropertyValue(propertyName).trim();
-    
-    // Compare the computed values
-    return propertyValue === cssValue;
-  });
-  
-  return matchingElements;
-}
-
-
 document.addEventListener('DOMContentLoaded', function() {
     const logo = document.getElementById('intro-logo');
     const paths = logo.querySelectorAll('.text, .mark');
@@ -2347,6 +2326,8 @@ document.addEventListener('DOMContentLoaded', function() {
         const footer = document.querySelector('footer');
         const boxes = document.querySelectorAll('.form-box, .product-name, .feature-box__body');
         const highlights = document.querySelectorAll('em, p.highlight');
+        const images = document.querySelectorAll('img');
+        const boosts = document.querySelectorAll('.boost');
         
         const allPink = pink === total;
         if (allPink) {
@@ -2356,12 +2337,13 @@ document.addEventListener('DOMContentLoaded', function() {
                 row.setAttribute("data-background-image", originalBackgroundImage);
             }
 
-            background.style.display = 'block';
-            background.hidden = false;
+            images.forEach(elem => {
+                elem.style.opacity = '0.4';
+            })
 
-            row.style.transition = "background 5.5s ease";
-            row.style.transition = "background-image 5.5s ease";
-            row.style.backgroundImage = 'none';
+            boosts.forEach(elem => {
+                elem.style.opacity = '0.9';
+            })
 
             icons.forEach(icon => {
                 icon.style.transition = "fill 2.5s ease";
@@ -2370,10 +2352,12 @@ document.addEventListener('DOMContentLoaded', function() {
 
             headings.forEach(text => {
                 text.style.color = neon;
+                text.style.opacity = '0.8';
             });
 
             subheadings.forEach(text => {
                 text.style.color = '#23a6d5';
+                text.style.opacity = '0.9';
             });
 
             boxes.forEach(box => {
@@ -2386,6 +2370,15 @@ document.addEventListener('DOMContentLoaded', function() {
             })
 
             footer.style.backgroundColor = 'none';
+
+            // it's showtime!
+            background.style.transition = "display 5.5s ease";
+            background.style.display = 'block';
+            background.hidden = false;
+
+            row.style.transition = "background 5.5s ease";
+            row.style.transition = "background-image 5.5s ease";
+            row.style.backgroundImage = 'none';
         } else {
             background.style.display = 'none';
             background.hidden = true;
