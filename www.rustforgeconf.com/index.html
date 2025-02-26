@@ -2286,5 +2286,189 @@
     </div>
 </div>
 
+<script>
+function elementsUsingCssVar(variableName, propertyName) {
+  const cssValue = getComputedStyle(document.documentElement)
+    .getPropertyValue(variableName)
+    .trim();
+  
+  // Get all elements in the document
+  const allElements = document.querySelectorAll('*');
+  
+  // Filter elements that use the CSS variable for the specified property
+  const matchingElements = Array.from(allElements).filter(element => {
+    const computedStyle = getComputedStyle(element);
+    const propertyValue = computedStyle.getPropertyValue(propertyName).trim();
+    
+    // Compare the computed values
+    return propertyValue === cssValue;
+  });
+  
+  return matchingElements;
+}
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    const logo = document.getElementById('intro-logo');
+    const paths = logo.querySelectorAll('.text, .mark');
+    const markPaths = logo.querySelectorAll('.mark');
+    const neon = '#e73c7e';
+    
+    // Hide background initially
+    const background = document.getElementById('background');
+    background.style.display = 'none';
+    background.hidden = true;
+
+    // Set the original state
+    const pathInfo = new Map();
+    paths.forEach(path => {
+        pathInfo.set(path, {
+            isPink: false,
+        });
+    });
+    
+    function checkLogoState() {
+        const row = document.querySelector(".row:has(#intro)");
+        const backgroundImageIsShowing = row.style.backgroundImage !== 'none';
+        var pink = 0;
+        var total = 0;
+        
+        pathInfo.forEach((info, path) => {
+            total++;
+            if (info.isPink) {
+                pink++;
+            }
+        });
+        
+        const gutter = document.querySelector('.left-gutter');
+        const icons = gutter.querySelectorAll("path, polygon");
+        const headings = document.querySelectorAll('h2');
+        const subheadings = document.querySelectorAll('h3');
+        const footer = document.querySelector('footer');
+        const boxes = document.querySelectorAll('.form-box, .product-name, .feature-box__body');
+        const highlights = document.querySelectorAll('em, p.highlight');
+        
+        const allPink = pink === total;
+        if (allPink) {
+            let backgroundImage = getComputedStyle(row).backgroundImage;
+            if (!row.hasAttribute("data-background-image")) {
+                let originalBackgroundImage = getComputedStyle(row).backgroundImage;
+                row.setAttribute("data-background-image", originalBackgroundImage);
+            }
+
+            background.style.display = 'block';
+            background.hidden = false;
+
+            row.style.transition = "background 5.5s ease";
+            row.style.transition = "background-image 5.5s ease";
+            row.style.backgroundImage = 'none';
+
+            icons.forEach(icon => {
+                icon.style.transition = "fill 2.5s ease";
+                icon.style.fill = neon;
+            });
+
+            headings.forEach(text => {
+                text.style.color = neon;
+            });
+
+            subheadings.forEach(text => {
+                text.style.color = '#23a6d5';
+            });
+
+            boxes.forEach(box => {
+                box.style.backgroundColor = '#23a6d543';
+            });
+
+            highlights.forEach(h => {
+                h.style.color = '#ee7752';
+                h.style.backgroundColor = '#ee775223';
+            })
+
+            footer.style.backgroundColor = 'none';
+        } else {
+            background.style.display = 'none';
+            background.hidden = true;
+            let originalBackgroundImage = row.getAttribute("data-background-image") || null;
+            if (originalBackgroundImage) {
+                row.style.backgroundImage = originalBackgroundImage;
+            }
+            icons.forEach(icon => {
+                icon.style.fill = '';
+            });
+
+            headings.forEach(text => {
+                text.style.color = '';
+            });
+
+            footer.style.backgroundColor = ''
+        }
+    }
+    
+    const observer = new MutationObserver(checkLogoState);
+    observer.observe(logo, {
+        attributes: true,
+        attributeFilter: ['style', 'fill'],
+        subtree: true,
+        childList: true
+    });
+    
+    paths.forEach(path => {
+        path.addEventListener('click', function(e) {
+            e.stopPropagation();
+            const info = pathInfo.get(path);
+            
+            if (info.isPink) {
+                path.style.fill = '';
+                path.style.filter = '';
+                info.isPink = false;
+            } else {
+                path.style.fill = neon;
+                path.style.filter = `drop-shadow(0 0 7px ${neon})`;
+                info.isPink = true;
+            }
+            
+            checkLogoState();
+        });
+    });
+
+    logo.addEventListener('mousedown', function(e) {
+        // A double check to avoid double-triggering on the path
+        if (e.target.tagName === 'path' || e.target.tagName === 'polygon') {
+            return;
+        }
+
+        // light up!
+        paths.forEach(path => {
+            let fill = path.getAttribute('fill') || window.getComputedStyle(path).fill;
+            path.style.filter = `drop-shadow(0 0 7px ${fill})`;
+        });
+    });
+    
+    logo.addEventListener('mouseup', function(e) {
+        paths.forEach(path => {
+            // Don't remove filter from paths that are already pink
+            const info = pathInfo.get(path);
+            if (!info || !info.isPink) {
+                path.style.filter = '';
+            }
+        });
+    });
+    
+    // Run initial check to make sure background is hidden at start
+    checkLogoState();
+    
+    // Add CSS animation for the glow effect
+    const style = document.createElement('style');
+    style.textContent = `
+        @keyframes glow {
+            0% { filter: drop-shadow(0 0 2px #e73c7e); }
+            50% { filter: drop-shadow(0 0 10px #e73c7e); }
+            100% { filter: drop-shadow(0 0 2px #e73c7e); }
+        }
+    `;
+    document.head.appendChild(style);
+});
+</script>
 </body>
 </html>
