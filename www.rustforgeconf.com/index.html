@@ -2646,5 +2646,30 @@ document.addEventListener('DOMContentLoaded', function() {
     document.head.appendChild(style);
 });
 </script>
+<script>
+    document
+        .querySelectorAll('form')
+        .forEach(form => {
+            form
+                .addEventListener('submit', function (e) {
+                    e.preventDefault();
+                    fetch(
+                        e.target.target,
+                        {
+                            body: new FormData(e.target),
+                            method: e.target.method
+                        }
+                    ).then(response => response.json())
+                        .then(data => {
+                            e.target.reset();
+                            if (data.status === "success") {
+                                alert("Thank you for your interest! We've added you to the mailing list. You're welcome to email hello@rustforgeconf.com to update your details.");
+                                return;
+                            }
+                            alert("There was a problem submitting your data. Please email hello@rustforgeconf.com and we get your details loaded up.")
+                        })
+                });
+        });
+</script>
 </body>
 </html>
