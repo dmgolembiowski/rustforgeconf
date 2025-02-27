@@ -854,6 +854,15 @@
             border-bottom: var(--framework-width) solid var(--framework-color);
         }
 
+        .feature-box__heading strong + em a {
+            border-bottom: none;
+            color: inherit;
+        }
+
+        .feature-box__heading strong + em:has(> a):active {
+            border-color: var(--brand-color-light);
+        }
+
         .feature-box__footer {
             flex-shrink: 1;
             right: 0;
@@ -1848,6 +1857,11 @@
             <h2>Travel <span class="boost">Guidance</span></h2>
 
             <p>The city's airport is <em>WLG</em> (Wellington International Airport).</p>
+        </div> <!-- -->
+
+        <div class="section" id="offers">
+
+            <h2><span class="boost">Offers</span> for delegates</h2>
 
             <div>
                 <h3>Travel Offers</h3>
@@ -1914,6 +1928,104 @@
                 </div>
 
             </div> <!-- /#travel-offers -->
+
+            <div>
+                <h3>Accommodation Offers</h3>
+                <p>
+                    Rather than have a single conference hotel, we have arranged discounts for a suite of options to
+                    cater to different preferences and budgets.
+                </p>
+            </div>
+
+            <div id="accommodation-offers">
+
+                <div class="feature-box">
+                    <div class="feature-box__body">
+
+                        <h3 class="feature-box__heading">
+                            <strong>Hotel</strong>
+                            <em>
+                                <a href="https://all.accor.com/hotel/3276/index.en.shtml">Novotel Wellington</a>
+                            </em>
+                        </h3>
+
+                        <p>4-star hotel overlooking the city and harbour beyond.</p>
+
+                        <ul class="plus">
+                            <li>Prices: $$$-$$$$</li>
+                            <li>Distance: 12 minutes' walk from venue (850m / 0.5 miles).</li>
+                            <li>Address: 133 The Terrace, Wellington</li>
+                        </ul>
+
+                        <p>Use the <a href="https://accorevents.com/offers/rust-forge-conference-2025">dedicated booking portal</a> to access special rates.</p>
+                    </div>
+                    <div class="feature-box__footer">
+                        <div class="feature-box__footer-blocks">
+                            <a class="feature-box__footer-block-solid" target="_blank" href="https://accorevents.com/offers/rust-forge-conference-2025">
+                                Book Novotel</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="feature-box">
+                    <div class="feature-box__body">
+
+                        <h3 class="feature-box__heading">
+                            <strong>Hotel</strong>
+                            <em>
+                                <a href="https://all.accor.com/hotel/3049/index.en.shtml">ibis Wellington</a>
+                            </em>
+                        </h3>
+
+                        <p>3.5-star economy hotel in the city.</p>
+
+                        <ul class="plus">
+                            <li>Prices: $$-$$$</li>
+                            <li>Distance: 3 minutes' walk from venue (400m / 0.7 miles).</li>
+                            <li>Address: 153 Featherston Street, Wellington</li>
+                        </ul>
+
+                        <p>Use the <a href="https://accorevents.com/offers/rust-forge-conference-2025">dedicated booking portal</a> to access special rates.</p>
+                    </div>
+                    <div class="feature-box__footer">
+                        <div class="feature-box__footer-blocks">
+                            <a class="feature-box__footer-block-solid" target="_blank" href="https://accorevents.com/offers/rust-forge-conference-2025">
+                                Book ibis</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="feature-box">
+                    <div class="feature-box__body">
+
+                        <h3 class="feature-box__heading">
+                            <strong>Hostel</strong>
+                            <em>
+                                <a href="https://hakahouse.com/wellington/">Haka House Wellington</a>
+                            </em>
+                        </h3>
+
+                        <p>Self-catered hostel with shared and private rooms. Female-only dorm rooms available.</p>
+
+                        <ul class="plus">
+                            <li>Prices: $-$$</li>
+                            <li>Distance: 15 minutes' walk from venue (1.1km / 0.7 miles).</li>
+                            <li>Address: 292 Wakefield Street, Wellington</li>
+                        </ul>
+                    </div>
+                    <div class="feature-box__footer">
+                        <div class="feature-box__footer-blocks">
+                            <div class="feature-box__footer-block-shaded">
+                                Code: RFCWEL25
+                            </div>
+                            <a class="feature-box__footer-block-solid" target="_blank" href="https://reservation.travelanium.net/propertyibe2/rates?propertyId=1081&checkin=2025-08-25&checkout=2025-08-30">
+                                Book Haka House</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div> <!-- /#accomodation-offers -->
+
 
         </div> <!-- /#travel -->
 
