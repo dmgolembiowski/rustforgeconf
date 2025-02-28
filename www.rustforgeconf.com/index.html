@@ -778,6 +778,14 @@
             background-color: var(--brand-color-light-ghost);
         }
 
+        .form-box em a {
+            border-bottom: none;
+        }
+
+        .form-box em:has(> a):active {
+            border-color: var(--brand-color-light);
+        }
+
 
         /**
          * COMPONENT > PRODUCT BOX
@@ -2286,11 +2294,17 @@
         <div class="section" id="interested">
             <div class="form-box">
                 <h2>Let's do this!</h2>
-                <p>Show your interest, let us know if you'd like to attend, speak, volunteer, or any of the above.
-                You'll also receive updates as planning develops. There's no commitment. ♥</p>
+                <p>Do <a href="mailto:hello@rustforgeconf.com?subject=Considering%20(attending%7Cspeaking%7Cvolunteering)%20at%20Rust%20Forge%202025">send us a message</a> to let us know if you'd like to 
+                    <em><a href="mailto:hello@rustforgeconf.com?subject=Considering%20attending%20Rust%20Forge%202025">attend</a></em>, 
+                    <em><a href="mailto:hello@rustforgeconf.com?subject=Considering%20speaking%20Rust%20Forge%202025">speak</a></em>, 
+                    <em><a href="mailto:hello@rustforgeconf.com?subject=Considering%20volunteering%20Rust%20Forge%202025">volunteer</a></em>,
+                    or any of the above.
+                You'll receive updates as planning develops. There's no commitment. ♥</p>
                 <p>We're also looking for sponsors. Your support makes all the difference, especially during our first
                 year! </p>
-                <form enctype="multipart/form-data" id="form02" method="post" target="https://hooks.zapier.com/hooks/catch/19805528/263afdp/" data-autofocus="1">
+                <p><strong>We&rsquo;re excited to hear from you!</strong></p>
+                <!-- TODO: fix this form -->
+                <!-- <form enctype="multipart/form-data" id="form02" method="post" target="/sign-up" data-autofocus="1">
 
                     <div class="field" data-type="email">
                         <input type="email" name="email" placeholder="iloverust@example.com" maxlength="128" required="">
@@ -2315,7 +2329,7 @@
                     </div>
 
                     <input type="hidden" name="id" value="form01">
-                </form>
+                </form> -->
 
             </div>
         </div> <!-- /#interested -->
@@ -2645,31 +2659,6 @@ document.addEventListener('DOMContentLoaded', function() {
     `;
     document.head.appendChild(style);
 });
-</script>
-<script>
-    document
-        .querySelectorAll('form')
-        .forEach(form => {
-            form
-                .addEventListener('submit', function (e) {
-                    e.preventDefault();
-                    fetch(
-                        e.target.target,
-                        {
-                            body: new FormData(e.target),
-                            method: e.target.method
-                        }
-                    ).then(response => response.json())
-                        .then(data => {
-                            e.target.reset();
-                            if (data.status === "success") {
-                                alert("Thank you for your interest! We've added you to the mailing list. You're welcome to email hello@rustforgeconf.com to update your details.");
-                                return;
-                            }
-                            alert("There was a problem submitting your data. Please email hello@rustforgeconf.com and we get your details loaded up.")
-                        })
-                });
-        });
 </script>
 </body>
 </html>
