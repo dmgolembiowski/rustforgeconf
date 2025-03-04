@@ -2559,7 +2559,7 @@ document
                     }
                 );
 
-                const data = response.json();
+                const data = await response.json();
                 form.reset()
 
                 if (data.status === "success") {
