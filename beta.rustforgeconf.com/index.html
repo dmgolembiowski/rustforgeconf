@@ -2565,10 +2565,12 @@ document
                 form.reset()
 
                 if (data.status === "success") {
-                    const success = "Thank you for your interest!\n\n"
-                        + email + " has been submitted.\n\n"
-                        + "A confirmation email should be with you shortly. "
-                        + "Please email hello@rustforgeconf.com if it hasn't arrived within 24h.";
+                    const success = `Thank you for your interest!
+
+<${email}> has been submitted.
+
+A confirmation email should be with you shortly.
+Please email hello@rustforgeconf.com if it hasn't arrived within 24h.`;
 
                     alert(success);
                     return;
