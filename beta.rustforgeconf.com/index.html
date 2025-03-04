@@ -2538,9 +2538,7 @@
 </div>
 
 <script>
-const success = "Thank you for your interest! A confirmation email should be with you shortly. Please email hello@rustforgeconf.com if it hasn't arrived within 24h.";
 const validation = "Looks like there was a problem submitting your email address. Please send us a note on hello@rustforgeconf.com."
-const connectivity = "There was an error connecting to our server. Please send us a note on hello@rustforgeconf.com.";
 
 document
     .querySelectorAll('form')
@@ -2565,6 +2563,11 @@ document
                 form.reset()
 
                 if (data.status === "success") {
+                    const success = "Thank you for your interest!\n\n"
+                        + form.email + " has been submitted.\n\n"
+                        + "A confirmation email should be with you shortly. "
+                        + "Please email hello@rustforgeconf.com if it hasn't arrived within 24h.";
+
                     alert(success);
                     return;
                 }
