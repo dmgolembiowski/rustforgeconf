@@ -1396,7 +1396,55 @@
                     <h3>Join the Discord server</h3>
                     <p><a href="https://discord.gg/fwd8tGC4Ya">Chat with people</a> from around the world.</p>
                 </div>
+
+                <div class="form-box">
+                    <h3>Contact us</h3>
+                    <p>Do <a href="mailto:hello@rustforgeconf.com?subject=Considering%20(attending%7Cspeaking%7Cvolunteering)%20at%20Rust%20Forge%202025">send us a message</a>,
+                        especially to let us know if you'd like to
+                        <em><a href="mailto:hello@rustforgeconf.com?subject=Considering%20attending%20Rust%20Forge%202025">attend</a></em>,
+                        <em><a href="mailto:hello@rustforgeconf.com?subject=Considering%20speaking%20Rust%20Forge%202025">speak</a></em>, or
+                        <em><a href="mailto:hello@rustforgeconf.com?subject=Considering%20volunteering%20Rust%20Forge%202025">volunteer</a></em>.
+
+                    <p><em><a href="mailto:hello@rustforgeconf.com?subject=Considering%20(attending%7Cspeaking%7Cvolunteering)%20at%20Rust%20Forge%202025">&lt;hello@rustforgeconf.com&gt;</a></em></p>
+                </div>
             </div>
+
+            <div class="section" id="mailing-list">
+                <div class="form-box">
+                    <h3>Join mailing list</h3>
+                        You'll receive updates as planning develops. There's no commitment. ♥</p>
+                    <p>We're also looking for sponsors. Your support makes all the difference, especially during our first
+                        year! </p>
+                    <p><strong>We&rsquo;re excited to hear from you!</strong></p>
+                    <form enctype="application/x-www-form-urlencoded" id="form01" method="post" action="/sign-up" data-autofocus="1">
+
+                        <div class="field" data-type="email">
+                            <input type="email" name="email" placeholder="iloverust@example.com" maxlength="128" required="">
+                        </div>
+
+                        <div class="field" data-type="select">
+                            <select name="interested-in">
+                                <option value="">– Interested In ... (optional) –</option>
+                                <option value="Attending">Attending</option>
+                                <option value="Speaking">Speaking</option>
+                                <option value="Sponsoring">Sponsoring</option>
+                                <option value="Organising">Organising</option>
+                                <option value="Volunteering">Volunteering</option>
+                                <option value="Something Else">Something Else</option>
+                            </select>
+                        </div>
+
+                        <div class="actions">
+                            <button type="submit" class="button">
+                                form.submit()
+                            </button>
+                        </div>
+
+                        <input type="hidden" name="id" value="form01">
+                    </form>
+
+                </div>
+            </div> <!-- /#interested -->
         </div> <!-- /#get-involved -->
 
 
@@ -2307,9 +2355,9 @@
         <div class="section" id="interested">
             <div class="form-box">
                 <h2>Let's do this!</h2>
-                <p>Do <a href="mailto:hello@rustforgeconf.com?subject=Considering%20(attending%7Cspeaking%7Cvolunteering)%20at%20Rust%20Forge%202025">send us a message</a> to let us know if you'd like to 
-                    <em><a href="mailto:hello@rustforgeconf.com?subject=Considering%20attending%20Rust%20Forge%202025">attend</a></em>, 
-                    <em><a href="mailto:hello@rustforgeconf.com?subject=Considering%20speaking%20Rust%20Forge%202025">speak</a></em>, 
+                <p>Do <a href="mailto:hello@rustforgeconf.com?subject=Considering%20(attending%7Cspeaking%7Cvolunteering)%20at%20Rust%20Forge%202025">send us a message</a> to let us know if you'd like to
+                    <em><a href="mailto:hello@rustforgeconf.com?subject=Considering%20attending%20Rust%20Forge%202025">attend</a></em>,
+                    <em><a href="mailto:hello@rustforgeconf.com?subject=Considering%20speaking%20Rust%20Forge%202025">speak</a></em>,
                     <em><a href="mailto:hello@rustforgeconf.com?subject=Considering%20volunteering%20Rust%20Forge%202025">volunteer</a></em>,
                     or any of the above.
                 You'll receive updates as planning develops. There's no commitment. ♥</p>
@@ -2317,7 +2365,6 @@
                 year! </p>
                 <p><strong>We&rsquo;re excited to hear from you!</strong></p>
 <!--            <p><strong><a href="mailto:hello@rustforgeconf.com?subject=Considering%20(attending%7Cspeaking%7Cvolunteering)%20at%20Rust%20Forge%202025">&lt;hello@rustforgeconf.com&gt;</a></strong></p>-->
-                <!-- TODO: fix this form -->
                 <form enctype="application/x-www-form-urlencoded" id="form02" method="post" action="/sign-up" data-autofocus="1">
 
                     <div class="field" data-type="email">
@@ -2342,7 +2389,7 @@
                         </button>
                     </div>
 
-                    <input type="hidden" name="id" value="form01">
+                    <input type="hidden" name="id" value="form02">
                 </form>
 
             </div>
