@@ -1364,7 +1364,7 @@
                         <p class="p-summary">
                         <span class="p-name">Rust Forge 2025</span> is a <span class="p-category">conference</span> for
                         developers building with the Rust programming language that is being hosted in
-                        <strong> <a href="#location">
+                        <strong> <a id="#location">
                                     <span class="p-location h-hdr">
                                         <span class="p-locality">Wellington</span>,
                                         <span class="p-country-name">New&nbsp;Zealand</span>
@@ -1706,7 +1706,7 @@
 
             <div id="support-levels">
                 <div class="feature-box">
-                    <div class="feature-box__body">
+                    <div class="feature-box__body" id="forge-sponsorship">
 
                         <h3 class="feature-box__heading">
                             <strong>Forge</strong> <em>Sponsor</em>
@@ -1735,7 +1735,7 @@
                 <div class="feature-box">
                     <div class="feature-box__body">
 
-                        <h3 class="feature-box__heading">
+                        <h3 class="feature-box__heading" id="furnace-sponsorship">
                             <strong>Furnace</strong> <em>Sponsor</em>
                         </h3>
 
@@ -2316,9 +2316,9 @@
                 <p>We're also looking for sponsors. Your support makes all the difference, especially during our first
                 year! </p>
                 <p><strong>We&rsquo;re excited to hear from you!</strong></p>
-                <p><strong><a href="mailto:hello@rustforgeconf.com?subject=Considering%20(attending%7Cspeaking%7Cvolunteering)%20at%20Rust%20Forge%202025">&lt;hello@rustforgeconf.com&gt;</a></strong></p>
+<!--            <p><strong><a href="mailto:hello@rustforgeconf.com?subject=Considering%20(attending%7Cspeaking%7Cvolunteering)%20at%20Rust%20Forge%202025">&lt;hello@rustforgeconf.com&gt;</a></strong></p>-->
                 <!-- TODO: fix this form -->
-                <!-- <form enctype="multipart/form-data" id="form02" method="post" target="/sign-up" data-autofocus="1">
+                <form enctype="application/x-www-form-urlencoded" id="form02" method="post" action="/sign-up" data-autofocus="1">
 
                     <div class="field" data-type="email">
                         <input type="email" name="email" placeholder="iloverust@example.com" maxlength="128" required="">
@@ -2343,19 +2343,55 @@
                     </div>
 
                     <input type="hidden" name="id" value="form01">
-                </form> -->
+                </form>
 
             </div>
         </div> <!-- /#interested -->
-
-
     </div>
 </div>
 
 <footer>
 <div class="row">
     <div class="col">
-        <div class="section">
+<!--        TODO: NAVIGATION -->
+
+<!--        <div class="section">-->
+<!--            <div>-->
+<!--                <h3>General Information</h3>-->
+<!--                <ul class="arrow">-->
+<!--                    <li><a href="#intro">Top of the page</a></li>-->
+<!--                    <li><a href="#get-involved">Get involved</a></li>-->
+<!--                    <li><a href="#what-is-rust-forge">What is Rust Forge?</a></li>-->
+<!--                    <li><a href="#where-and-when">Where and When?</a></li>-->
+<!--                    <li><a href="#participate">How to Participate</a></li>-->
+<!--                </ul>-->
+<!--            </div>-->
+
+<!--            <div>-->
+<!--                <h3>For delegates</h3>-->
+<!--                <ul class="arrow">-->
+<!--                    <li><a href="#workshop">How to Adopt Rust Workshop</a></li>-->
+<!--                    <li><a href="#networking">Co-creation Days</a></li>-->
+<!--                    <li><a href="#conference">Conference</a></li>-->
+<!--                    <li><a href="#interested">Sign up</a></li>-->
+<!--                </ul>-->
+<!--            </div>-->
+
+<!--            <div>-->
+<!--                <h3>For teams</h3>-->
+<!--                <ul class="arrow">-->
+<!--                    <li><a href="#spaces">Team spaces</a></li>-->
+<!--                    <li>-->
+<!--                        <a href="#sponsorship">Sponsorship options</a>-->
+<!--                        <ul>-->
+<!--                            <li><a href="forge-sponsorship">Forge</a></li>-->
+<!--                            <li><a href="furnace-sponsorship">Furnace</a></li>-->
+<!--                        </ul>-->
+<!--                    </li>-->
+<!--                    <li><a href="#interested">Sign up</a></li>-->
+<!--                </ul>-->
+<!--            </div>-->
+
             <div id="footer-layout">
                 <p>
                 &copy; 2024-2025 Accelerant Limited. All rights reserved.<br><br> Design and Development by
@@ -2501,6 +2537,49 @@
         </ul>
     </div>
 </div>
+
+<script>
+const validation = "Looks like there was a problem submitting your email address. Please send us a note on hello@rustforgeconf.com."
+
+document
+    .querySelectorAll('form')
+    .forEach(form => {
+        form
+            .addEventListener('submit', async function (e) {
+                e.preventDefault();
+                e.stopPropagation();
+
+                const email = form.email.value;
+
+                const response = await fetch(
+                    form.action,
+                    {
+                        body: new FormData(form),
+                        method: form.method || 'POST',
+                        headers: {
+                            'Accept': 'application/json'
+                        }
+                    }
+                );
+
+                const data = await response.json();
+                form.reset()
+
+                if (data.status === "success") {
+                    const success = `Thank you for your interest!
+
+<${email}> has been submitted.
+
+A confirmation email should be with you shortly.
+Please email hello@rustforgeconf.com if it hasn't arrived within 24h.`;
+
+                    alert(success);
+                    return;
+                }
+                alert(validation)
+            });
+    });
+</script>
 
 <script>
 document.addEventListener('DOMContentLoaded', function() {
