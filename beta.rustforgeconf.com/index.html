@@ -2538,6 +2538,42 @@
 </div>
 
 <script>
+const success = "Thank you for your interest! A confirmation email should be with you shortly. Please email hello@rustforgeconf.com if it hasn't arrived within 24h.";
+const validation = "Looks like there was a problem submitting your email address. Please send us a note on hello@rustforgeconf.com."
+const connectivity = "There was an error connecting to our server. Please send us a note on hello@rustforgeconf.com.";
+
+document
+    .querySelectorAll('form')
+    .forEach(form => {
+        form
+            .addEventListener('submit', function (e) {
+                e.preventDefault();
+
+                const url = e.target.action || '/sign-up';
+
+                fetch(
+                    url,
+                    {
+                        body: new FormData(e.target),
+                        method: e.target.method
+                    }
+                ).then(response => response.json())
+                    .then(data => {
+                        e.target.reset();
+                        if (data.status === "success") {
+                            alert(success);
+                            return;
+                        }
+                        alert(validation)
+                    })
+                    .catch(_error => {
+                        alert(connectivity);
+                    });
+            });
+    });
+</script>
+
+<script>
 document.addEventListener('DOMContentLoaded', function() {
     const logo = document.getElementById('intro-logo');
     const paths = logo.querySelectorAll('.text, .mark');
