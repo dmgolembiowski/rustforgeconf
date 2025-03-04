@@ -2548,6 +2548,8 @@ document
                 e.preventDefault();
                 e.stopPropagation();
 
+                const email = form.email.value;
+
                 const response = await fetch(
                     form.action,
                     {
@@ -2564,7 +2566,7 @@ document
 
                 if (data.status === "success") {
                     const success = "Thank you for your interest!\n\n"
-                        + form.email + " has been submitted.\n\n"
+                        + email + " has been submitted.\n\n"
                         + "A confirmation email should be with you shortly. "
                         + "Please email hello@rustforgeconf.com if it hasn't arrived within 24h.";
 
