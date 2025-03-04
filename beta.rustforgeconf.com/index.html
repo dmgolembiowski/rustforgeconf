@@ -2316,7 +2316,7 @@
                 <p>We're also looking for sponsors. Your support makes all the difference, especially during our first
                 year! </p>
                 <p><strong>We&rsquo;re excited to hear from you!</strong></p>
-                <p><strong><a href="mailto:hello@rustforgeconf.com?subject=Considering%20(attending%7Cspeaking%7Cvolunteering)%20at%20Rust%20Forge%202025">&lt;hello@rustforgeconf.com&gt;</a></strong></p>
+<!--            <p><strong><a href="mailto:hello@rustforgeconf.com?subject=Considering%20(attending%7Cspeaking%7Cvolunteering)%20at%20Rust%20Forge%202025">&lt;hello@rustforgeconf.com&gt;</a></strong></p>-->
                 <!-- TODO: fix this form -->
                 <form enctype="application/x-www-form-urlencoded" id="form02" method="post" action="/sign-up" data-autofocus="1">
 
@@ -2546,29 +2546,29 @@ document
     .querySelectorAll('form')
     .forEach(form => {
         form
-            .addEventListener('submit', function (e) {
+            .addEventListener('submit', async function (e) {
                 e.preventDefault();
+                e.stopPropagation();
 
-                const url = e.target.action || '/sign-up';
-
-                fetch(
-                    url,
+                const response = await fetch(
+                    form.action,
                     {
-                        body: new FormData(e.target),
-                        method: e.target.method
-                    }
-                ).then(response => response.json())
-                    .then(data => {
-                        e.target.reset();
-                        if (data.status === "success") {
-                            alert(success);
-                            return;
+                        body: new FormData(form),
+                        method: form.method || 'POST',
+                        headers: {
+                            'Accept': 'application/json'
                         }
-                        alert(validation)
-                    })
-                    .catch(_error => {
-                        alert(connectivity);
-                    });
+                    }
+                );
+
+                const data = response.json();
+                form.reset()
+
+                if (data.status === "success") {
+                    alert(success);
+                    return;
+                }
+                alert(validation)
             });
     });
 </script>
