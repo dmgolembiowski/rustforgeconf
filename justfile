@@ -14,3 +14,6 @@ sync:
 
 preview:
     cd www.rustforgeconf.com && python3 -m http.server
+
+preview-beta:
+    cd beta.rustforgeconf.com && python3 -m http.server
