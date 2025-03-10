@@ -1069,6 +1069,56 @@
             }
         }
 
+        /**
+        *  SECTION - SPONSORS AND SUPPORTERS
+        */
+        .supporter-tier-heading {
+            text-align: center;
+            max-width: 40rem;
+            margin: auto auto;
+        }
+
+        .sponsors h3 {
+            margin: var(--spacing-default) auto;
+        }
+
+        .supporter-logos {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            width: 100%;
+            align-items: center;
+            column-gap: var(--spacing-small);
+        }
+
+        .supporter-logos > * {
+            background-color: rgba(255,255,255,0.65);
+            aspect-ratio: 1;
+            padding: 1rem;
+            max-width: 100%;
+            object-fit: contain;
+        }
+
+        .supporter-logos.forge img {
+            background-color: rgba(255,255,255, 0.95);
+        }
+
+        .supporter-logos.furnace img {
+            background-color: rgba(255, 255, 255, 0.8);
+        }
+
+        @media screen and (min-width: 720px) {
+            .supporter-logos > * {
+                max-width: 10rem;
+            }
+
+            #spark-sponsors ul {
+                display: table;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+        }
 
         /**
          * SECTION > WHERE AND WHEN
@@ -1463,6 +1513,53 @@
             </div>
         </div> <!-- /#what -->
 
+        <div class="section" id="giving-thanks">
+            <h2><span class="boost">Sponsors</span> and Supporters</h2>
+
+            <h4 class="supporter-tier-heading">Rust Forge is made possible thanks to the financial support of our
+                sponsors:</h4>
+
+            <div class="sponsors furnace" id="furnace-sponsors">
+                <h3>Furnace</h3>
+
+                <div class="supporter-logos furnace">
+                    <img src="assets/images/sponsors/linux-foundation.svg">
+                </div>
+            </div>
+
+            <div class="sponsors ember" id="ember-sponsors">
+                <h3>Ember</h3>
+
+                <div class="supporter-logos">
+                    <img src="assets/images/sponsors/jetbrains.svg">
+                </div>
+            </div>
+
+            <div class="sponsors spark" id="spark-sponsors">
+                <h3>Spark</h3>
+
+                <ul class="plus">
+                    <li>Neil Henderson, Blue Tarp Media</li>
+                    <li>John Funk, Underscore Funk Design</li>
+                </ul>
+            </div>
+
+            <h3>Travel Partners</h3>
+            <div class="supporter-logos">
+                <img src="assets/images/sponsors/cathay.png">
+                <img src="assets/images/sponsors/qantas.svg">
+            </div>
+
+            <h3>Special Thanks</h3>
+            <p>
+                A huge thank you to Wellington's regional tourism agency, WellingtonNZ and its Business Events Wellington team
+                for facilitating so many connections that have enabled this event.
+            </p>
+            <div class="supporter-logos">
+                <img src="assets/images/sponsors/wellingtonnz.svg">
+                <img src="assets/images/sponsors/business-events-wellington.png">
+            </div>
+        </div>
 
         <div class="section" id="where-and-when">
             <img src="assets/images/shed6-500x260.png" alt="Shed 6 from across the harbour." style="opacity: 0.8;">
