@@ -1,0 +1,6 @@
+.logo .text {
+    fill: var(--text-color-highlight);
+}
+.logo .mark {
+    fill: var(--brand-color-light);
+}

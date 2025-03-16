@@ -1,0 +1,114 @@
+#viewport-column {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+@media screen and (min-width: 768px) {
+    #main {
+        min-height: 75vh;
+    }
+}
+
+.left-gutter {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: var(--viewport-gutter);
+    padding-top: var(--spacing-default);
+
+    background-image: var(--background-pattern);
+}
+
+.navigation-icons {
+    list-style: none;
+    padding: var(--spacing-small) 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-tiny);
+}
+
+.navigation-icons li {
+    margin: 0;
+}
+
+.navigation-icons a {
+    text-decoration: none;
+
+    padding: var(--spacing-tiny);
+    color: var(--brand-color-light);
+    border: 1px solid var(--brand-color-light-ghost);
+    display: flex;
+    flex-direction: column;
+    border-radius: 2px;
+}
+
+.navigation-icons a:hover {
+
+    color: white;
+}
+
+.navigation-icons svg {
+    fill: currentColor;
+    display: block;
+}
+
+.navigation-icons label {
+    display: none;
+}
+
+.social-icons {
+    list-style: none;
+    padding: var(--spacing-small) 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-tiny);
+}
+
+.social-icons li {
+    margin: 0;
+}
+
+.social-icons a {
+    text-decoration: none;
+    border: none;
+    padding: var(--spacing-tiny);
+    display: block;
+    color: var(--brand-color-light);
+}
+
+.social-icons a:hover {
+    color: white;
+}
+
+.social-icons svg {
+    fill: currentColor;
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.right-gutter {
+    display: none;
+}
+
+.image-row {
+    display: flex;
+    flex-direction: column;
+    grid-template-columns: 1fr;
+}
+
+@media screen and (min-width: 800px) {
+    .image-row {
+        flex-direction: row;
+        gap: var(--spacing-small);
+    }
+}

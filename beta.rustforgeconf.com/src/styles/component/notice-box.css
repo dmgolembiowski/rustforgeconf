@@ -1,0 +1,9 @@
+.notice-box {
+    outline: 1px dotted var(--brand-color-light-ghost);
+    cursor: pointer;
+    padding: var(--spacing-small) var(--spacing-small) var(--spacing-small) var(--spacing-small);
+    width: 100%;
+    box-sizing: border-box;
+    font-size: var(--font-size-small);
+    color: var(--brand-color-light);
+}

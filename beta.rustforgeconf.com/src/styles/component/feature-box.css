@@ -1,0 +1,82 @@
+/**
+ * COMPONENT > FEATURE BOX
+ * -------------------------------------------------------- */
+
+.feature-box {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+}
+
+.feature-box.dashed .feature-box__body {
+    border: var(--framework-width) dashed var(--brand-color-light-ghost);
+}
+
+.feature-box__body {
+    border: var(--framework-width) solid var(--framework-color);
+    padding: var(--spacing-small);
+    flex-grow: 1;
+}
+
+.feature-box__heading {
+    font-weight: normal;
+    margin-bottom: var(--spacing-small);
+    font-size: 1.125rem;
+}
+
+.feature-box__heading strong {
+    font-style: normal;
+    color: var(--heading-color-highlight);
+    /* border-bottom: var(--framework-width) solid var(--framework-color); */
+}
+
+.feature-box__footer {
+    flex-shrink: 1;
+    right: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+.feature-box__footer-blocks {
+    background-color: var(--background-color);
+    position: relative;
+    top: calc(var(--spacing-small) * -1);
+    border-right: var(--framework-width) solid var(--framework-color);
+    display: flex;
+    flex-direction: row;
+    max-width: calc(100% - var(--spacing-default));
+    justify-content: flex-end;
+}
+
+@media screen and (max-width: 720px) {
+    .feature-box__footer-blocks {
+        flex-direction: column;
+        align-items: stretch;
+    }
+}
+
+.feature-box__footer-block-shaded {
+    padding: var(--spacing-smaller) var(--spacing-small);
+    text-align: right;
+
+    background-image: var(--background-pattern);
+    color: var(--text-color-highlight);
+}
+
+.feature-box__footer-block-solid {
+    padding: var(--spacing-smaller) var(--spacing-small);
+    text-align: right;
+    color: var(--brand-color-light);
+    text-align: right;
+    background-image: var(--background-pattern-dashed);
+}
+a.feature-box__footer-block-solid {
+    background: var(--brand-color-light);
+    color: var(--background-color);
+}
+
+a.feature-box__footer-block-solid:hover {
+    background-color: var(--text-color-highlight);
+}

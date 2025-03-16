@@ -1,0 +1,40 @@
+#floating-footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    margin: 0 var(--viewport-gutter);
+
+    width: calc(100% -  var(--viewport-gutter));
+    z-index: 100;
+    text-align: center;
+    background-color: var(--brand-color-dark-ghost);
+    background-image: var(--background-pattern-dashed);
+    color: var(--text-color-highlight);
+    padding: var(--spacing-small);
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    gap: var(--spacing-smaller);
+    flex-direction: column;
+}
+
+@media screen and (min-width: 768px) {
+    #floating-footer {
+        flex-direction: row;
+    }
+}
+
+#floating-footer a{
+    background-color: var(--highlight-color);
+    padding: var(--spacing-tiny) var(--spacing-small);
+    display: block;
+    color: var(--background-color);
+}
+#floating-footer a:hover {
+    background-color: white;
+}
+footer {
+    padding-bottom: 10rem;
+}

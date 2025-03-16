@@ -1,0 +1,46 @@
+details {
+    margin: 0;
+    padding: 0;
+    background-image: var(--background-pattern);
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+details summary {
+    outline: 1px solid var(--brand-color-light-ghost);
+    cursor: pointer;
+    padding: var(--spacing-small) var(--spacing-small) var(--spacing-small) var(--spacing-small);
+    width: 100%;
+    box-sizing: border-box;
+}
+
+details[closed] summary {
+    background-color: var(--brand-color-light);
+}
+
+details summary::marker {
+    color: var(--brand-color-light);
+    margin-right: 10px;
+}
+
+details summary span {
+    padding-left: 4px;
+}
+
+.details__body {
+    outline: 1px solid var(--brand-color-light-ghost);
+    display: flex;
+    flex-direction: column;
+}
+
+.details__body div {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-content);
+    padding: var(--spacing-default);
+}
+
+.details__body div:not(:first-child) {
+    border-top: 1px solid var(--brand-color-light-ghost);
+}

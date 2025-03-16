@@ -1,0 +1,30 @@
+.logo-grid {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    gap: var(--spacing-small)
+}
+
+.logo-grid > * {
+    background-color: white;
+    aspect-ratio: 3/2;
+    padding: 1rem;
+    max-width: 100%;
+    width: 100%;
+    box-sizing: border-box;
+
+}
+.logo-grid img {
+    object-fit: contain;
+    aspect-ratio: 3/2;
+
+}
+
+@media screen and (min-width: 480px) {
+    .logo-grid > * {
+        max-width: 13rem;
+    }
+}
