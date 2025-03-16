@@ -1,0 +1,14 @@
+{
+    "name": "underscorefunk/rustforgeconf",
+    "description": "Website",
+    "type": "website",
+    "license": "GPL v2",
+    "autoload": {
+        "psr-4": {
+            "rfc\\ws\\": "src/"
+        }
+    },
+    "require": {
+        "erusev/parsedown": "^1.7"
+    }
+}

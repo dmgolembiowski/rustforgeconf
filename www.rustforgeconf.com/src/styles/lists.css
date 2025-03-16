@@ -1,0 +1,49 @@
+ul {
+    margin-left: var(--spacing-small);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-teeny);
+}
+
+li {
+    margin: 0;
+}
+
+ul.plus {
+    list-style: none;
+    margin-top: var(--spacing-small);
+    margin-bottom: var(--spacing-small);
+}
+
+ul.plus li::before {
+    position: absolute;
+    left: 0;
+    width: var(--spacing-small);
+    content: "+ ";
+    margin-left: calc(-1 * var(--spacing-small));
+}
+
+ul.plus ul {
+    list-style: none;
+}
+
+ul.plus ul li::before {
+    position: absolute;
+    left: 0;
+    width: var(--spacing-small);
+    content: "- ";
+    margin-left: calc(-1 * var(--spacing-small));
+}
+
+ul.arrow {
+    list-style: none;
+}
+
+ul.arrow li::before {
+    position: absolute;
+    left: 0;
+    width: var(--spacing-small);
+    content: "→ ";
+    margin-left: calc(-1 * var(--spacing-small));
+}

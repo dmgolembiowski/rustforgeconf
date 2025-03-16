@@ -1,0 +1,177 @@
+/**
+ * COMPONENT > BACKGROUND EASTER EGG
+ * -------------------------------------------------------- */
+
+.yas {
+    --background-pattern: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%2306252f' fill-opacity='0.2' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
+    --brand-color-dark-ghost: rgba(231, 60, 126, 0.72);
+    --brand-color-light: white;
+    --brand-color-light-ghost: white;
+    --text-color-highlight: var(--background-color-dark);
+    --highlight-color: var(--background-color-dark);
+    --heading-color: var(--background-color-dark);
+    --framework-color: var(--background-color-dark);
+    --background-color: #e73c7e;
+
+}
+.yas em {
+    background-color: #23a6d5;
+
+}
+.yas a:has(em) em {
+    background: var(--brand-color-light-ghost);
+    color: #e73c7e;
+}
+.yas h2 .button {
+    background: var(--brand-color-light-ghost);
+    color: #e73c7e;
+}
+
+#background {
+    display: none;
+    background-attachment: fixed;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    z-index: -10;
+}
+
+html {
+
+}
+#pattern {
+
+    animation: scroll 360s linear infinite;
+    background: url("/assets/images/glitter-hc-accented.webp"),
+    #111111;
+    color: #eee;
+    height: 100vh;
+    min-width: 360px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    perspective: 1000px;
+    perspective-origin: 50% 50%;
+    position: fixed;
+
+    z-index: -30;
+}
+
+@keyframes scroll {
+    100% {
+        background-position: 0px -400%;
+    }
+}
+
+/* Fallback if the operatring system prefers reduced motion*/
+@media (prefers-reduced-motion) {
+    .wrapper {
+        animation: scroll 800s linear infinite;
+    }
+}
+
+
+
+#scan-lines {
+
+z-index: -20;
+    height: 100%;
+    background-attachment: fixed;
+    width: 100%;
+    position: fixed;
+    background: url('data:image/svg+xml;utf8,<svg style="fill: %2306252f" viewBox="0 0 1 1" xmlns="http://www.w3.org/2000/svg"><rect width="3" height="3" /></svg>') 0px 0px/1px 4px;
+
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+#background-overlay-pattern {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: 5px;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='rgba(6,37,47,1)' fill-opacity='1' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+.yas .section {
+    text-shadow: 1px 1px rgba(6, 37, 47, 0.25);
+    animation: glow 15s ease infinite;
+}
+
+.yas #background {
+    display: block;
+    filter: none;
+}
+
+@keyframes glow {
+    0% {
+        filter: drop-shadow(0 0 10px rgba(238, 119, 82, 0.25));
+    }
+    25% {
+        filter: drop-shadow(0 0 10px rgba(231, 60, 126, 0.5));
+    }
+    75% {
+        filter: drop-shadow(0 0 10px rgba(35, 166, 213, 0.5));
+    }
+    100% {
+        filter: drop-shadow(0 0 10px rgba(35, 213, 171, 0.5));
+    }
+}
+
+#intro-logo .yas {
+    fill: #e73c7e !important;
+}
+
+#intro-logo path:hover,
+#intro-logo polygon:hover {
+    cursor: pointer;
+}
+
+#floating-header {
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    top: 0;
+    right: 0;
+    align-content: center;
+    align-items: center;
+    margin-right: var(--viewport-gutter);
+    margin-left: var(--viewport-gutter);
+    width: calc( 100% - (2 * var(--viewport-gutter)));
+    z-index: 1000;
+}
+#tone-it-down {
+    display: none;
+}
+.yas #tone-it-down {
+    font-size: var(--font-size-small);
+    background-color: var(--highlight-color);
+    border-radius: 0px 0px var(--spacing-tiny) var(--spacing-tiny);
+    display: block;
+    padding: var(--spacing-tiny) var(--spacing-small);
+    color: var(--text-color);
+    border: 0;
+
+}
+
+#tone-it-down:hover {
+    cursor: pointer;
+    background-color: var(--background-color);
+}

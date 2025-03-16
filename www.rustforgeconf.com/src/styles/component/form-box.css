@@ -1,0 +1,26 @@
+/**
+ * COMPONENT > FORM BOX
+ * -------------------------------------------------------- */
+
+.form-box {
+    border: 1px solid var(--brand-color-light);
+    box-shadow: 10px 10px 0px var(--brand-color-light);
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0 auto;
+    max-width: min(100%, 30rem);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-default);
+    padding: var(--spacing-default);
+}
+
+a:has(> .form-box ) {
+    border-bottom: none;
+}
+
+a .form-box:hover {
+    background-color: var(--brand-color-light-ghost);
+}

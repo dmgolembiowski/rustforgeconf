@@ -1,0 +1,117 @@
+
+h1 {
+    font-family: 'Roc Grotesk Wide Bold', 'Space Mono', 'Fira Code', monospace;
+    font-size: clamp(2rem, 7.5vw, 5rem);
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: -0.05rem;
+    font-weight: normal;
+    color: var(--heading-color);
+    text-align: left;
+    line-height: 98%;
+}
+
+h2 {
+    font-family: 'Roc Grotesk Wide Bold', 'Space Mono', 'Fira Code', monospace;
+    font-size: clamp(1.5rem, 3vw, 3rem);
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 0rem;
+    font-weight: normal;
+    color: var(--heading-color);
+    text-align: left;
+    line-height: 98%;
+}
+h2.small {
+    font-size: clamp(1.125rem, 2vw, 1.5rem);
+}
+
+h3 {
+    font-family: 'Roc Grotesk Wide Bold', 'Space Mono', 'Fira Code', monospace;
+    font-size: clamp(1.125rem, 2vw, 1.5rem);
+    line-height: 1.25;
+    color: var(--heading-color);
+    text-transform: uppercase;
+    letter-spacing: 0.5pt;
+}
+
+h3.small {
+    font-size: clamp(1rem, 1.5vw, 1.125rem);
+}
+
+
+h4 {
+    font-size: 1rem;
+    color: var(--text-color-highlight);
+    text-transform: uppercase;
+    letter-spacing: 0.5pt;
+    font-weight: 400;
+}
+
+h1 .boost,
+h2 .boost,
+h3 .boost{
+    color: var(--heading-color-highlight);
+}
+
+p {
+    margin: 0;
+}
+
+a {
+    color: var(--text-color-highlight);
+    text-decoration: none;
+    border-bottom: 1px solid var(--highlight-color);
+    font-weight: 500;
+}
+
+strong {
+    color: var(--highlight-color);
+}
+.weak {
+    color: var(--text-color-muted);
+}
+.break-text {
+    word-break: break-all;
+}
+
+
+code {
+    border: 1px solid var(--brand-color-light-ghost);
+    padding: 0.125em 0.325em;
+    display: inline-block;
+    border-radius: 0.25em;
+}
+
+
+/**
+ * TEXT TREATMENTS
+ * -------------------------------------------------------- */
+strong {
+    color: var(--text-color-highlight);
+}
+
+em {
+    font-family: var(--font-family-body);
+    font-size: var(--font-size-regular);
+    font-style: normal;
+    line-height: var(--line-height-regular);
+    /* border: 1px solid var(--brand-color-light-ghost); */
+    background: var(--background-pattern);
+    font-weight: 500;
+    color: var(--brand-color-light);
+    padding: var(--spacing-hairline) var(--spacing-teeny);
+    display: inline-block;
+    border-radius: var(--spacing-hairline);
+    text-transform: none;
+}
+
+.highlight {
+    color: var(--highlight-color);
+    text-decoration-color: var(--highlight-color);
+    font-weight: 500;
+}
+
+.small {
+    font-size: var(--font-size-small);
+}
