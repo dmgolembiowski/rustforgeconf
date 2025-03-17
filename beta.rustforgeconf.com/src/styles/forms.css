@@ -1,3 +1,22 @@
+.field {
+    display: flex;
+    justify-content: stretch;
+}
+
+input[type="email"] {
+    padding: 1rem 2rem;
+    outline: 1px solid var(--framework-color);
+    text-decoration: none;
+    background-color: transparent;
+
+    border: 0;
+    font-size: inherit;
+    font-family: inherit;
+    color: white;
+    display: block;
+    width: 100%;
+}
+
 select {
     display: block;
     font-size: inherit;
@@ -26,4 +45,17 @@ select {
 
 select:hover {
     cursor: pointer;
+}
+
+button.button {
+    background-color: var(--highlight-color);
+    padding: var(--spacing-small) var(--spacing-small);
+    display: block;
+    color: var(--background-color);
+    font-size: inherit;
+    font-family: inherit;
+    border: 0;
+}
+button.button:hover {
+    background-color: var(--text-color-highlight);
 }
