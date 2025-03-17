@@ -17,12 +17,12 @@ $routes = [
     '/sponsor'     => 'participate__sponsor.php',
     '/sponsor/rad' => 'participate__become-a-sponsor.php',
 
-    '/events'      => 'event__hub.php',
-    '/social'      => 'event__social.php',
-    '/workshop'    => 'event__workshop.php', // TODO: remove
-    '/how-to-adopt-rust-workshop'    => 'event__workshop.php',
-    '/talks'       => 'event__talks.php',
-    '/team-spaces' => 'event__team_spaces.php',
+    '/events'                     => 'event__hub.php',
+    '/social'                     => 'event__social.php',
+    '/workshop'                   => 'event__workshop.php', // TODO: remove
+    '/how-to-adopt-rust-workshop' => 'event__workshop.php',
+    '/talks'                      => 'event__talks.php',
+    '/team-spaces'                => 'event__team_spaces.php',
 
     '/location'    => 'location__hub.php',
     '/venue'       => 'location__venue.php',
@@ -36,9 +36,8 @@ $routes = [
 
     '/conduct-and-safety' => 'conduct-and-safety.php',
 
-    '/call-for-papers' => 'call-for-papers.php',
 
-    '/about'           => 'about.php',
+    '/about' => 'about.php',
 
     '/privacy-policy' => 'privacy-policy.php',
 
@@ -46,6 +45,7 @@ $routes = [
 
     '/mailing-list' => 'mailing-list.php',
 
+    '/cfp'      => 'redirect__cfp.php',
     '/register' => 'redirect__register.php',
     '/discord'  => 'redirect__discord.php',
     '/linkedin' => 'redirect__linkedin.php',

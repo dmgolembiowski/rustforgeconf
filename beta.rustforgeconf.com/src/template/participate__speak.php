@@ -9,10 +9,10 @@ partial\Header::render();
             <?php partial\Top_Level_Nav::render(); ?>
             <div>
                 <h1>Let's <br><span class="boost">hear it!</span></h1>
-                <p class="highlight">We would love to have you speak at Rust Forge Conf 2025! <em>Our call for papers is opening soon, so stay tuned!</em></p>
+                <p class="highlight">We would love to have you speak at Rust Forge Conf 2025!</p>
             </div>
         </div>
-
+        <a class="button" href="/cfp" hx-boost="false" target="_blank">Submit your proposal</a>
         <div class="regular-spacing">
             <h2>
                 Format for the conference </h2>
