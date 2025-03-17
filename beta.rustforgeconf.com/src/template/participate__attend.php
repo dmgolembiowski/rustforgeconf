@@ -118,7 +118,7 @@ partial\Header::render();
 
                 <div class="feature-box__footer">
                     <div class="feature-box__footer-blocks">
-                        <a href="/sponsor/rad" class="feature-box__footer-block-solid">$1k USD</a>
+                        <a href="/become-a-sponsor" class="feature-box__footer-block-solid">$1k USD</a>
                     </div>
                 </div>
 
@@ -143,7 +143,7 @@ partial\Header::render();
 
                 <div class="feature-box__footer">
                     <div class="feature-box__footer-blocks">
-                        <a href="/sponsor/rad" class="feature-box__footer-block-solid" >$3k USD</a>
+                        <a href="/become-a-sponsor" class="feature-box__footer-block-solid" >$3k USD</a>
                     </div>
                 </div>
 

@@ -15,7 +15,7 @@ $routes = [
     '/speak'       => 'participate__speak.php',
     '/attend'      => 'participate__attend.php',
     '/sponsor'     => 'participate__sponsor.php',
-    '/sponsor/rad' => 'participate__become-a-sponsor.php',
+    '/become-a-sponsor' => 'participate__become-a-sponsor.php',
 
     '/events'                     => 'event__hub.php',
     '/social'                     => 'event__social.php',
