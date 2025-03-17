@@ -2,12 +2,11 @@
 
 namespace rfc\ws\partial;
 
-class Top_Level_Nav
+class News_Nav
 {
     public static function render()
     {
         ?>
-
         <nav class="horizontal-nav">
             <a class="home" href="/">~</a>
             <ul class="horizontal-nav">
@@ -16,9 +15,9 @@ class Top_Level_Nav
                 <li><a href="/sponsor">Sponsor</a></li>
                 <li><a href="/events">Events</a></li>
                 <li><a href="/location">Location</a></li>
-                <li><a href="/news">News</a></li>
+                <li><a class="active" href="/news">News</a></li>
                 <li><a href="/about">About</a></li>
-            </ul>
+            </ul>            
         </nav>
 
         <?php

@@ -9,7 +9,7 @@ partial\Header::render();
     <section id="workshop">
 
         <div class="row-spacing">
-            <?php partial\Event_Nav::render(); ?>
+            <?php partial\Event_Nav::render($active_subpage = 'how-to-adopt-rust-workshop'); ?>
             <div class="ragged-right">
                 <h1>
                     How to Adopt Rust <span class="boost">Workshop</span>

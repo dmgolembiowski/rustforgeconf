@@ -33,8 +33,17 @@
     right: -0.25em;
     z-index: -1;
 }
+.horizontal-nav a.active {
+    text-shadow: 0 0 6px var(--brand-color-dark);
+    background-color: var(--brand-color-dark-ghost);
+    background-image: var(--background-pattern-dashed);
+}
 
-
+.dual-navigation {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-hairline);
+}
 
 .lateral-menu {
     position: relative;

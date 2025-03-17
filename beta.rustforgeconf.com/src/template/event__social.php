@@ -10,7 +10,7 @@ partial\Header::render();
 
         <div class="row-spacing">
 
-            <?php partial\Event_Nav::render(); ?>
+            <?php partial\Event_Nav::render($active_subpage = 'social'); ?>
             <div class="ragged-right">
                 <h1>
                     <span class="boost">Spaces</span><br>In-between </h1>

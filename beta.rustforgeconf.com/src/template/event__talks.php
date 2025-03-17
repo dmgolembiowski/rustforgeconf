@@ -7,7 +7,7 @@ partial\Header::render();
 
     <section id="talks">
         <div class="row-spacing">
-            <?php partial\Event_Nav::render(); ?>
+            <?php partial\Event_Nav::render($active_subpage = 'talks'); ?>
             <div class="ragged-right">
                 <h1>
                     Conference <br><span class="boost">Talks</span>

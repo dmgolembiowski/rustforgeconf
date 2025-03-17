@@ -8,7 +8,7 @@ partial\Header::render(title: 'News');
 
     <section>
         <div class="row-spacing">
-            <?php partial\Top_Level_Nav::render(); ?>
+            <?php partial\News_Nav::render(); ?>
             <h1>News</h1>
         </div>
         <ul class="news-items">

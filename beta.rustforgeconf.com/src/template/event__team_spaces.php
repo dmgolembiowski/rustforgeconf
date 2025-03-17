@@ -8,7 +8,7 @@ partial\Header::render();
     <section>
         <div class="row-spacing">
 
-            <?php partial\Event_Nav::render(); ?>
+            <?php partial\Event_Nav::render($active_subpage = 'team-spaces'); ?>
             <div class="ragged-right">
                 <h1>
                     Team <span class="boost">Spaces</span>

@@ -3,7 +3,7 @@
 use rfc\ws\partial;
 
 partial\Header::render();
-?><?php partial\Location_Nav::render(); ?>
+?><?php partial\Location_Nav::render($active_subpage = 'activities'); ?>
 
     <section id="families">
 
