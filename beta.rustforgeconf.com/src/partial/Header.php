@@ -7,10 +7,9 @@ class Header
 {
     public static function render(
             string $title = '',
-            string $head = '',
-            bool $is_home = False, 
     )
     {
+        $is_home = $_SERVER['REQUEST_URI'] === '/';
         ?>
         <!DOCTYPE html>
         <html lang="en" prefix="og: https://ogp.me/ns#">
@@ -85,7 +84,6 @@ class Header
                 <meta property="og:title" content="<?php echo $title; ?>"/>
             <?php endif; ?>
             
-            <?php echo $head; ?>
             <?php Background::render_js(); ?>
         </head>
 
