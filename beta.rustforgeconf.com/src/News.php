@@ -89,7 +89,7 @@ class News
         $content      = file_get_contents(self::PATH . $filename);
         $front_matter = self::parse_front_matter($content);
         $content      = substr($content, $front_matter['content_start'] ?? 0);
-        $date         = substr($filename, 0, strpos($filename, '.md'));
+        $date         = substr($filename, 0, 10);
 
         $article = $front_matter;
 

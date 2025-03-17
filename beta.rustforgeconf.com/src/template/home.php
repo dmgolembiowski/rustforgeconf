@@ -13,7 +13,8 @@ $styles = ob_get_clean();
 
 partial\Header::render(
         title: 'Be part of something new!',
-        head: $styles
+        head: $styles,
+        is_home: True,
 );
 ?>
     <section>

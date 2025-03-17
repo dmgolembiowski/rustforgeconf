@@ -13,7 +13,7 @@ partial\Header::render( title: $article['title']);
             <?php partial\Top_Level_Nav::render(); ?>
             <div class="tight-spacing-spacing">
                 <h1><?php echo $article['title']; ?></h1>
-                <p><?php echo date('F j, Y', strtotime($article['date'])); ?></p>
+                <p><time datetime="<?php echo date('Y-m-d', strtotime($article['date'])); ?>"><?php echo date('jS F Y', strtotime($article['date'])); ?><time></p>
             </div>
         </div>
         <div>
