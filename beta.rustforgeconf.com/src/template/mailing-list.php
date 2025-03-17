@@ -3,12 +3,12 @@
 use rfc\ws\partial;
 use rfc\ws\ui\component\Api as ui;
 
-partial\Header::render();
+partial\Header::render(title: "Mailing List");
 
 ?>
     <section>
         <div class="row-spacing">
-            <?php partial\Top_Level_Nav::render(); ?>
+
             <div class="regular-spacing">
                 <h1>Mailing list</h1>
             </div>

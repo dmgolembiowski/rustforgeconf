@@ -2,13 +2,13 @@
 
 use rfc\ws\partial;
 
-partial\Header::render();
+partial\Header::render( title: "Become a Sponsor");
 ?>
 
     <section>
     <div class="row-spacing">
 
-        <?php partial\Top_Level_Nav::render(); ?>
+        <?php partial\Header_Nav::render(); ?>
         <div class="ragged-right">
             <h1>
                 You're <span class="boost">Rad</span>

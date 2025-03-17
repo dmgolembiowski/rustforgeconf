@@ -2,8 +2,8 @@
 
 use rfc\ws\partial;
 
-partial\Header::render();
-?><?php partial\Location_Nav::render(); ?>
+partial\Header::render( title: "New Zealand Culture");
+?>
 
 <section id="culture">
     <h1>Local <span class="boost">Culture</span></h1>

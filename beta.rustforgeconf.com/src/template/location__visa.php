@@ -2,12 +2,11 @@
 
 use rfc\ws\partial;
 
-partial\Header::render();
+partial\Header::render( title: "Visa Information");
 ?>
     <section id="visa">
 
         <div class="row-spacing">
-            <?php partial\Location_Nav::render($active_subpage = 'visa'); ?>
             <div>
                 <h1><span class="boost">Visa</span></h1>
                 <p class="highlight">

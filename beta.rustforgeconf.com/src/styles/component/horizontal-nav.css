@@ -33,10 +33,18 @@
     right: -0.25em;
     z-index: -1;
 }
-.horizontal-nav a.active {
+.horizontal-nav li a.active {
     text-shadow: 0 0 6px var(--brand-color-dark);
     background-color: var(--brand-color-dark-ghost);
     background-image: var(--background-pattern-dashed);
+}
+.horizontal-nav li a.ancestor {
+    text-shadow: 0 0 6px var(--brand-color-dark);
+    background-color: var(--brand-color-dark-ghost);
+    background-image: var(--background-pattern-dashed);
+}
+.horizontal-nav a.active {
+    color: var(--text-color-highlight);
 }
 
 .dual-navigation {

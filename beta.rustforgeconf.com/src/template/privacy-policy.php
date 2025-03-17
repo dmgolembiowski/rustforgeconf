@@ -2,7 +2,7 @@
 
 use rfc\ws\partial;
 
-partial\Header::render();
+partial\Header::render(title: "Privacy Policy");
 ?>
     <div class="section" id="legal">
 

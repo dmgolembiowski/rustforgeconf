@@ -19,7 +19,6 @@ $routes = [
 
     '/events'                     => 'event__hub.php',
     '/social'                     => 'event__social.php',
-    '/workshop'                   => 'event__workshop.php', // TODO: remove
     '/how-to-adopt-rust-workshop' => 'event__workshop.php',
     '/talks'                      => 'event__talks.php',
     '/team-spaces'                => 'event__team_spaces.php',

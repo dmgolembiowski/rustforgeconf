@@ -2,8 +2,8 @@
 
 use rfc\ws\partial;
 
-partial\Header::render();
-?><?php partial\Location_Nav::render(); ?>
+partial\Header::render( title: "Dining");
+?>
 
     <section id="culture">
         <h1>Good <span class="boost">Eats</span></h1>

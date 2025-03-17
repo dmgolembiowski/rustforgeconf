@@ -2,12 +2,11 @@
 
 use rfc\ws\partial;
 
-partial\Header::render();
+partial\Header::render( title: "International Travel");
 ?>
 
     <section>
         <div class="row-spacing">
-            <?php partial\Location_Nav::render(); ?>
             <div>
                 <h1><span class="boost">International</span> Delegates</h1>
                 <p>The city's airport is <em>WLG</em> (Wellington International Airport). Delegates from outsize of New

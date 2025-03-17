@@ -2,13 +2,12 @@
 
 use rfc\ws\partial;
 
-partial\Header::render();
+partial\Header::render( title: "Team Spaces");
 ?>
 
     <section>
         <div class="row-spacing">
 
-            <?php partial\Event_Nav::render($active_subpage = 'team-spaces'); ?>
             <div class="ragged-right">
                 <h1>
                     Team <span class="boost">Spaces</span>

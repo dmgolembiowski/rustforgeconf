@@ -2,13 +2,13 @@
 
 use rfc\ws\partial;
 
-partial\Header::render();
+partial\Header::render( title: "Venue");
 ?>
 
 
     <section id="venue">
         <div class="row-spacing">
-            <?php partial\Location_Nav::render($active_subpage = 'venue'); ?>
+
             <div>
                 <h1>Shed <span class="boost">6</span></h1>
                 <p class="highlight">

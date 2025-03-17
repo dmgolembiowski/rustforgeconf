@@ -3,23 +3,11 @@
 use rfc\ws\partial;
 use rfc\ws\News;
 
-ob_start();
-?>
-<style>
-
-</style>
-<?php
-$styles = ob_get_clean();
-
-partial\Header::render(
-        title: 'Be part of something new!',
-        head: $styles,
-        is_home: True,
-);
+partial\Header::render(title: 'Be part of something new!');
 ?>
     <section>
         <div class="row-spacing">
-            <?php partial\Top_Level_Nav::render(); ?>
+
             <div id="intro-layout" class="regular-spacing ragged-right">
                 <div id="intro-date">27-30th August 2025</div>
                 <svg id="intro-logo" class="logo" viewBox="0 0 763.18 317.17" style="enable-background:new 0 0 763.18 317.17;" xml:space="preserve">

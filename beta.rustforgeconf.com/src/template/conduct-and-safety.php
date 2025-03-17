@@ -2,12 +2,12 @@
 
 use rfc\ws\partial;
 
-partial\Header::render();
+partial\Header::render( title: "Conduct and Safety");
 ?>
 
 <section id="conduct-and-safety">
 
-    <h2>Conduct and Safety</h2>
+    <h1>Conduct and Safety</h1>
 
     <p>Everyone participating in the event and its online spaces agrees to the
     <a href="https://www.rust-lang.org/policies/code-of-conduct">Rust Project&rsquo;s Code of Conduct</a>. While

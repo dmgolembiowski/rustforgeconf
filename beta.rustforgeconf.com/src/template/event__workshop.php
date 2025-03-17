@@ -2,14 +2,13 @@
 
 use rfc\ws\partial;
 
-partial\Header::render();
+partial\Header::render( title: "How to Adopt Rust Workshop");
 ?>
 
 
     <section id="workshop">
 
         <div class="row-spacing">
-            <?php partial\Event_Nav::render($active_subpage = 'how-to-adopt-rust-workshop'); ?>
             <div class="ragged-right">
                 <h1>
                     How to Adopt Rust <span class="boost">Workshop</span>

@@ -2,11 +2,10 @@
 
 use rfc\ws\partial;
 
-partial\Header::render();
+partial\Header::render(title: "Speak at Rust Forge 2025");
 ?>
     <section>
         <div class="row-spacing">
-            <?php partial\Top_Level_Nav::render(); ?>
             <div>
                 <h1>Let's <br><span class="boost">hear it!</span></h1>
                 <p class="highlight">We would love to have you speak at Rust Forge Conf 2025!</p>

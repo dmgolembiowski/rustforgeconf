@@ -2,13 +2,12 @@
 
 use rfc\ws\partial;
 
-partial\Header::render();
+partial\Header::render( title: "Attend");
 ?>
 
 
     <section>
         <div class="row-spacing">
-            <?php partial\Top_Level_Nav::render(); ?>
             <div class="regular-spacing">
                 <h1><span class="boost">Let's get together</span> <br>in August</h1>
                 <p class="highlight">We'd love to see you there!</p>

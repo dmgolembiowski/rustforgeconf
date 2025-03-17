@@ -54,4 +54,5 @@ h2 .button {
 }
 h2 .button:hover {
     color: var(--text-color-highlight);
+    background: var(--background-pattern);
 }

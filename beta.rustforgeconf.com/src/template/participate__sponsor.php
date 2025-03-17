@@ -2,11 +2,10 @@
 
 use rfc\ws\partial;
 
-partial\Header::render();
+partial\Header::render( title: "Sponsorship Opportunities");
 ?>
     <section>
         <div class="row-spacing">
-            <?php partial\Top_Level_Nav::render(); ?>
             <div class="regular-spacing">
                 <h1>
                     It takes a <span class="boost">community</span>

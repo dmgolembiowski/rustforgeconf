@@ -7,11 +7,10 @@ partial\Header::render(title: "About Us");
 
     <section>
         <div class="row-spacing">
-            <?php partial\Top_Level_Nav::render(); ?>
-            <div>
+
                 <h1>
-                    <span class="boost">Who</span> is Involved? </h1>
-            </div>
+                    <span class="boost">Who</span> <br>is Involved? </h1>
+
         </div>
 
         <div class="columns__1-4">

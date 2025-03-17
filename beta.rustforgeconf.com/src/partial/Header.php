@@ -2,6 +2,7 @@
 
 namespace rfc\ws\partial;
 
+
 class Header
 {
     public static function render(
@@ -97,6 +98,10 @@ class Header
         ?>
         <div id="viewport-column">
         <div id="main">
+                <section style="padding-bottom: 0">
+                <?php Header_Nav::render(); ?>
+                </section>
+
         <?php
     }
 }
