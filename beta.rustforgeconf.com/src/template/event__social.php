@@ -2,7 +2,7 @@
 
 use rfc\ws\partial;
 
-partial\Header::render();
+partial\Header::render( title: "Social");
 ?>
 
 
@@ -10,7 +10,6 @@ partial\Header::render();
 
         <div class="row-spacing">
 
-            <?php partial\Event_Nav::render($active_subpage = 'social'); ?>
             <div class="ragged-right">
                 <h1>
                     <span class="boost">Spaces</span><br>In-between </h1>

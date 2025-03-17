@@ -2,14 +2,12 @@
 
 use rfc\ws\partial;
 
-partial\Header::render();
-?><?php partial\Location_Nav::render($active_subpage = 'activities'); ?>
+partial\Header::render( title: "Activities in Wellington");
+?>
 
     <section id="families">
 
         <h1><span class="boost">Bring</span> your family </h1>
-
-        <h2><span class="boost">Bring</span> your family </h2>
 
         <div id="families-photos">
 

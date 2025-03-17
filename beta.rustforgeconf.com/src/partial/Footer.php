@@ -7,6 +7,7 @@ class Footer
     public static function render()
     {
         ?>
+
         </div> <!-- /#main -->
 
         <?php // Event_Supporters::render();

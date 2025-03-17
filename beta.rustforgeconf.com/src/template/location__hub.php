@@ -2,14 +2,13 @@
 
 use rfc\ws\partial;
 
-partial\Header::render();
+partial\Header::render(title: "Location");
 ?>
 
 
     <section id="location">
 
         <div class="row-spacing">
-            <?php partial\Location_Nav::render(); ?>
             <div>
                 <h1>
                     The perfect <span class="boost">Place</span></h1>

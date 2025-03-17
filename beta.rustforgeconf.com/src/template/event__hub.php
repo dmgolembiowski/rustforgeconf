@@ -7,7 +7,7 @@ partial\Header::render( title: 'Conference Events');
 
     <section>
         <div class="row-spacing">
-            <?php partial\Event_Nav::render(); ?>
+
             <div class="ragged-right">
                 <h1>Rust Forge
                     <span class="boost">Events</span></h1>

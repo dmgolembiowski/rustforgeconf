@@ -2,13 +2,12 @@
 
 use rfc\ws\partial;
 
-partial\Header::render();
+partial\Header::render(title: "Travel");
 ?>
 
 
     <section id="travel">
         <div class="row-spacing">
-            <?php partial\Location_Nav::render($active_subpage = 'travel'); ?>
             <div>
                 <h1>Travel <span class="boost">Guidance</span></h1>
                 <p>The city's airport is <em>WLG</em> (Wellington International Airport). Delegates from outsize of New Zealand should review our <a href="/travel/intl">international traveller recommendations/guidelines</a> and <a href="/travel/visa">visa requirements</a>.</p>

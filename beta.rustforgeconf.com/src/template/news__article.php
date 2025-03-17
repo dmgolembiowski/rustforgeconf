@@ -10,7 +10,6 @@ partial\Header::render( title: $article['title']);
 
     <section>
         <div class="row-spacing">
-            <?php partial\News_Nav::render(); ?>
             <article class="hentry">
             <div class="tight-spacing-spacing">
                 <h1 class="entry-title"><?php echo $article['title']; ?></h1>
@@ -18,7 +17,7 @@ partial\Header::render( title: $article['title']);
             </div>
             </article>
         </div>
-        <div class="entry-content">
+        <div class="entry-content regular-spacing">
             <?php echo $article['content_formatted'] ?? ''; ?>
         </div>
     </section>

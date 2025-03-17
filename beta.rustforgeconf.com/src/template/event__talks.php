@@ -2,12 +2,11 @@
 
 use rfc\ws\partial;
 
-partial\Header::render();
+partial\Header::render( title: "Rust Forge Conference Talks");
 ?>
 
     <section id="talks">
         <div class="row-spacing">
-            <?php partial\Event_Nav::render($active_subpage = 'talks'); ?>
             <div class="ragged-right">
                 <h1>
                     Conference <br><span class="boost">Talks</span>
