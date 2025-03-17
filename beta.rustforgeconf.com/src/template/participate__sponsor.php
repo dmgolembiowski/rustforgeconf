@@ -12,6 +12,7 @@ partial\Header::render();
                     It takes a <span class="boost">community</span>
                 </h1>
 
+
                 <p>
                     Our hope is that Rust Forge will be a place where developers of all levels and walks of life can
                     join together to celebrate their differences, learn from each other, and leave the conference
@@ -20,16 +21,10 @@ partial\Header::render();
                 <p>To achieve this, <span class="highlight">Rust Forge needs your support</span>.</p>
             </div>
         </div>
+        <a class="button" href="/become-a-sponsor" >Become a Sponsor</a>
+
         <div>
-            <h3>Sponsorship Opportunities</h3>
-            <ul class="arrow">
-                <li>
-                    <a href="/sponsor/rad">Apply to become a Rust Forge 2025 sponsor</a> and reserve a place in our
-                        hearts</li>
-            </ul>
-        </div>
-        <div>
-            <h3>How to help:</h3>
+            <h3>Other ways to help:</h3>
             <ul class="plus">
                 <li><a href="/attend">Register early</a></li>
                 <li><a href="/discord" hx-boost="false" target="_blank">Join the event's Discord server</a></li>
@@ -72,7 +67,7 @@ partial\Header::render();
 
                     <div class="feature-box__footer">
                         <div class="feature-box__footer-blocks">
-                            <a class="feature-box__footer-block-solid" href="/sponsor/rad">$12k USD (1 max)</a>
+                            <a class="feature-box__footer-block-solid" href="/become-a-sponsor">$12k USD (1 max)</a>
                         </div>
                     </div>
 
@@ -101,7 +96,7 @@ partial\Header::render();
 
                     <div class="feature-box__footer">
                         <div class="feature-box__footer-blocks">
-                            <a class="feature-box__footer-block-solid" href="/sponsor/rad">$8k USD (3 max)</a>
+                            <a class="feature-box__footer-block-solid" href="/become-a-sponsor">$8k USD (3 max)</a>
                         </div>
                     </div>
 
