@@ -2,13 +2,13 @@
 
 use rfc\ws\partial;
 
-partial\Header::render();
+partial\Header::render(title: "Accommodation");
 ?>
 
 
     <section id="accommodations">
         <div class="row-spacing">
-            <?php partial\Location_Nav::render($active_subpage = 'lodging'); ?>
+            <?php partial\Location_Nav::render($active_subpage = 'accommodation'); ?>
             <div>
                 <h1>Places to <span class="boost">Stay</span></h1>
                 <p>Rather than have a single conference hotel, we have arranged discounts for a suite of options to

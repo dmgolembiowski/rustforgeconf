@@ -27,7 +27,7 @@ class Location_Nav
 
                     <li><a <?php if($active_subpage == "venue"): ?>class="active"<?php endif ?> href="/venue">Venue</a></li>
                     <li><a <?php if($active_subpage == "travel"): ?>class="active"<?php endif ?> href="/travel">Travel</a></li>
-                    <li><a <?php if($active_subpage == "lodging"): ?>class="active"<?php endif ?> href="/lodging">Lodging</a></li>
+                    <li><a <?php if($active_subpage == "accommodation"): ?>class="active"<?php endif ?> href="/accommodation">Accommodation</a></li>
                         <!--
                     <li><a <?php if($active_subpage == "dining"): ?>class="active"<?php endif ?> href="/dining">dining</a></li>
                     <li><a <?php if($active_subpage == "activities"): ?>class="active"<?php endif ?>href="/activities">activites</a></li>
