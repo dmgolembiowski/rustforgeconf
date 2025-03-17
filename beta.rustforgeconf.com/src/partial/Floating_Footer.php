@@ -8,8 +8,10 @@ class Floating_Footer
     {
         ?>
         <div id="floating-footer">
+            <?php if (mktime(0, 0, 0, 3, 30, 2025) > strtotime("now")): ?>
             <p class="small">Early Bird Registration is Open</p>
-            <a href="/register" hx-boost="false">Get your Pass</a>
+            <?php endif ?>
+            <a href="/register" hx-boost="false">Register Now</a>
         </div>
 
         <?php
