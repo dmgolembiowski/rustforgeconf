@@ -18,7 +18,7 @@ partial\Header::render( title: 'Conference Events');
             <ul class="arrow">
                 <li><a href="/social"><em>Socialize</em></a> and connect with developers and creators</li>
                 <li><a href="/team-spaces"><em>Hang our or host a team space</em></a></li>
-                <li><a href="/workshop"><em>Learn about how to adopt rust</em></a> through a workshop by Tim McNamara</li>
+                <li><a href="/how-to-adopt-rust-workshop"><em>Learn about how to adopt rust</em></a> through a workshop by Tim McNamara</li>
                 <li><a href="/talks"><em>Listen to inspiring talks</em></a> during our main conference presentations </li>
             </ul>
         </div>
