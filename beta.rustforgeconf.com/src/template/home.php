@@ -143,7 +143,7 @@ partial\Header::render(title: 'Be part of something new!');
                                 <li>Book a <a href="/team-spaces"><em>Team Space</em></a> to gather in New Zealand or
                                     open it up and host your own workshop!
                                 </li>
-                                <li>Take a <a href="/workshop"><em>Workshop</em></a> with Tim McNamara</li>
+                                <li>Take a <a href="/how-to-adopt-rust-workshop"><em>Workshop</em></a> with Tim McNamara</li>
                                 <li>Learn from inspiring <a href="/talks"><em>Talks</em></a></li>
                             </ul>
                         </li>
