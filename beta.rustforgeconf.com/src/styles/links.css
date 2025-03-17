@@ -23,6 +23,16 @@ a.small {
     font-size: var(--font-size-small);
 }
 
+a.button {
+    background-color: var(--highlight-color);
+    padding: var(--spacing-tiny) var(--spacing-small);
+    display: block;
+    color: var(--background-color);
+}
+a.button:hover {
+   background-color: var(--text-color-highlight);
+}
+
 h2 .button {
     font-family: var(--font-family-body);
 
