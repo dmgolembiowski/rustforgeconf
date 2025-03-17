@@ -21,7 +21,7 @@ partial\Header::render();
             <p>Our venue is located across the street from your <a href="/lodging">lodging</a> with available
                 accessibility features.</p>
 
-            <p>Shed 6 sits on Queens Wharf, a totara wharf built in the 1860s then known as ‘deep water wharf’. It is
+            <p>Shed 6 sits on Queens Wharf, a <a target="_blank" href="https://en.wikipedia.org/wiki/Podocarpus_totara">tōtara</a> wharf built in the 1860s then known as ‘deep water wharf’. It is
                 one of several cargo sheds that have been built in this area over the years. Among them are Shed 5
                 (built in 1886), Shed 3 Dockside (built in 1887), and Shed 1 (1964).</p>
             <p>Learn more at <a target="_blank" href="https://www.wellingtonnz.com/venues-wellington/our-venues/shed-6">Venues
