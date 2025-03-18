@@ -91,7 +91,15 @@ class Header_Nav
                 $p[1],
                 self::classes($parent_item, $active_item, $parent_item)
             );
+          
+        echo '<ul>';
+        self::render_nav_items(self::NAV_ITEMS, $uri, $active_item, $parent_item);
+        echo '</ul></nav>';
 
+
+        $child_nav_items = self::NAV_ITEMS[$parent_item][2] ?? [];
+
+        if (!empty($child_nav_items)) {
             echo '<nav class="horizontal-nav sub-nav">';
             echo '<ul>';
             self::render_nav_items($child_nav_items, $uri, $active_item, $parent_item);
