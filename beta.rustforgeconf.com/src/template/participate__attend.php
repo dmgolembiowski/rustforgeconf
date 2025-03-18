@@ -14,6 +14,11 @@ partial\Header::render( title: "Attend");
             </div>
         </div>
 
+        <div class="tight-spacing ragged-right">
+            <a class="button" href="/register">Register</a>
+            <a class="button" href="/cfp">Propose a session</a>
+        </div>
+
         <div class="columns__2">
             <div>
                 <h3>Each Pass Includes</h3>

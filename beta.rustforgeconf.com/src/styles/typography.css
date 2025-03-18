@@ -115,3 +115,34 @@ em {
 .small {
     font-size: var(--font-size-small);
 }
+
+.big-stamp {
+    background-color: var(--brand-color-light);
+
+    padding: var(--spacing-smaller) var(--spacing-small);
+
+    font-family: "Roc Grotesk Wide Bold", "Space Mono", "Fira Code", monospace;
+    color: var(--background-color);
+    font-size: clamp(1rem, 2vw, 1.5rem);
+    text-transform: uppercase;
+    letter-spacing: 0rem;
+    font-weight: normal;
+
+    text-align: left;
+    line-height: 98%;
+    margin: 0 0;
+    display: block;
+    float: left;
+}
+
+.big-stamp a {
+    color: var(--background-color);
+}
+
+.big-stamp:hover {
+    color: var(--brand-color-light-ghost);
+}
+
+.big-stamp a:hover {
+    color: var(--background-color);
+}

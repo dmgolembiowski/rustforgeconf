@@ -9,7 +9,7 @@ partial\Header::render(title: 'Be part of something new!');
         <div class="row-spacing">
 
             <div id="intro-layout" class="regular-spacing ragged-right">
-                <div id="intro-date">27-30th August 2025</div>
+                <div class="big-stamp">27-30th August 2025</div>
                 <svg id="intro-logo" class="logo" viewBox="0 0 763.18 317.17" style="enable-background:new 0 0 763.18 317.17;" xml:space="preserve">
                         <g>
                             <path class="text" d="M122.69,60.63c0-19.72-12.7-32.59-53.49-32.59H0v109.99h32.09V98.41h39.78c13.71,0,18.05,5.18,18.05,16.55
