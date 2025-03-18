@@ -33,6 +33,9 @@
     right: -0.25em;
     z-index: -1;
 }
+.horizontal-nav li a:hover {
+    border-bottom-color: var(--brand-color-light);
+}
 .horizontal-nav li a.active {
     text-shadow: 0 0 6px var(--brand-color-dark);
     background-color: var(--brand-color-dark-ghost);
@@ -45,6 +48,14 @@
 }
 .horizontal-nav a.active {
     color: var(--text-color-highlight);
+}
+
+.sub-nav {
+    margin-left: var(--spacing-teeny);
+}
+
+.sub-nav li {
+    margin-right: var(--spacing-hairline);
 }
 
 .dual-navigation {
