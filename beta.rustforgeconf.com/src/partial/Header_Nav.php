@@ -71,6 +71,7 @@ class Header_Nav
         $uri         = $_SERVER['REQUEST_URI'];
         $active_item = self::active_item($uri);
         $parent_item = self::parent_item($uri, $active_item);
+        $child_nav_items = self::NAV_ITEMS[$parent_item][2] ?? [];
 
         echo '<div>';
         echo '<nav class="horizontal-nav">';
@@ -82,6 +83,15 @@ class Header_Nav
             self::classes('', $active_item, $parent_item)
         );
 
+        if ( !empty($child_nav_items) && !empty( $parent_item )  ) {
+            $p = self::NAV_ITEMS[$parent_item];
+            self::render_link(
+                $parent_item,
+                $p[0],
+                $p[1],
+                self::classes($parent_item, $active_item, $parent_item)
+            );
+          
         echo '<ul>';
         self::render_nav_items(self::NAV_ITEMS, $uri, $active_item, $parent_item);
         echo '</ul></nav>';
@@ -95,6 +105,11 @@ class Header_Nav
             self::render_nav_items($child_nav_items, $uri, $active_item, $parent_item);
             echo '</ul>';
             echo '</nav>';
+        } else {
+
+            echo '<ul>';
+            self::render_nav_items(self::NAV_ITEMS, $uri, $active_item, $parent_item);
+            echo '</ul></nav>';
         }
 
         echo '</div>';
