@@ -52,12 +52,6 @@ class Header
             <meta name="twitter:site" content="@rustforgeconf">
             <meta property="fb:app_id" content="61562783053986"/>
             <link rel="canonical" href="<?php echo $url; ?>"/>
-            <!-- <?php print_r($uri) ?> -->
-            <!-- <?php print_r($url) ?> -->
-            <!-- <?php print_r($title) ?> -->
-            <!-- <?php print_r($full_title) ?> -->
-            <!-- <?php print_r($description) ?> --> 
-            <!-- <?php print_r($is_home) ?> -->
             <?php if($is_home): ?>
                 <meta property="og:image" name="twitter:image" content="<?php echo $image_url; ?>"/>
                 <meta property="og:image:width" content="<?php echo $image_width; ?>"/>
