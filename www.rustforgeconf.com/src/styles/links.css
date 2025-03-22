@@ -1,0 +1,58 @@
+a[target="_blank"]::after {
+    content: "↗";
+    margin: 0 3px 0 0.5em;
+    transform: rotate(-180deg);
+}
+a:hover {
+    color: var(--brand-color-light);
+}
+
+a:has(em) {
+    border: 0;
+}
+a em {
+    text-decoration: none;
+    color: var(--brand-color-light);
+    border: 1px solid var(--brand-color-light-ghost);
+}
+a:hover em{
+    color: var(--text-color-highlight);
+}
+
+a.small {
+    font-size: var(--font-size-small);
+}
+
+a.button {
+    background-color: var(--highlight-color);
+    padding: var(--spacing-tiny) var(--spacing-small);
+    display: block;
+    color: var(--background-color);
+}
+a.button:hover {
+   background-color: var(--text-color-highlight);
+}
+
+h2 .button {
+    font-family: var(--font-family-body);
+
+    font-style: normal;
+    line-height: 1em;
+    font-size: 0.45em;
+    padding: 0.625em 0.75em 0.5em 0.75em;
+    border: 1px solid var(--brand-color-light-ghost);
+    background: var(--background-pattern);
+    font-weight: 500;
+    color: var(--brand-color-light);
+
+    display: inline-block;
+    border-radius: var(--spacing-hairline);
+    text-transform: uppercase;
+    position: relative;
+    top: -0.25em;
+
+}
+h2 .button:hover {
+    color: var(--text-color-highlight);
+    background: var(--background-pattern);
+}

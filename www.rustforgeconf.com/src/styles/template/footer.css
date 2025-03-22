@@ -1,0 +1,4 @@
+footer {
+    background-image: var(--background-pattern);
+    margin-top: var( --spacing-medium);
+}

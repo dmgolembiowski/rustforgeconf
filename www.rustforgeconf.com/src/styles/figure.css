@@ -1,0 +1,12 @@
+figure img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+figure figcaption {
+    background-image: var(--background-pattern);
+    padding: var(--spacing-teeny);
+    font-size: 0.75em;
+    color: var(--text-color-muted);
+}

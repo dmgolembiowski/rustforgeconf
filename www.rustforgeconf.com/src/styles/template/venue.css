@@ -1,0 +1,7 @@
+#venue__map {
+    width: 100%;
+    height: 50vh;
+    min-height: 400px;
+    background-color: var(--brand-light-color);
+    mix-blend-mode: luminosity;
+}

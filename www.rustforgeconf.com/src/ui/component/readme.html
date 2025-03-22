@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+	<meta charset="utf-8"/>
+</head>
+<body>
+
+<h2 id="uicomponents">UI Components</h2>
+
+<blockquote>
+<p>The <code>ui component API</code> should be used to expose the creation of components from this library
+through static methods. That way the ui library can be brought into scope and used as follows:</p>
+
+<pre><code class="php">use \twwg\frontend\ui\component\Api as ui;
+ 
+ui::heading()
+-&gt;classes( 'my-heading' )
+-&gt;has(
+       ui::text( &quot;Free Courses/Membership&quot; )
+);
+</code></pre>
+</blockquote>
+
+<h2 id="generalapproach">General Approach</h2>
+
+<h3 id="baseclass">Base Class</h3>
+
+<p>Components use the builder pattern to scaffold out HTML. Components are build on the foundation
+a shared component <code>twwg\frontend\ui\component\shared\Component</code> which has some core components:</p>
+
+<ul>
+<li><strong>Tag:</strong> The web component tag type to use (div, a, p, etc)</li>
+<li><strong>Name:</strong> A data-attribute name you can assign to give components types (in a loose sense)</li>
+<li><strong>Id:</strong> Corresponds to the id attribute of an html element</li>
+<li><strong>Css_Classes:</strong> A typed collection of string class names for a component</li>
+<li><strong>Components:</strong> Children of a given component</li>
+</ul>
+
+<h3 id="creatingcomponents">Creating Components</h3>
+
+<p>New components are created</p>
+
+<p>Components are created by authoring a new class which implements <code>interface\Render</code>. This forces
+you to write implementations for if a ui component should render and what its rendered output
+looks like.</p>
+
+<h2 id="componenttypes">Component Types</h2>
+
+<h3 id="primitive">Primitive</h3>
+
+<p>A set of base ui components that generic, complex, and domain components
+build on.</p>
+
+<h3 id="generic">Generic</h3>
+
+<p>Generic components are of specific types</p>
+
+<h3 id="complex">Complex</h3>
+
+<h3 id="domain">Domain</h3>
+
+<p>Components that rely on domain models or complex typed data.</p>
+
+</body>
+</html>
+

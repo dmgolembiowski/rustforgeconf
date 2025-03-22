@@ -139,10 +139,6 @@ em {
     color: var(--background-color);
 }
 
-.big-stamp:hover {
-    color: var(--brand-color-light-ghost);
-}
-
 .big-stamp a:hover {
-    color: var(--background-color);
+    background-color: white;
 }

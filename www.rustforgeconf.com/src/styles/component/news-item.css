@@ -1,0 +1,33 @@
+/**
+ * COMPONENT > NEWS ITEM
+ * -------------------------------------------------------- */
+
+.news-items {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.news-item {
+    background-image: var(--background-pattern);
+    list-style: none;
+    margin: 0;
+    padding: var(--spacing-small);
+}
+
+.news-items.row {
+    display: grid;
+    grid-template-columns: 1fr;
+    flex-wrap: wrap;
+    gap: var(--spacing-small);
+}
+@media screen and (min-width: 980px) {
+    .news-items.row {
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+.news-item__date {
+    font-size: var(--font-size-small);
+    margin: 0 0.5em;
+}

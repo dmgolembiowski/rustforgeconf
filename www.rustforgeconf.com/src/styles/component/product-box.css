@@ -1,0 +1,44 @@
+/**
+ * COMPONENT > PRODUCT BOX
+ * -------------------------------------------------------- */
+
+.product-block {
+    outline: 0px solid var(--framework-color);
+    display: flex;
+    width: auto;
+    flex-direction: column;
+    gap: var(--framework-width);
+
+}
+
+.product-name {
+    padding: var(--spacing-small);
+    flex-grow: 1;
+    color: var(--text-color-highlight);
+    background-image: var(--background-pattern);
+}
+
+.product-name strong {
+    color: var(--brand-color-light);
+    font-weight: normal;
+}
+
+.product-name em {
+    font-style: normal;
+    color: var(--highlight-color);
+}
+
+.product-price {
+    /*background-color: var(--framework-color); */
+    color: var(--brand-color-light);
+    padding: 1rem;
+    text-align: right;
+    background-image: var(--background-pattern-dashed);
+
+}
+
+@media screen and (min-width: 680px) {
+    .product-block {
+        flex-direction: row;
+    }
+}
