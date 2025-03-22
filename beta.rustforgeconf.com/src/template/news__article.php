@@ -5,7 +5,7 @@ use rfc\ws\News;
 
 $article = News::get_from_request($_SERVER['REQUEST_URI']);
 
-partial\Header::render( title: $article['title']);
+partial\Header::render( title: $article['title'], description: $article['description']);
 ?>
 
     <section>
