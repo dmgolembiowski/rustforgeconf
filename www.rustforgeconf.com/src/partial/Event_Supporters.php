@@ -18,10 +18,10 @@ class Event_Supporters
 
             <div class="logo-grid">
                 <a href="">
-                    <img src="assets/images/sponsors/cathay.png">
+                    <img src="/assets/images/sponsors/cathay.png">
                 </a>
                 <a href="">
-                    <img src="assets/images/sponsors/qantas.svg">
+                    <img src="/assets/images/sponsors/qantas.svg">
                 </a>
             </div>
 
@@ -31,10 +31,10 @@ class Event_Supporters
 
             <div class="logo-grid">
                 <a href="">
-                    <img src="assets/images/sponsors/wellingtonnz.svg">
+                    <img src="/assets/images/sponsors/wellingtonnz.svg">
                 </a>
                 <a href="">
-                    <img src="assets/images/sponsors/business-events-wellington.png">
+                    <img src="/assets/images/sponsors/business-events-wellington.png">
                 </a>
             </div>
         </section>
