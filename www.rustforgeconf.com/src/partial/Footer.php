@@ -25,14 +25,14 @@ class Footer
                     <div class="tight-spacing" style="display: flex; flex-direction: column; align-items: center">
                         <h3 class="small">Furnace</h3>
                         <div class="logo-grid">
-                            <img src="assets/images/sponsors/linux-foundation.svg">
+                            <img src="/assets/images/sponsors/linux-foundation.svg">
                         </div>
                     </div>
 
                     <div class="tight-spacing" style="display: flex; flex-direction: column; align-items: center">
                         <h3 class="small">Ember</h3>
                         <div class="logo-grid">
-                            <img src="assets/images/sponsors/jetbrains.svg">
+                            <img src="/assets/images/sponsors/jetbrains.svg">
                         </div>
                     </div>
 
@@ -52,7 +52,7 @@ class Footer
                         <p class="small">Thanks to the support of our transportation and hospitality partners for making
                             Rust Forge 2025 accessible and affordable to our delegates.</p>
                         <div class="logo-grid">
-                            <img src="assets/images/sponsors/cathay.png"> <img src="assets/images/sponsors/qantas.svg">
+                            <img src="/assets/images/sponsors/cathay.png"> <img src="/git assets/images/sponsors/qantas.svg">
                         </div>
                     </div>
                     <div class="tight-spacing">
@@ -64,8 +64,8 @@ class Footer
                             Business Events Wellington team for facilitating so many connections that have enabled this
                             event.</p>
                         <div class="logo-grid">
-                            <img src="assets/images/sponsors/wellingtonnz.svg">
-                            <img src="assets/images/sponsors/business-events-wellington.png">
+                            <img src="/assets/images/sponsors/wellingtonnz.svg">
+                            <img src="/assets/images/sponsors/business-events-wellington.png">
                         </div>
                     </div>
                 </div>
