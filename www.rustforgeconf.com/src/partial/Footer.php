@@ -52,7 +52,7 @@ class Footer
                         <p class="small">Thanks to the support of our transportation and hospitality partners for making
                             Rust Forge 2025 accessible and affordable to our delegates.</p>
                         <div class="logo-grid">
-                            <img src="/assets/images/sponsors/cathay.png"> <img src="/git assets/images/sponsors/qantas.svg">
+                            <img src="/assets/images/sponsors/cathay.png"> <img src="/assets/images/sponsors/qantas.svg">
                         </div>
                     </div>
                     <div class="tight-spacing">
