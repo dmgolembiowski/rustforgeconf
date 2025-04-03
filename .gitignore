@@ -1,5 +1,10 @@
 # environment variables, e.g. server hostname
 .env
+# Forbidden letters
+beta.rustforgeconf.com/assets/fonts/RocGrotesk/RocGrotesk-WideBold.woff
+beta.rustforgeconf.com/assets/fonts/RocGrotesk/RocGrotesk-WideBold-hinted.ttf
+beta.rustforgeconf.com/assets/fonts/RocGrotesk/RocGrotesk-WideBold.ttf
+beta.rustforgeconf.com/assets/fonts/RocGrotesk/RocGrotesk-WideBold.woff2
 
 # IDE and OS cruft
 .idea/
