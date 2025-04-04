@@ -1,9 +1,15 @@
 # environment variables, e.g. server hostname
 .env
 
+# instance/deployment content
+cache/
+
 # IDE and OS cruft
 .idea/
 .vscode/
 *.swp
 *.swo
 .DS_Store
+
+# john's silly local env setup
+wp-includes/
