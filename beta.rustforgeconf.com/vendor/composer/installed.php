@@ -3,11 +3,11 @@
         'name' => 'underscorefunk/rustforgeconf',
         'pretty_version' => 'dev-main',
         'version' => 'dev-main',
-        'reference' => '0e00de4022ff1cb359cd318c146ad8f5edf5d71d',
+        'reference' => 'b0295e97a56de759c0d0a7c813d15951e12b9c18',
         'type' => 'website',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'dev' => false,
+        'dev' => true,
     ),
     'versions' => array(
         'erusev/parsedown' => array(
@@ -22,7 +22,7 @@
         'underscorefunk/rustforgeconf' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
-            'reference' => '0e00de4022ff1cb359cd318c146ad8f5edf5d71d',
+            'reference' => 'b0295e97a56de759c0d0a7c813d15951e12b9c18',
             'type' => 'website',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),

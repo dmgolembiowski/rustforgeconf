@@ -6,9 +6,15 @@ beta.rustforgeconf.com/assets/fonts/RocGrotesk/RocGrotesk-WideBold-hinted.ttf
 beta.rustforgeconf.com/assets/fonts/RocGrotesk/RocGrotesk-WideBold.ttf
 beta.rustforgeconf.com/assets/fonts/RocGrotesk/RocGrotesk-WideBold.woff2
 
+# instance/deployment content
+cache/
+
 # IDE and OS cruft
 .idea/
 .vscode/
 *.swp
 *.swo
 .DS_Store
+
+# john's silly local env setup
+wp-includes/
