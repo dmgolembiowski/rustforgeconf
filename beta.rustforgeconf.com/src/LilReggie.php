@@ -15,7 +15,7 @@ class LilReggie {
     }
 
     public static function cached_get( string $name ) {
-        $cache_file = self::API_CACHE_PATH . $name . '.json';
+        $cache_file = self::API_CACHE_PATH . '.lil-reggie-'.$name;
         $api_key = getenv('LIL_REGIE_API_KEY');
 
         if ( ! file_exists( self::API_CACHE_PATH )) {
