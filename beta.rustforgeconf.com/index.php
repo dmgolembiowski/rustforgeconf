@@ -44,6 +44,8 @@ $routes = [
 
     '/mailing-list' => 'mailing-list.php',
 
+    '/tool/profile-drawing' => 'tool__profile-drawing.php',
+
     '/cfp'      => 'redirect__cfp.php',
     '/register' => 'redirect__register.php',
     '/discord'  => 'redirect__discord.php',
