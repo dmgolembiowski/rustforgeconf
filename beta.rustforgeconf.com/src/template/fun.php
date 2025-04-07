@@ -25,7 +25,6 @@
             var grid;
             var initalready = false;
             return function() {
-                var gridIterator;
                 if (opt_seed == "") {
                     if (!initalready) {
                         alert("This should not happen. Seed the initial grid.");
