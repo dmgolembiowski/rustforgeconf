@@ -1,101 +1,132 @@
-<script>
-    const cardinal_lookup = ({idx, cols, rows}) => {
-        let row = Math.floor(idx / cols);
-        let col = idx % rows;
-        let n_r = (row - 1 + cols) % cols;
-        let n_c = col;
-        let e_r = row;
-        let e_c = (col + 1) % cols;
-        let s_r = (row + 1) % rows;
-        let s_c = col;
-        let w_r = row;
-        let w_c = (col - 1) + cols;
-        let idx_n = n_r * cols + n_c;
-        let idx_e = e_r * cols + e_c;
-        let idx_s = s_r * cols + s_c;
-        let idx_w = w_r * $cols + w_c;
-        return [idx_n, idx_e, idx_s, idx_w];
-    }
-    function initialize_grid(opt_seed = "") {
-        var grid;
-        var initalready = false;
-        return function() {
-            var gridIterator;
-            if (opt_seed == "") {
-                if (!initalready) {
-                    alert("This should not happen. Seed the initial grid.");
-                    return null;
-                }
-            } else {
-                if (initalready) {
-                    return grid;
-                }
-                const $$seed = opt_seed;
-                grid = new Proxy({}, {
-                    set (obj, key, value) {
-                        obj[key] = value; // let fields = document.querySelectorAll(`[name=${key}]`); for (let slot of fields) { //     slot.value = value; // }
-                        return true;
-                    }
-                    
-                });
-                function *enumerate() {
-                    let index = 0;
-                    for (const x of this["data"]) {
-                        yield [index, x];
-                        index++;
-                    }
-                }
-                Object.setPrototypeOf(grid, {enumerate: enumerate});
-                grid["$$seed"] = $$seed;
-                grid["data"] = grid["$$seed"].repeat(1);
-                Object.freeze(grid["$$seed"]);
-                initalready = true;
-            }
-            return grid;
-        }
-    }
-    var get_or_init_grid = initialize_grid("0002241320121211011213102430003424412343130143123311200141114142");
-    var grid = get_or_init_grid();
-
-</script>
-<?php
-    $n = "10101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010";
-    $characters = str_split($n);
-    $col_count = 8;
-    $row_count = 8;
-
-    function decay($digits) {
-        // 4 non-decaying neighbors
-        // sum is 16
-        $check_crowded = fn($digits, $idx) => false;
-        // 0 or 1 neighbors
-        //
-        // - if the sum is 13 or higher, return false (aka not isolated), else check further.
-        // - Given T = { 4 }, aka the set of 4, and S is given by ...
-        //   S = {
-        //     $digits[$idx_North],
-        //     $digits[$idx_East],
-        //     $digits[$idx_South],
-        //     $digits[$idx_West],
-        //   }, then if S ∩ T != ∅  and the sum of the members of S satisfies `$sum >= 8` return false.
-        // - return true.
-        $check_isolated = fn($digits, $idx) => false; 
-
-        // Let S be the set describing the four cardinal numbers of a cell at the index $idx.
-        $check_mutation = function(string $digits, int $idx) {
-            $neighbors  = cardinal_lookup($idx, 8, 8);
-            print_r($neighbors);
-            return false;  
-        };
-        
-    }
-?>
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tesserae Automatae</title>
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        const cardinal_lookup = ({idx, cols, rows}) => {
+            let row = Math.floor(idx / cols);
+            let col = idx % rows;
+            let n_r = (row - 1 + cols) % cols;
+            let n_c = col;
+            let e_r = row;
+            let e_c = (col + 1) % cols;
+            let s_r = (row + 1) % rows;
+            let s_c = col;
+            let w_r = row;
+            let w_c = (col - 1) + cols;
+            let idx_n = n_r * cols + n_c;
+            let idx_e = e_r * cols + e_c;
+            let idx_s = s_r * cols + s_c;
+            let idx_w = w_r * $cols + w_c;
+            return [idx_n, idx_e, idx_s, idx_w];
+        }
+        function initialize_grid(opt_seed = "") {
+            var grid;
+            var initalready = false;
+            return function() {
+                var gridIterator;
+                if (opt_seed == "") {
+                    if (!initalready) {
+                        alert("This should not happen. Seed the initial grid.");
+                        return null;
+                    }
+                } else {
+                    if (initalready) {
+                        return grid;
+                    }
+                    const $$seed = opt_seed;
+                    grid = new Proxy({}, {
+                        set (obj, key, value) {
+                            obj[key] = value; // let fields = document.querySelectorAll(`[name=${key}]`); for (let slot of fields) { //     slot.value = value; // }
+                            return true;
+                        }
+                        
+                    });
+                    function *enumerate() {
+                        let index = 0;
+                        for (const x of this["data"]) {
+                            yield [index, x];
+                            index++;
+                        }
+                    }
+                    Object.setPrototypeOf(grid, {enumerate: enumerate});
+                    grid["$$seed"] = $$seed;
+                    grid["$$rows"] = 8;
+                    grid["$$cols"] = 8;
+                    grid["data"] = grid["$$seed"].repeat(1);
+                    Object.freeze(grid["$$seed"]);
+                    Object.freeze(grid["$$rows"]);
+                    Object.freeze(grid["$$cols"]);
+                    initalready = true;
+                }
+                return grid;
+            }
+        }
+        var get_or_init_grid = initialize_grid("0002241320121211011213102430003424412343130143123311200141114142");
+        var grid = get_or_init_grid();
+        
+        // TODO: addEventListener for `submit` to run all animations
+        document.addEventListener('DOMContentLoaded', function() {
+            const form = document.getElementById('game-form');
+            const gridContainer = document.getElementById('game-grid');
+            document.addEventListener(
+                'input', 
+                function(ev) => {
+                    if (!event.target.closest('[data-form-sync'])) return
+                    let grid_ref = get_or_init_grid();
+                    grid_ref[event.target.name] = event.target.value;
+                }
+            );
+            form.addEventListener('submit', function(event) {
+                // Since applying the automata rules operates purely on data
+                // and we already have the mechanism for two way data binding in the DOM, 
+                // we can just purely recompute the grid here, and mutate it from the Promise.
+                async function apply_rules(grid) {
+                    const rows = grid.$$rows; 
+                    const cols = grid.$$cols;
+                    console.log(`Recomputing grid: ${grid}`);
+                    for (const [idx, _cell] of grid.enumerate()) {
+                        let neighbors = cardinal_loookup({idx, cols, rows});
+                        let [n, e, s, w] = neighbors;
+                        // TODO: Update the graph
+                        console.error("Not yet implemented.");
+                    }
+                    return;
+                }
+                // TODO: Determine a better stop_callback, like checking for a number of iterations
+                // or cyclical checking. For now the default `stop_callback` should guarantee that the 
+                // run_loop only proceeds a single pass before exiting. Ergo, we should see the initial state 
+                // followed by one transition via CSS update. 
+                async function run_loop(grid, stop_callback = () => true) {
+                    let step = 0;
+                    while (true) {
+                        step++;
+                        Promise.resolve(apply_rules(grid)).then(() => {
+                            if (stop_callback()) return;
+                        });
+                    }
+                    console.log(`Running the loop: step ${step}`);
+
+                };
+                event.preventDefault();
+                Promise.resolve(run_loop(get_or_init_grid()).)
+                /*const formData = new FormData(form);
+                fetch('', { // Submit to the same PHP file
+                    method: 'POST',
+                    body: formData
+                })
+                .then(response => response.text())
+                .then(data => {
+                    gridContainer.innerHTML = data; // Replace the grid content
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                });
+                */
+            });
+        });
+    </script>
     <style>
         body {
             font-family: sans-serif;
@@ -331,27 +362,7 @@
 
     <script>
         // Basic JavaScript to handle form submission and potentially update the grid without full reload (optional enhancement)
-        document.addEventListener('DOMContentLoaded', function() {
-            const form = document.getElementById('game-form');
-            const gridContainer = document.getElementById('game-grid');
-
-            form.addEventListener('submit', function(event) {
-                // Prevent default form submission (for demonstration - PHP handles it fully now)
-                event.preventDefault();
-                const formData = new FormData(form);
-                fetch('', { // Submit to the same PHP file
-                    method: 'POST',
-                    body: formData
-                })
-                .then(response => response.text())
-                .then(data => {
-                    gridContainer.innerHTML = data; // Replace the grid content
-                })
-                .catch(error => {
-                    console.error('Error:', error);
-                });
-            });
-        });
+        
     </script>
 </body>
 </html>
