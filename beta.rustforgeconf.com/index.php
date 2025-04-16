@@ -44,6 +44,9 @@ $routes = [
 
     '/mailing-list' => 'mailing-list.php',
 
+    '/tool/profile-drawing' => 'tool__profile-drawing.php',
+    '/tool/attendees' => 'tool__attendees.php',
+
     '/cfp'      => 'redirect__cfp.php',
     '/register' => 'redirect__register.php',
     '/discord'  => 'redirect__discord.php',
@@ -51,4 +54,5 @@ $routes = [
     '/x'        => 'redirect__x.php',
 ];
 
+Env::init();
 Router::run($routes, $_SERVER);
